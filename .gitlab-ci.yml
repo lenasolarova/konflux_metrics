@@ -52,11 +52,9 @@ analyze-gitlab-flakiness:
         git commit -m "chore: update GitLab retest metrics [gitlab-ci]"
 
         # Create a temporary netrc file for authentication
-        cat > ~/.netrc <<EOF
-machine github.com
-login ${GITHUB_TOKEN}
-password x-oauth-basic
-EOF
+        echo "machine github.com" > ~/.netrc
+        echo "login ${GITHUB_TOKEN}" >> ~/.netrc
+        echo "password x-oauth-basic" >> ~/.netrc
         chmod 600 ~/.netrc
 
         # Push to GitHub
