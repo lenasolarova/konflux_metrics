@@ -26,8 +26,6 @@ analyze-gitlab-flakiness:
     - pip install --no-cache-dir prometheus-client requests
     - git config --global user.name "gitlab-ci[bot]"
     - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
-    - git config --global credential.helper store
-    - echo "https://${GITHUB_TOKEN}:x-oauth-basic@github.com" > ~/.git-credentials
 
   script:
     # Run the GitLab flakiness analyzer
@@ -51,7 +49,7 @@ analyze-gitlab-flakiness:
         echo "📊 Committing new GitLab retest metrics..."
         git commit -m "chore: update GitLab retest metrics [gitlab-ci]"
         git pull --rebase origin main || git pull --rebase origin master || true
-        git push origin main
+        git push https://${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git HEAD:main
         echo "✅ Results pushed to GitHub!"
       fi
 
