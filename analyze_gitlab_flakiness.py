@@ -433,20 +433,9 @@ def main():
         prom_metrics['retest_rate'].labels(project='all_projects').set(overall_mrs_with_retests/overall_mrs*100)
         prom_metrics['avg_retests_per_mr'].labels(project='all_projects').set(overall_retests/overall_mrs)
 
-    # Push metrics to Prometheus (Pushgateway or Grafana Cloud)
-    grafana_cloud_url = os.environ.get('GRAFANA_CLOUD_URL')
-
-    if grafana_cloud_url and GRAFANA_CLOUD_AVAILABLE:
-        # Push to Grafana Cloud
-        print(f"\n📊 Pushing metrics to Grafana Cloud...")
-        try:
-            push_to_grafana_cloud(registry, job_name='gitlab-flakiness-analyzer')
-            print("✅ Metrics successfully pushed to Grafana Cloud!")
-        except Exception as e:
-            print(f"⚠️  Failed to push metrics to Grafana Cloud: {e}")
-            print("   Continuing anyway...")
-    elif pushgateway_url:
-        # Push to local Pushgateway
+    # Optional: Push metrics to Prometheus Pushgateway (for local testing)
+    pushgateway_url = os.environ.get('PROMETHEUS_PUSHGATEWAY')
+    if pushgateway_url:
         print(f"\n📊 Pushing metrics to Prometheus Pushgateway at {pushgateway_url}...")
         try:
             push_to_gateway(pushgateway_url, job='gitlab-flakiness-analyzer', registry=registry)
@@ -455,7 +444,7 @@ def main():
             print(f"⚠️  Failed to push metrics to Prometheus: {e}")
             print("   Continuing anyway...")
     else:
-        print("\n⚠️  No Prometheus endpoint configured (set GRAFANA_CLOUD_URL or PROMETHEUS_PUSHGATEWAY)")
+        print("\n📊 Metrics available in JSON file (Grafana will read from GitHub)")
 
     print("\n✅ Analysis complete!")
 

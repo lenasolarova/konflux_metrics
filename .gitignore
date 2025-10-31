@@ -1,0 +1,29 @@
+# Local testing environment (kept in local-testing/ folder)
+local-testing/
+
+# Generated result files
+*.json
+!grafana-dashboard-v2.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
