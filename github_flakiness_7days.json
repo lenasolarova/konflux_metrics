@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-10-31T15:25:09.012627",
+  "analysis_date": "2025-10-31T16:21:22.760072",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,14 +15,14 @@
   ],
   "days_analyzed": 7,
   "date_range": {
-    "from": "2025-10-24T15:24:21.948741+00:00",
-    "to": "2025-10-31T15:25:09.012644"
+    "from": "2025-10-24T16:20:37.660999+00:00",
+    "to": "2025-10-31T16:21:22.760090"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 43,
-    "total_commits": 53,
-    "total_runs": 53,
+    "total_prs_analyzed": 42,
+    "total_commits": 50,
+    "total_runs": 50,
     "total_retests": 0,
     "prs_with_retests": 0,
     "pr_retest_rate": 0.0,
@@ -590,22 +590,12 @@
           "total_runs": 2,
           "total_retests": 0,
           "commits_with_retests": 0
-        },
-        {
-          "pr_number": 1618,
-          "title": "fix(deps): update module github.com/redhatinsights/app-common-go to v1.6.9",
-          "merged_at": "2025-10-24T16:15:53Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 3,
-          "total_runs": 3,
-          "total_retests": 0,
-          "commits_with_retests": 0
         }
       ],
       "summary": {
-        "total_prs_analyzed": 3,
-        "total_commits": 8,
-        "total_runs": 8,
+        "total_prs_analyzed": 2,
+        "total_commits": 5,
+        "total_runs": 5,
         "total_retests": 0,
         "prs_with_retests": 0,
         "pr_retest_rate": 0.0,
