@@ -7,6 +7,9 @@ stages:
 
 analyze-gitlab-flakiness:
   stage: analyze
+  tags:
+    - shared
+    - x86_64
 
   # Run hourly
   rules:
