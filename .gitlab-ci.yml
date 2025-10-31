@@ -52,7 +52,7 @@ analyze-gitlab-flakiness:
         git commit -m "chore: update GitLab retest metrics [gitlab-ci]"
 
         # Configure git to use token directly
-        git remote set-url origin "https://oauth2:${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git"
+        git remote set-url origin "https://${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git"
 
         # Push to GitHub
         git push origin main
