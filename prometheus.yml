@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: 'pushgateway'
+    honor_labels: true
+    static_configs:
+      - targets: ['localhost:9091']
+
+remote_write:
+  - url: ${GRAFANA_CLOUD_URL}
+    basic_auth:
+      username: ${GRAFANA_CLOUD_USER}
+      password: ${GRAFANA_CLOUD_TOKEN}
