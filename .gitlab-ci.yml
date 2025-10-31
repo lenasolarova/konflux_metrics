@@ -7,7 +7,7 @@ stages:
 
 analyze-gitlab-flakiness:
   stage: analyze
-  image: docker:24-dind
+  image: docker:24
   tags:
     - shared
     - x86_64
@@ -20,8 +20,10 @@ analyze-gitlab-flakiness:
 
   variables:
     GIT_STRATEGY: clone
-    DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: ""
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
 
   services:
     - docker:24-dind
@@ -31,6 +33,7 @@ analyze-gitlab-flakiness:
     - pip3 install --no-cache-dir prometheus-client requests --break-system-packages
     - git config --global user.name "gitlab-ci[bot]"
     - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
+    - until docker info; do sleep 1; done
 
   script:
     # Start Pushgateway
@@ -40,7 +43,7 @@ analyze-gitlab-flakiness:
 
     # Run the GitLab flakiness analyzer (pushes to pushgateway)
     - echo "🔍 Analyzing GitLab repos for retests..."
-    - export PROMETHEUS_PUSHGATEWAY="localhost:9091"
+    - export PROMETHEUS_PUSHGATEWAY="pushgateway:9091"
     - python3 analyze_gitlab_flakiness.py
 
     # Create Prometheus config with env var substitution
