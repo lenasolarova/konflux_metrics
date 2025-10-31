@@ -52,7 +52,3 @@ analyze-gitlab-flakiness:
     paths:
       - gitlab_flakiness_7days.json
     expire_in: 90 days
-
-  only:
-    - schedules
-    - web
