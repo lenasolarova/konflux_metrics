@@ -27,7 +27,7 @@ analyze-gitlab-flakiness:
     - git config --global user.name "gitlab-ci[bot]"
     - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
     - git config --global credential.helper store
-    - echo "https://oauth2:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
+    - echo "https://${GITHUB_TOKEN}:x-oauth-basic@github.com" > ~/.git-credentials
 
   script:
     # Run the GitLab flakiness analyzer
