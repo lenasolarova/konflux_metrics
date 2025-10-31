@@ -57,7 +57,7 @@ def push_github_metrics(pushgateway_url):
             pr_retests.labels(
                 repository=repo_name,
                 pr_number=str(pr['pr_number']),
-                author=pr['author']
+                author=pr.get('user', pr.get('author', 'unknown'))
             ).set(pr['total_retests'])
 
         # Set aggregated metrics
