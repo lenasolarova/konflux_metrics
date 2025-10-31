@@ -33,7 +33,19 @@ analyze-gitlab-flakiness:
     - pip3 install --no-cache-dir prometheus-client requests --break-system-packages
     - git config --global user.name "gitlab-ci[bot]"
     - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
-    - until docker info; do sleep 1; done
+    # Wait for Docker daemon to be ready
+    - echo "Waiting for Docker daemon..."
+    - sleep 5
+    - |
+      for i in $(seq 1 30); do
+        if docker info >/dev/null 2>&1; then
+          echo "✅ Docker daemon is ready!"
+          break
+        fi
+        echo "Waiting for Docker daemon... ($i/30)"
+        sleep 2
+      done
+    - docker info
 
   script:
     # Start Pushgateway
