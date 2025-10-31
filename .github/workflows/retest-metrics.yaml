@@ -35,7 +35,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install prometheus-client requests
+          pip install prometheus-client requests prometheus-remote-write
 
       - name: Configure Git
         run: |
@@ -94,7 +94,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install prometheus-client requests
+          pip install prometheus-client requests prometheus-remote-write
 
       - name: Configure Git
         run: |
