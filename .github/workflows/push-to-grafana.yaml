@@ -31,46 +31,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install prometheus-client
+          pip install requests
 
-      - name: Start Pushgateway
-        run: |
-          echo "🚀 Starting Pushgateway..."
-          docker run -d --name pushgateway -p 9091:9091 prom/pushgateway
-          sleep 5
-
-      - name: Push metrics to Pushgateway
-        run: |
-          echo "📊 Processing metrics from JSON files..."
-          python3 push_json_to_prometheus.py
-
-      - name: Push to Grafana Cloud via Prometheus
+      - name: Push metrics directly to Grafana Cloud
         env:
           GRAFANA_CLOUD_URL: ${{ secrets.GRAFANA_CLOUD_URL }}
           GRAFANA_CLOUD_USER: ${{ secrets.GRAFANA_CLOUD_USER }}
           GRAFANA_CLOUD_TOKEN: ${{ secrets.GRAFANA_CLOUD_TOKEN }}
         run: |
-          echo "📝 Creating Prometheus config..."
-          cat > /tmp/prometheus.yml <<EOF
-          global:
-            scrape_interval: 5s
-          scrape_configs:
-            - job_name: 'pushgateway'
-              honor_labels: true
-              static_configs:
-                - targets: ['localhost:9091']
-          remote_write:
-            - url: ${GRAFANA_CLOUD_URL}
-              basic_auth:
-                username: ${GRAFANA_CLOUD_USER}
-                password: ${GRAFANA_CLOUD_TOKEN}
-          EOF
-
-          echo "🔄 Starting Prometheus to push metrics to Grafana Cloud..."
-          docker run -d --name prometheus --network host -v /tmp/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
-          echo "⏳ Waiting 30 seconds for Prometheus to scrape and push..."
-          sleep 30
-          echo "✅ Metrics should now be in Grafana Cloud!"
-
-          # Cleanup
-          docker stop prometheus pushgateway || true
+          echo "📊 Pushing metrics directly to Grafana Cloud..."
+          python3 push_to_grafana_cloud.py
+          echo "✅ Metrics pushed successfully!"
