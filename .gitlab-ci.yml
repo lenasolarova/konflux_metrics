@@ -35,8 +35,8 @@ analyze-gitlab-flakiness:
     # Copy the generated JSON file and push to GitHub
     - echo "📤 Pushing results to GitHub repo..."
     - |
-      # Clone repo
-      git clone https://x-access-token:${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git /tmp/konflux_metrics
+      # Clone repo without token
+      git clone https://github.com/lenasolarova/konflux_metrics.git /tmp/konflux_metrics
       cd /tmp/konflux_metrics
 
       # Copy the generated JSON file
@@ -50,8 +50,9 @@ analyze-gitlab-flakiness:
       else
         echo "📊 Committing new GitLab retest metrics..."
         git commit -m "chore: update GitLab retest metrics [gitlab-ci]"
-        git pull --rebase || true
-        git push https://x-access-token:${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git HEAD:main
+
+        # Push using token directly in URL with proper format
+        git push "https://${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git" HEAD:main
         echo "✅ Results pushed to GitHub!"
       fi
 
