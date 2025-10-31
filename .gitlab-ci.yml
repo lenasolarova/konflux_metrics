@@ -20,10 +20,8 @@ analyze-gitlab-flakiness:
 
   variables:
     GIT_STRATEGY: clone
-    DOCKER_HOST: tcp://docker:2376
-    DOCKER_TLS_CERTDIR: "/certs"
-    DOCKER_TLS_VERIFY: 1
-    DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""  # Disable TLS
 
   services:
     - docker:24-dind
@@ -33,9 +31,7 @@ analyze-gitlab-flakiness:
     - pip3 install --no-cache-dir prometheus-client requests --break-system-packages
     - git config --global user.name "gitlab-ci[bot]"
     - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
-    # Wait for Docker daemon to be ready
-    - echo "Waiting for Docker daemon..."
-    - sleep 5
+    # Wait for Docker daemon to be ready (no TLS, so should be faster)
     - |
       for i in $(seq 1 30); do
         if docker info >/dev/null 2>&1; then
@@ -43,7 +39,7 @@ analyze-gitlab-flakiness:
           break
         fi
         echo "Waiting for Docker daemon... ($i/30)"
-        sleep 2
+        sleep 1
       done
     - docker info
 
