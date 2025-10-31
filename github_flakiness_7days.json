@@ -1,0 +1,617 @@
+{
+  "analysis_date": "2025-10-31T11:29:30.897582",
+  "repos": [
+    "RedHatInsights/insights-ccx-messaging",
+    "RedHatInsights/insights-results-aggregator",
+    "RedHatInsights/insights-results-aggregator-exporter",
+    "RedHatInsights/insights-content-template-renderer",
+    "RedHatInsights/insights-behavioral-spec",
+    "RedHatInsights/insights-results-aggregator-cleaner",
+    "RedHatInsights/insights-operator-gathering-conditions-service",
+    "RedHatInsights/ccx-notification-service",
+    "RedHatInsights/ccx-notification-writer",
+    "RedHatInsights/obsint-mocks",
+    "RedHatInsights/insights-results-smart-proxy"
+  ],
+  "days_analyzed": 7,
+  "date_range": {
+    "from": "2025-10-24T11:28:45.792057+00:00",
+    "to": "2025-10-31T11:29:30.897597"
+  },
+  "overall_summary": {
+    "total_repos": 11,
+    "total_prs_analyzed": 43,
+    "total_commits": 52,
+    "total_runs": 51,
+    "total_retests": 0,
+    "prs_with_retests": 0,
+    "pr_retest_rate": 0.0,
+    "avg_retests_per_pr": 0.0,
+    "avg_retests_per_commit": 0.0
+  },
+  "repositories": {
+    "RedHatInsights/insights-ccx-messaging": {
+      "prs": [
+        {
+          "pr_number": 608,
+          "title": "AccountNumber won't be set if no account is defined in the incoming message",
+          "merged_at": "2025-10-29T15:18:42Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 607,
+          "title": "build(deps): update boto3 requirement from <1.40.46,>=1.34.1 to >=1.34.1,<1.40.60",
+          "merged_at": "2025-10-27T07:35:27Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
+        "total_runs": 2,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/insights-results-aggregator": {
+      "prs": [
+        {
+          "pr_number": 2311,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-28T20:45:55Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 2298,
+          "title": "chore(deps): update dependency jekyll-feed to \"~> 0.17.0\"",
+          "merged_at": "2025-10-27T09:19:31Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 2310,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-26T16:44:55Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 2309,
+          "title": "fix(deps): update module github.com/ibm/sarama to v1.46.3",
+          "merged_at": "2025-10-26T12:31:16Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 2308,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-25T16:44:26Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 2304,
+          "title": "Avoid initializing OCP recommendations table in dvo-writer",
+          "merged_at": "2025-10-24T13:16:20Z",
+          "user": "ikerreyes",
+          "total_commits": 2,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 6,
+        "total_commits": 7,
+        "total_runs": 6,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/insights-results-aggregator-exporter": {
+      "prs": [
+        {
+          "pr_number": 478,
+          "title": "chore(deps): update module github.com/getsentry/sentry-go to v0.36.2",
+          "merged_at": "2025-10-28T16:23:46Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 477,
+          "title": "chore(deps): update module github.com/tinylib/msgp to v1.5.0",
+          "merged_at": "2025-10-27T16:22:12Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
+        "total_runs": 2,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/insights-content-template-renderer": {
+      "prs": [
+        {
+          "pr_number": 228,
+          "title": "Bump fastapi from 0.120.0 to 0.120.1",
+          "merged_at": "2025-10-27T23:52:15Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 225,
+          "title": "Bump uvicorn from 0.37.0 to 0.38.0",
+          "merged_at": "2025-10-27T11:34:55Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 226,
+          "title": "Bump fastapi from 0.118.0 to 0.119.1",
+          "merged_at": "2025-10-27T11:07:39Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 227,
+          "title": "Update BDD image",
+          "merged_at": "2025-10-27T10:32:36Z",
+          "user": "ikerreyes",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 4,
+        "total_commits": 4,
+        "total_runs": 4,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/insights-behavioral-spec": {
+      "prs": [
+        {
+          "pr_number": 724,
+          "title": "Updated test to newer versions of ccx-messaging",
+          "merged_at": "2025-10-30T10:28:38Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 723,
+          "title": "[CCXDEV-15552] Fix issues when installing content-service",
+          "merged_at": "2025-10-27T11:02:40Z",
+          "user": "juandspy",
+          "total_commits": 2,
+          "total_runs": 2,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 2,
+        "total_commits": 3,
+        "total_runs": 3,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/insights-results-aggregator-cleaner": {
+      "prs": [
+        {
+          "pr_number": 537,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-28T20:39:27Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 536,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-28T16:32:59Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 535,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-27T00:38:14Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 534,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-26T16:43:42Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 533,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-26T12:32:20Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 532,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-25T16:41:38Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 6,
+        "total_commits": 6,
+        "total_runs": 6,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/insights-operator-gathering-conditions-service": {
+      "prs": [
+        {
+          "pr_number": 510,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-31T00:37:38Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 509,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-28T20:33:07Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 508,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-28T16:32:49Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 507,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-26T17:29:48Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 506,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-26T12:28:39Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 505,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-25T16:43:16Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 6,
+        "total_commits": 6,
+        "total_runs": 6,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/ccx-notification-service": {
+      "prs": [
+        {
+          "pr_number": 1034,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-30T10:07:38Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 3,
+          "total_runs": 3,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 1026,
+          "title": "chore(deps): update dependency github-pages to v232",
+          "merged_at": "2025-10-27T10:07:24Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 1031,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-26T16:52:16Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 1032,
+          "title": "fix(deps): update module github.com/ibm/sarama to v1.46.3",
+          "merged_at": "2025-10-26T12:40:11Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 1030,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-25T16:46:19Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 5,
+        "total_commits": 7,
+        "total_runs": 7,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/ccx-notification-writer": {
+      "prs": [
+        {
+          "pr_number": 695,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-30T16:58:54Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 694,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-30T10:59:15Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 693,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-28T16:46:22Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 683,
+          "title": "chore(deps): update dependency jekyll-feed to \"~> 0.17.0\"",
+          "merged_at": "2025-10-27T10:04:31Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 692,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-26T16:43:33Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 691,
+          "title": "fix(deps): update module github.com/ibm/sarama to v1.46.3",
+          "merged_at": "2025-10-26T12:37:20Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 690,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-25T16:43:01Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 7,
+        "total_commits": 7,
+        "total_runs": 7,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
+    "RedHatInsights/obsint-mocks": {
+      "prs": [],
+      "summary": {
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
+        "total_runs": 0,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
+      }
+    },
+    "RedHatInsights/insights-results-smart-proxy": {
+      "prs": [
+        {
+          "pr_number": 1612,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-27T11:14:33Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 3,
+          "total_runs": 3,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 1616,
+          "title": "chore(deps): update dependency github-pages to v232",
+          "merged_at": "2025-10-27T10:07:14Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 2,
+          "total_runs": 2,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
+          "pr_number": 1618,
+          "title": "fix(deps): update module github.com/redhatinsights/app-common-go to v1.6.9",
+          "merged_at": "2025-10-24T16:15:53Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 3,
+          "total_runs": 3,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 3,
+        "total_commits": 8,
+        "total_runs": 8,
+        "total_retests": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    }
+  }
+}
