@@ -24,7 +24,7 @@ analyze-gitlab-flakiness:
 
   before_script:
     - apt-get update && apt-get install -y git
-    - pip3 install --no-cache-dir requests
+    - pip3 install --no-cache-dir requests prometheus-client
     - git config --global user.name "gitlab-ci[bot]"
     - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
 
