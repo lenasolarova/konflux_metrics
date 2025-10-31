@@ -31,14 +31,24 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests
+          pip install prometheus-client requests
 
-      - name: Push metrics directly to Grafana Cloud
+      - name: Start Pushgateway
+        run: |
+          echo "🚀 Starting Pushgateway..."
+          docker run -d --name pushgateway -p 9091:9091 prom/pushgateway
+          sleep 5
+
+      - name: Push metrics to Pushgateway
+        run: |
+          echo "📊 Processing metrics from JSON files..."
+          python3 push_json_to_prometheus.py
+
+      - name: Push to Grafana Cloud
         env:
           GRAFANA_CLOUD_URL: ${{ secrets.GRAFANA_CLOUD_URL }}
           GRAFANA_CLOUD_USER: ${{ secrets.GRAFANA_CLOUD_USER }}
           GRAFANA_CLOUD_TOKEN: ${{ secrets.GRAFANA_CLOUD_TOKEN }}
         run: |
-          echo "📊 Pushing metrics directly to Grafana Cloud..."
+          echo "📡 Pushing metrics from Pushgateway to Grafana Cloud..."
           python3 push_to_grafana_cloud.py
-          echo "✅ Metrics pushed successfully!"
