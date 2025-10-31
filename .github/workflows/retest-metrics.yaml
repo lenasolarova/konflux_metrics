@@ -79,8 +79,6 @@ jobs:
 
   analyze-gitlab-retests:
     runs-on: ubuntu-latest
-    # Only run if GITLAB_TOKEN is set
-    if: vars.GITLAB_TOKEN != ''
 
     steps:
       - name: Checkout repository
@@ -107,6 +105,9 @@ jobs:
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
           PROMETHEUS_PUSHGATEWAY: ${{ secrets.PROMETHEUS_PUSHGATEWAY }}
+          GRAFANA_CLOUD_URL: ${{ secrets.GRAFANA_CLOUD_URL }}
+          GRAFANA_CLOUD_USER: ${{ secrets.GRAFANA_CLOUD_USER }}
+          GRAFANA_CLOUD_TOKEN: ${{ secrets.GRAFANA_CLOUD_TOKEN }}
         run: |
           echo "🔍 Analyzing retest metrics for GitLab repos..."
           python3 analyze_gitlab_flakiness.py
