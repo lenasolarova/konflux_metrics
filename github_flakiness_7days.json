@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-10-31T11:29:30.897582",
+  "analysis_date": "2025-10-31T14:17:31.134579",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,14 +15,14 @@
   ],
   "days_analyzed": 7,
   "date_range": {
-    "from": "2025-10-24T11:28:45.792057+00:00",
-    "to": "2025-10-31T11:29:30.897597"
+    "from": "2025-10-24T14:16:38.968174+00:00",
+    "to": "2025-10-31T14:17:31.134595"
   },
   "overall_summary": {
     "total_repos": 11,
     "total_prs_analyzed": 43,
-    "total_commits": 52,
-    "total_runs": 51,
+    "total_commits": 53,
+    "total_runs": 53,
     "total_retests": 0,
     "prs_with_retests": 0,
     "pr_retest_rate": 0.0,
@@ -32,6 +32,16 @@
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
       "prs": [
+        {
+          "pr_number": 609,
+          "title": "Logging error to warning when we are capturing exception",
+          "merged_at": "2025-10-31T12:23:28Z",
+          "user": "joselsegura",
+          "total_commits": 3,
+          "total_runs": 3,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
         {
           "pr_number": 608,
           "title": "AccountNumber won't be set if no account is defined in the incoming message",
@@ -54,9 +64,9 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
-        "total_runs": 2,
+        "total_prs_analyzed": 3,
+        "total_commits": 5,
+        "total_runs": 5,
         "total_retests": 0,
         "prs_with_retests": 0,
         "pr_retest_rate": 0.0,
@@ -115,22 +125,12 @@
           "total_runs": 1,
           "total_retests": 0,
           "commits_with_retests": 0
-        },
-        {
-          "pr_number": 2304,
-          "title": "Avoid initializing OCP recommendations table in dvo-writer",
-          "merged_at": "2025-10-24T13:16:20Z",
-          "user": "ikerreyes",
-          "total_commits": 2,
-          "total_runs": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
         }
       ],
       "summary": {
-        "total_prs_analyzed": 6,
-        "total_commits": 7,
-        "total_runs": 6,
+        "total_prs_analyzed": 5,
+        "total_commits": 5,
+        "total_runs": 5,
         "total_retests": 0,
         "prs_with_retests": 0,
         "pr_retest_rate": 0.0,
