@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 import sys
 import time
 import os
+import ssl
 
 # Prometheus imports
 from prometheus_client import CollectorRegistry, Counter, Gauge, push_to_gateway
@@ -43,8 +44,12 @@ class GitLabFlakinessAnalyzer:
     def _api_request(self, url):
         """Make API request with error handling"""
         req = urllib.request.Request(url, headers=self.headers)
+        # Disable SSL verification for internal GitLab with self-signed cert
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
         try:
-            with urllib.request.urlopen(req) as response:
+            with urllib.request.urlopen(req, context=ctx) as response:
                 # GitLab uses RateLimit-Remaining header
                 self.rate_limit_remaining = response.headers.get('RateLimit-Remaining')
                 return json.loads(response.read().decode('utf-8'))
