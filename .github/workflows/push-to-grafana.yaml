@@ -1,0 +1,243 @@
+name: Push Metrics to Grafana Cloud
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'github_flakiness_*.json'
+      - 'gitlab_flakiness_*.json'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  push-to-grafana:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install prometheus-client
+
+      - name: Start Pushgateway
+        run: |
+          echo "🚀 Starting Pushgateway..."
+          docker run -d --name pushgateway -p 9091:9091 prom/pushgateway
+          sleep 5
+
+      - name: Push GitHub metrics to Pushgateway
+        run: |
+          echo "📊 Processing GitHub metrics..."
+          python3 << 'EOF'
+import json
+import os
+from prometheus_client import CollectorRegistry, Gauge, push_to_gateway
+
+# Read the GitHub flakiness JSON
+with open('github_flakiness_7days.json', 'r') as f:
+    data = json.load(f)
+
+# Initialize Prometheus registry
+registry = CollectorRegistry()
+
+# Create metrics
+mr_retests = Gauge(
+    'github_pr_retests',
+    'Number of retests for individual PR',
+    ['repository', 'pr_number', 'author'],
+    registry=registry
+)
+
+retests_total = Gauge(
+    'github_flakiness_retests_total',
+    'Total number of retests detected',
+    ['repository'],
+    registry=registry
+)
+
+retest_rate = Gauge(
+    'github_flakiness_retest_rate_percent',
+    'Percentage of PRs requiring retests',
+    ['repository'],
+    registry=registry
+)
+
+avg_retests_per_pr = Gauge(
+    'github_flakiness_avg_retests_per_pr',
+    'Average number of retests per PR',
+    ['repository'],
+    registry=registry
+)
+
+prs_analyzed = Gauge(
+    'github_flakiness_prs_analyzed_total',
+    'Total number of pull requests analyzed',
+    ['repository'],
+    registry=registry
+)
+
+# Process each repository
+for repo_name, repo_data in data.get('repositories', {}).items():
+    summary = repo_data.get('summary', {})
+
+    # Set per-PR metrics
+    for pr in repo_data.get('prs', []):
+        mr_retests.labels(
+            repository=repo_name,
+            pr_number=str(pr['pr_number']),
+            author=pr['author']
+        ).set(pr['total_retests'])
+
+    # Set aggregated metrics
+    prs_analyzed.labels(repository=repo_name).set(summary.get('total_prs_analyzed', 0))
+    retests_total.labels(repository=repo_name).set(summary.get('total_retests', 0))
+
+    if summary.get('total_prs_analyzed', 0) > 0:
+        retest_rate.labels(repository=repo_name).set(summary.get('pr_retest_rate', 0))
+        avg_retests_per_pr.labels(repository=repo_name).set(summary.get('avg_retests_per_pr', 0))
+
+# Set overall metrics
+overall = data.get('overall_summary', {})
+prs_analyzed.labels(repository='all_repositories').set(overall.get('total_prs_analyzed', 0))
+retests_total.labels(repository='all_repositories').set(overall.get('total_retests', 0))
+
+if overall.get('total_prs_analyzed', 0) > 0:
+    retest_rate.labels(repository='all_repositories').set(overall.get('pr_retest_rate', 0))
+    avg_retests_per_pr.labels(repository='all_repositories').set(overall.get('avg_retests_per_pr', 0))
+
+# Push to gateway
+print("Pushing GitHub metrics to Pushgateway...")
+push_to_gateway('localhost:9091', job='github-flakiness-metrics', registry=registry)
+print("✅ GitHub metrics pushed!")
+EOF
+
+      - name: Push GitLab metrics to Pushgateway
+        run: |
+          echo "📊 Processing GitLab metrics..."
+          python3 << 'EOF'
+import json
+import os
+from prometheus_client import CollectorRegistry, Gauge, push_to_gateway
+
+# Read the GitLab flakiness JSON
+with open('gitlab_flakiness_7days.json', 'r') as f:
+    data = json.load(f)
+
+# Initialize Prometheus registry
+registry = CollectorRegistry()
+
+# Create metrics
+mr_retests = Gauge(
+    'gitlab_mr_retests',
+    'Number of retests for individual MR',
+    ['project', 'mr_number', 'author'],
+    registry=registry
+)
+
+retests_total = Gauge(
+    'gitlab_flakiness_retests_total',
+    'Total number of retests detected',
+    ['project'],
+    registry=registry
+)
+
+retest_rate = Gauge(
+    'gitlab_flakiness_retest_rate_percent',
+    'Percentage of MRs requiring retests',
+    ['project'],
+    registry=registry
+)
+
+avg_retests_per_mr = Gauge(
+    'gitlab_flakiness_avg_retests_per_mr',
+    'Average number of retests per MR',
+    ['project'],
+    registry=registry
+)
+
+mrs_analyzed = Gauge(
+    'gitlab_flakiness_mrs_analyzed_total',
+    'Total number of merge requests analyzed',
+    ['project'],
+    registry=registry
+)
+
+# Process each project
+for project_name, project_data in data.get('projects', {}).items():
+    summary = project_data.get('summary', {})
+
+    # Set per-MR metrics
+    for mr in project_data.get('mrs', []):
+        mr_retests.labels(
+            project=project_name,
+            mr_number=str(mr['mr_iid']),
+            author=mr['author']
+        ).set(mr['total_retests'])
+
+    # Set aggregated metrics
+    mrs_analyzed.labels(project=project_name).set(summary.get('total_mrs_analyzed', 0))
+    retests_total.labels(project=project_name).set(summary.get('total_retests', 0))
+
+    if summary.get('total_mrs_analyzed', 0) > 0:
+        retest_rate.labels(project=project_name).set(summary.get('mr_retest_rate', 0))
+        avg_retests_per_mr.labels(project=project_name).set(summary.get('avg_retests_per_mr', 0))
+
+# Set overall metrics
+overall = data.get('overall_summary', {})
+mrs_analyzed.labels(project='all_projects').set(overall.get('total_mrs_analyzed', 0))
+retests_total.labels(project='all_projects').set(overall.get('total_retests', 0))
+
+if overall.get('total_mrs_analyzed', 0) > 0:
+    retest_rate.labels(project='all_projects').set(overall.get('mr_retest_rate', 0))
+    avg_retests_per_mr.labels(project='all_projects').set(overall.get('avg_retests_per_mr', 0))
+
+# Push to gateway
+print("Pushing GitLab metrics to Pushgateway...")
+push_to_gateway('localhost:9091', job='gitlab-flakiness-metrics', registry=registry)
+print("✅ GitLab metrics pushed!")
+EOF
+
+      - name: Push to Grafana Cloud via Prometheus
+        env:
+          GRAFANA_CLOUD_URL: ${{ secrets.GRAFANA_CLOUD_URL }}
+          GRAFANA_CLOUD_USER: ${{ secrets.GRAFANA_CLOUD_USER }}
+          GRAFANA_CLOUD_TOKEN: ${{ secrets.GRAFANA_CLOUD_TOKEN }}
+        run: |
+          echo "📝 Creating Prometheus config..."
+          cat > /tmp/prometheus.yml <<EOF
+          global:
+            scrape_interval: 5s
+          scrape_configs:
+            - job_name: 'pushgateway'
+              honor_labels: true
+              static_configs:
+                - targets: ['localhost:9091']
+          remote_write:
+            - url: ${GRAFANA_CLOUD_URL}
+              basic_auth:
+                username: ${GRAFANA_CLOUD_USER}
+                password: ${GRAFANA_CLOUD_TOKEN}
+          EOF
+
+          echo "🔄 Starting Prometheus to push metrics to Grafana Cloud..."
+          docker run -d --name prometheus --network host -v /tmp/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
+          echo "⏳ Waiting 30 seconds for Prometheus to scrape and push..."
+          sleep 30
+          echo "✅ Metrics should now be in Grafana Cloud!"
+
+          # Cleanup
+          docker stop prometheus pushgateway || true

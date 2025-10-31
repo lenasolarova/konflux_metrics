@@ -1,13 +1,14 @@
 # GitLab CI/CD Pipeline for Flakiness Analysis
 # This runs inside gitlab.cee.redhat.com and analyzes the GitLab repos
-# Results are pushed to GitHub repo and Grafana Cloud
+# Results are pushed to GitHub repo
+# A separate GitHub Actions workflow handles pushing to Grafana Cloud
 
 stages:
   - analyze
 
 analyze-gitlab-flakiness:
   stage: analyze
-  image: docker:24
+  image: python:3.11-slim
   tags:
     - shared
     - x86_64
@@ -20,67 +21,17 @@ analyze-gitlab-flakiness:
 
   variables:
     GIT_STRATEGY: clone
-    DOCKER_HOST: tcp://docker:2375
-    DOCKER_TLS_CERTDIR: ""  # Disable TLS
-
-  services:
-    - docker:24-dind
 
   before_script:
-    - apk add --no-cache python3 py3-pip git curl
-    - pip3 install --no-cache-dir prometheus-client requests --break-system-packages
+    - apt-get update && apt-get install -y git
+    - pip3 install --no-cache-dir requests
     - git config --global user.name "gitlab-ci[bot]"
     - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
-    # Wait for Docker daemon to be ready (no TLS, so should be faster)
-    - |
-      for i in $(seq 1 30); do
-        if docker info >/dev/null 2>&1; then
-          echo "✅ Docker daemon is ready!"
-          break
-        fi
-        echo "Waiting for Docker daemon... ($i/30)"
-        sleep 1
-      done
-    - docker info
 
   script:
-    # Start Pushgateway
-    - echo "🚀 Starting Pushgateway..."
-    - docker run -d --name pushgateway -p 9091:9091 prom/pushgateway
-    - sleep 5
-
-    # Run the GitLab flakiness analyzer (pushes to pushgateway)
+    # Run the GitLab flakiness analyzer
     - echo "🔍 Analyzing GitLab repos for retests..."
-    - export PROMETHEUS_PUSHGATEWAY="pushgateway:9091"
     - python3 analyze_gitlab_flakiness.py
-
-    # Create Prometheus config with env var substitution
-    - echo "📝 Creating Prometheus config..."
-    - |
-      cat > /tmp/prometheus.yml <<EOF
-      global:
-        scrape_interval: 5s
-      scrape_configs:
-        - job_name: 'pushgateway'
-          honor_labels: true
-          static_configs:
-            - targets: ['pushgateway:9091']
-      remote_write:
-        - url: ${GRAFANA_CLOUD_URL}
-          basic_auth:
-            username: ${GRAFANA_CLOUD_USER}
-            password: ${GRAFANA_CLOUD_TOKEN}
-      EOF
-
-    # Start Prometheus and let it scrape + remote write
-    - echo "🔄 Starting Prometheus to push metrics to Grafana Cloud..."
-    - docker run -d --name prometheus --link pushgateway -p 9090:9090 -v /tmp/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
-    - echo "⏳ Waiting 30 seconds for Prometheus to scrape and push..."
-    - sleep 30
-    - echo "✅ Metrics should now be in Grafana Cloud!"
-
-    # Cleanup
-    - docker stop prometheus pushgateway || true
 
     # Copy the generated JSON file and push to GitHub
     - echo "📤 Pushing results to GitHub repo..."
