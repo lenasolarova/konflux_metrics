@@ -21,6 +21,7 @@ analyze-gitlab-flakiness:
     GIT_STRATEGY: clone
 
   before_script:
+    - mkdir -p ~/.local
     - curl -sS https://bootstrap.pypa.io/get-pip.py | python3 - --user
     - export PATH=$PATH:~/.local/bin
     - pip3 install --user prometheus-client requests
