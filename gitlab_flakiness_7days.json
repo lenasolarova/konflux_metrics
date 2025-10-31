@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-10-31T14:21:48.820249",
+  "analysis_date": "2025-10-31T14:29:23.679072",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 7,
   "date_range": {
-    "from": "2025-10-24T14:21:43.588195+00:00",
-    "to": "2025-10-31T14:21:48.820267"
+    "from": "2025-10-24T14:29:15.927370+00:00",
+    "to": "2025-10-31T14:29:23.679088"
   },
   "overall_summary": {
     "total_projects": 7,
