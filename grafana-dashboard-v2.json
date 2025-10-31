@@ -1,0 +1,344 @@
+{
+  "dashboard": {
+    "title": "Konflux Retest Metrics - All Platforms",
+    "timezone": "browser",
+    "schemaVersion": 16,
+    "version": 0,
+    "refresh": "30s",
+    "templating": {
+      "list": [
+        {
+          "name": "platform",
+          "type": "custom",
+          "label": "Platform",
+          "multi": true,
+          "includeAll": true,
+          "options": [
+            {
+              "text": "All",
+              "value": "$__all",
+              "selected": true
+            },
+            {
+              "text": "GitHub",
+              "value": "github",
+              "selected": false
+            },
+            {
+              "text": "GitLab",
+              "value": "gitlab",
+              "selected": false
+            }
+          ],
+          "current": {
+            "text": "All",
+            "value": "$__all"
+          },
+          "query": "github,gitlab",
+          "allValue": ".*"
+        },
+        {
+          "name": "repository",
+          "type": "query",
+          "label": "Repository/Project",
+          "datasource": "Prometheus",
+          "multi": true,
+          "includeAll": true,
+          "query": "label_values(github_flakiness_retests_total, repository)",
+          "refresh": 1,
+          "regex": "^(?!all_repos).*",
+          "current": {
+            "text": "All",
+            "value": "$__all"
+          },
+          "allValue": ".*"
+        },
+        {
+          "name": "gitlab_project",
+          "type": "query",
+          "label": "GitLab Project",
+          "datasource": "Prometheus",
+          "multi": true,
+          "includeAll": true,
+          "query": "label_values(gitlab_flakiness_retests_total, project)",
+          "refresh": 1,
+          "regex": "^(?!all_projects).*",
+          "current": {
+            "text": "All",
+            "value": "$__all"
+          },
+          "allValue": ".*"
+        }
+      ]
+    },
+    "panels": [
+      {
+        "id": 1,
+        "title": "Retests per PR/MR Over Time (All Platforms)",
+        "type": "timeseries",
+        "gridPos": {"h": 9, "w": 24, "x": 0, "y": 0},
+        "targets": [
+          {
+            "expr": "github_pr_retests{repository=~\"$repository\"}",
+            "legendFormat": "GH PR#{{pr_number}} ({{repository}})",
+            "refId": "A"
+          },
+          {
+            "expr": "gitlab_mr_retests{project=~\"$gitlab_project\"}",
+            "legendFormat": "GL MR!{{mr_number}} ({{project}})",
+            "refId": "B"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "custom": {
+              "drawStyle": "points",
+              "lineInterpolation": "linear",
+              "lineWidth": 0,
+              "pointSize": 8,
+              "showPoints": "always",
+              "fillOpacity": 0,
+              "spanNulls": false
+            },
+            "unit": "short",
+            "min": 0,
+            "max": 5
+          },
+          "overrides": [
+            {
+              "matcher": {"id": "byRegexp", "options": "GH.*"},
+              "properties": [
+                {"id": "color", "value": {"mode": "fixed", "fixedColor": "blue"}}
+              ]
+            },
+            {
+              "matcher": {"id": "byRegexp", "options": "GL.*"},
+              "properties": [
+                {"id": "color", "value": {"mode": "fixed", "fixedColor": "orange"}}
+              ]
+            }
+          ]
+        },
+        "options": {
+          "legend": {
+            "displayMode": "table",
+            "placement": "right",
+            "calcs": ["lastNotNull", "max", "mean"],
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "multi",
+            "sort": "desc"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "Retest Rate Trends (%)",
+        "type": "timeseries",
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 9},
+        "targets": [
+          {
+            "expr": "github_flakiness_retest_rate_percent{repository=~\"$repository\"}",
+            "legendFormat": "GH: {{repository}}",
+            "refId": "A"
+          },
+          {
+            "expr": "gitlab_flakiness_retest_rate_percent{project=~\"$gitlab_project\"}",
+            "legendFormat": "GL: {{project}}",
+            "refId": "B"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "custom": {
+              "drawStyle": "points",
+              "lineInterpolation": "linear",
+              "lineWidth": 0,
+              "pointSize": 8,
+              "showPoints": "always",
+              "fillOpacity": 0
+            },
+            "unit": "percent",
+            "max": 500,
+            "min": 0
+          }
+        },
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          }
+        }
+      },
+      {
+        "id": 3,
+        "title": "Average Retests per PR/MR",
+        "type": "timeseries",
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 9},
+        "targets": [
+          {
+            "expr": "github_flakiness_avg_retests_per_pr{repository=~\"$repository\"}",
+            "legendFormat": "GH: {{repository}}",
+            "refId": "A"
+          },
+          {
+            "expr": "gitlab_flakiness_avg_retests_per_mr{project=~\"$gitlab_project\"}",
+            "legendFormat": "GL: {{project}}",
+            "refId": "B"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "custom": {
+              "drawStyle": "points",
+              "lineInterpolation": "linear",
+              "lineWidth": 0,
+              "pointSize": 8,
+              "showPoints": "always",
+              "fillOpacity": 0
+            },
+            "unit": "short",
+            "decimals": 2,
+            "min": 0,
+            "max": 5
+          }
+        }
+      },
+      {
+        "id": 5,
+        "title": "GitHub Stats",
+        "type": "stat",
+        "gridPos": {"h": 5, "w": 12, "x": 0, "y": 17},
+        "targets": [
+          {
+            "expr": "sum(github_flakiness_prs_analyzed_total{repository=~\"$repository\"})",
+            "legendFormat": "PRs Analyzed",
+            "refId": "A"
+          },
+          {
+            "expr": "sum(github_flakiness_retests_total{repository=~\"$repository\"})",
+            "legendFormat": "Total Retests",
+            "refId": "B"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "short"
+          }
+        },
+        "options": {
+          "graphMode": "area",
+          "colorMode": "value",
+          "orientation": "auto"
+        }
+      },
+      {
+        "id": 6,
+        "title": "GitLab Stats",
+        "type": "stat",
+        "gridPos": {"h": 5, "w": 12, "x": 12, "y": 17},
+        "targets": [
+          {
+            "expr": "sum(gitlab_flakiness_mrs_analyzed_total{project=~\"$gitlab_project\"})",
+            "legendFormat": "MRs Analyzed",
+            "refId": "A"
+          },
+          {
+            "expr": "sum(gitlab_flakiness_retests_total{project=~\"$gitlab_project\"})",
+            "legendFormat": "Total Retests",
+            "refId": "B"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "short",
+            "noValue": "No data"
+          }
+        },
+        "options": {
+          "graphMode": "area",
+          "colorMode": "value",
+          "orientation": "auto"
+        }
+      },
+      {
+        "id": 7,
+        "title": "GitHub Retests Over Time by Repository",
+        "type": "timeseries",
+        "gridPos": {"h": 7, "w": 12, "x": 0, "y": 22},
+        "targets": [
+          {
+            "expr": "github_flakiness_retests_total{repository=~\"$repository\",repository!=\"all_repos\"}",
+            "legendFormat": "{{repository}}",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "custom": {
+              "drawStyle": "line",
+              "lineInterpolation": "smooth",
+              "pointSize": 5,
+              "showPoints": "always",
+              "fillOpacity": 10
+            },
+            "unit": "short",
+            "min": 0
+          }
+        },
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          }
+        }
+      },
+      {
+        "id": 8,
+        "title": "GitLab Retests Over Time by Project",
+        "type": "timeseries",
+        "gridPos": {"h": 7, "w": 12, "x": 12, "y": 22},
+        "targets": [
+          {
+            "expr": "gitlab_flakiness_retests_total{project=~\"$gitlab_project\",project!=\"all_projects\"}",
+            "legendFormat": "{{project}}",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "custom": {
+              "drawStyle": "line",
+              "lineInterpolation": "smooth",
+              "pointSize": 5,
+              "showPoints": "always",
+              "fillOpacity": 10
+            },
+            "unit": "short",
+            "min": 0,
+            "noValue": "No GitLab data"
+          }
+        },
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          }
+        }
+      }
+    ],
+    "time": {
+      "from": "now-7d",
+      "to": "now"
+    }
+  },
+  "overwrite": true
+}

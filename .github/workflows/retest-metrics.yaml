@@ -1,0 +1,133 @@
+name: Hourly Retest Metrics Analysis
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      days_back:
+        description: 'Number of days to analyze'
+        required: false
+        default: '7'
+        type: string
+
+jobs:
+  analyze-github-retests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install prometheus-client requests
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Analyze GitHub repos for retests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROMETHEUS_PUSHGATEWAY: ${{ secrets.PROMETHEUS_PUSHGATEWAY }}
+          GRAFANA_CLOUD_URL: ${{ secrets.GRAFANA_CLOUD_URL }}
+          GRAFANA_CLOUD_USER: ${{ secrets.GRAFANA_CLOUD_USER }}
+          GRAFANA_CLOUD_TOKEN: ${{ secrets.GRAFANA_CLOUD_TOKEN }}
+        run: |
+          echo "🔍 Analyzing retest metrics for GitHub repos..."
+          python3 analyze_github_flakiness.py
+
+      - name: Commit and push results
+        run: |
+          # Add all JSON result files
+          git add github_flakiness_*.json || true
+
+          # Check if there are changes to commit
+          if git diff --cached --quiet; then
+            echo "📊 No changes to commit"
+          else
+            echo "📊 Committing new retest metrics..."
+            git commit -m "chore: update GitHub retest metrics [bot]"
+            git pull --rebase origin main || git pull --rebase origin master || true
+            git push
+          fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: retest-metrics-${{ github.run_number }}
+          path: |
+            github_flakiness_*.json
+          retention-days: 90
+
+  analyze-gitlab-retests:
+    runs-on: ubuntu-latest
+    # Only run if GITLAB_TOKEN is set
+    if: vars.GITLAB_TOKEN != ''
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install prometheus-client requests
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Analyze GitLab repos for retests
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+          PROMETHEUS_PUSHGATEWAY: ${{ secrets.PROMETHEUS_PUSHGATEWAY }}
+        run: |
+          echo "🔍 Analyzing retest metrics for GitLab repos..."
+          python3 analyze_gitlab_flakiness.py
+
+      - name: Commit and push results
+        run: |
+          # Add all JSON result files
+          git add gitlab_flakiness_*.json || true
+
+          # Check if there are changes to commit
+          if git diff --cached --quiet; then
+            echo "📊 No changes to commit"
+          else
+            echo "📊 Committing new retest metrics..."
+            git commit -m "chore: update GitLab retest metrics [bot]"
+            git pull --rebase origin main || git pull --rebase origin master || true
+            git push
+          fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gitlab-metrics-${{ github.run_number }}
+          path: |
+            gitlab_flakiness_*.json
+          retention-days: 90
