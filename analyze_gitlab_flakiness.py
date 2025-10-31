@@ -440,7 +440,7 @@ def main():
         # Push to Grafana Cloud
         print(f"\n📊 Pushing metrics to Grafana Cloud...")
         try:
-            push_to_grafana_cloud(registry, job='gitlab-flakiness-analyzer')
+            push_to_grafana_cloud(registry, job_name='gitlab-flakiness-analyzer')
             print("✅ Metrics successfully pushed to Grafana Cloud!")
         except Exception as e:
             print(f"⚠️  Failed to push metrics to Grafana Cloud: {e}")
