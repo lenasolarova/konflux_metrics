@@ -1,0 +1,58 @@
+# GitLab CI/CD Pipeline for Flakiness Analysis
+# This runs inside gitlab.cee.redhat.com and analyzes the GitLab repos
+# Results are pushed to GitHub repo and Grafana Cloud
+
+stages:
+  - analyze
+
+analyze-gitlab-flakiness:
+  stage: analyze
+  image: python:3.11
+
+  # Run hourly
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"  # Allow manual runs
+
+  variables:
+    GIT_STRATEGY: clone
+
+  before_script:
+    - pip install prometheus-client requests
+    - git config --global user.name "gitlab-ci[bot]"
+    - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
+
+  script:
+    # Run the GitLab flakiness analyzer
+    - echo "🔍 Analyzing GitLab repos for retests..."
+    - python3 analyze_gitlab_flakiness.py
+
+    # Clone the GitHub repo to push results
+    - echo "📤 Pushing results to GitHub repo..."
+    - git clone https://${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git /tmp/konflux_metrics
+    - cd /tmp/konflux_metrics
+
+    # Copy the generated JSON file
+    - cp ${CI_PROJECT_DIR}/gitlab_flakiness_7days.json .
+
+    # Commit and push to GitHub
+    - git add gitlab_flakiness_7days.json
+    - |
+      if git diff --cached --quiet; then
+        echo "📊 No changes to commit"
+      else
+        echo "📊 Committing new GitLab retest metrics..."
+        git commit -m "chore: update GitLab retest metrics [gitlab-ci]"
+        git pull --rebase origin main || git pull --rebase origin master || true
+        git push
+        echo "✅ Results pushed to GitHub!"
+      fi
+
+  artifacts:
+    paths:
+      - gitlab_flakiness_7days.json
+    expire_in: 90 days
+
+  only:
+    - schedules
+    - web
