@@ -31,7 +31,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install prometheus-client requests
+          pip install prometheus-client
 
       - name: Start Pushgateway
         run: |
@@ -44,11 +44,46 @@ jobs:
           echo "📊 Processing metrics from JSON files..."
           python3 push_json_to_prometheus.py
 
-      - name: Push to Grafana Cloud
+      - name: Push to Grafana Cloud via Prometheus
         env:
           GRAFANA_CLOUD_URL: ${{ secrets.GRAFANA_CLOUD_URL }}
           GRAFANA_CLOUD_USER: ${{ secrets.GRAFANA_CLOUD_USER }}
           GRAFANA_CLOUD_TOKEN: ${{ secrets.GRAFANA_CLOUD_TOKEN }}
         run: |
-          echo "📡 Pushing metrics from Pushgateway to Grafana Cloud..."
-          python3 push_to_grafana_cloud.py
+          echo "📝 Creating Prometheus config..."
+          cat > /tmp/prometheus.yml <<EOF
+          global:
+            scrape_interval: 5s
+            evaluation_interval: 5s
+          scrape_configs:
+            - job_name: 'pushgateway'
+              honor_labels: true
+              static_configs:
+                - targets: ['localhost:9091']
+          remote_write:
+            - url: ${GRAFANA_CLOUD_URL}
+              basic_auth:
+                username: ${GRAFANA_CLOUD_USER}
+                password: ${GRAFANA_CLOUD_TOKEN}
+          EOF
+
+          echo "🔄 Starting Prometheus to push metrics to Grafana Cloud..."
+          docker run -d --name prometheus --network host \
+            -v /tmp/prometheus.yml:/etc/prometheus/prometheus.yml \
+            prom/prometheus \
+            --config.file=/etc/prometheus/prometheus.yml \
+            --storage.tsdb.path=/prometheus \
+            --web.console.libraries=/usr/share/prometheus/console_libraries \
+            --web.console.templates=/usr/share/prometheus/consoles
+
+          echo "⏳ Waiting 60 seconds for Prometheus to scrape and push to Grafana Cloud..."
+          sleep 60
+
+          echo "📊 Checking if metrics were pushed..."
+          docker logs prometheus 2>&1 | tail -20
+
+          echo "✅ Metrics should now be in Grafana Cloud!"
+
+          # Cleanup
+          docker stop prometheus pushgateway || true
+          docker rm prometheus pushgateway || true
