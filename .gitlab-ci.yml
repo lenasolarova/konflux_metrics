@@ -51,11 +51,8 @@ analyze-gitlab-flakiness:
         echo "📊 Committing new GitLab retest metrics..."
         git commit -m "chore: update GitLab retest metrics [gitlab-ci]"
 
-        # Create a temporary netrc file for authentication
-        echo "machine github.com" > ~/.netrc
-        echo "login ${GITHUB_TOKEN}" >> ~/.netrc
-        echo "password x-oauth-basic" >> ~/.netrc
-        chmod 600 ~/.netrc
+        # Configure git to use token directly
+        git remote set-url origin "https://oauth2:${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git"
 
         # Push to GitHub
         git push origin main
