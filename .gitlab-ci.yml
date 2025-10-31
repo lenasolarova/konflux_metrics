@@ -21,7 +21,8 @@ analyze-gitlab-flakiness:
     GIT_STRATEGY: clone
 
   before_script:
-    - pip install prometheus-client requests
+    - dnf install -y python3 python3-pip git
+    - pip3 install prometheus-client requests
     - git config --global user.name "gitlab-ci[bot]"
     - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
 
