@@ -51,8 +51,14 @@ analyze-gitlab-flakiness:
         echo "📊 Committing new GitLab retest metrics..."
         git commit -m "chore: update GitLab retest metrics [gitlab-ci]"
 
-        # Configure git to use token directly
-        git remote set-url origin "https://${GITHUB_TOKEN}@github.com/lenasolarova/konflux_metrics.git"
+        # Create askpass helper script that echoes the token
+        echo '#!/bin/sh' > /tmp/askpass.sh
+        echo "echo \$GITHUB_TOKEN" >> /tmp/askpass.sh
+        chmod +x /tmp/askpass.sh
+
+        # Export for git to use
+        export GIT_ASKPASS=/tmp/askpass.sh
+        export GIT_TERMINAL_PROMPT=0
 
         # Push to GitHub
         git push origin main
