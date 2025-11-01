@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-01T04:04:34.017980",
+  "analysis_date": "2025-11-01T04:17:34.814090",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,19 +12,19 @@
   ],
   "days_analyzed": 7,
   "date_range": {
-    "from": "2025-10-25T04:04:16.055540+00:00",
-    "to": "2025-11-01T04:04:34.018001"
+    "from": "2025-10-25T04:17:34.515928+00:00",
+    "to": "2025-11-01T04:17:34.814099"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 10,
-    "total_commits": 10,
-    "total_pipelines": 8,
+    "total_mrs_analyzed": 0,
+    "total_commits": 0,
+    "total_pipelines": 0,
     "total_retests": 0,
     "mrs_with_retests": 0,
-    "mr_retest_rate": 0.0,
-    "avg_retests_per_mr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "mr_retest_rate": 0,
+    "avg_retests_per_mr": 0,
+    "avg_retests_per_commit": 0
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
@@ -41,71 +41,29 @@
       }
     },
     "ccx/ccx-data-pipeline": {
-      "mrs": [
-        {
-          "mr_iid": 1114,
-          "title": "Update ccx messaging",
-          "merged_at": "2025-10-30T10:57:59.219Z",
-          "author": "jsegural",
-          "total_commits": 1,
-          "total_pipelines": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        },
-        {
-          "mr_iid": 1113,
-          "title": "Add SENTRY_ENABLED parametrized environment variable to DVO extractor",
-          "merged_at": "2025-10-28T11:30:12.887Z",
-          "author": "jsegural",
-          "total_commits": 1,
-          "total_pipelines": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 2,
-        "total_commits": 2,
-        "total_pipelines": 2,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
+        "total_pipelines": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/content-service": {
-      "mrs": [
-        {
-          "mr_iid": 835,
-          "title": "Remove Dockerfile-konflux file",
-          "merged_at": "2025-10-30T09:52:37.279Z",
-          "author": "ireyes",
-          "total_commits": 1,
-          "total_pipelines": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        },
-        {
-          "mr_iid": 836,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-10-30T09:52:27.764Z",
-          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
-          "total_commits": 1,
-          "total_pipelines": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 2,
-        "total_commits": 2,
-        "total_pipelines": 2,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
+        "total_pipelines": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-load-test": {
@@ -122,57 +80,16 @@
       }
     },
     "ccx/parquet-factory": {
-      "mrs": [
-        {
-          "mr_iid": 313,
-          "title": "Update all dependencies",
-          "merged_at": "2025-10-30T09:54:56.259Z",
-          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
-          "total_commits": 1,
-          "total_pipelines": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        },
-        {
-          "mr_iid": 312,
-          "title": "Update module github.com/redhatinsights/app-common-go to v1.6.9",
-          "merged_at": "2025-10-27T10:30:32.835Z",
-          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
-          "total_commits": 1,
-          "total_pipelines": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        },
-        {
-          "mr_iid": 311,
-          "title": "Update module github.com/IBM/sarama to v1.46.3",
-          "merged_at": "2025-10-27T10:30:06.290Z",
-          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
-          "total_commits": 1,
-          "total_pipelines": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        },
-        {
-          "mr_iid": 308,
-          "title": "Update all dependencies",
-          "merged_at": "2025-10-27T10:25:33.374Z",
-          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
-          "total_commits": 1,
-          "total_pipelines": 1,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 4,
-        "total_commits": 4,
-        "total_pipelines": 4,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
+        "total_pipelines": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-upgrades-data-eng": {
@@ -189,37 +106,16 @@
       }
     },
     "ccx/ccx-upgrades-inference": {
-      "mrs": [
-        {
-          "mr_iid": 127,
-          "title": "Update pre-commit hooks version",
-          "merged_at": "2025-10-27T10:33:42.755Z",
-          "author": "ccx-bot",
-          "total_commits": 1,
-          "total_pipelines": 0,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        },
-        {
-          "mr_iid": 128,
-          "title": "Update BDD test image from cloudservices to redhat-services-prod",
-          "merged_at": "2025-10-27T09:34:12.891Z",
-          "author": "ireyes",
-          "total_commits": 1,
-          "total_pipelines": 0,
-          "total_retests": 0,
-          "commits_with_retests": 0
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 2,
-        "total_commits": 2,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_pipelines": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     }
   }
