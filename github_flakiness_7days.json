@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-01T01:21:17.355334",
+  "analysis_date": "2025-11-01T03:09:58.560699",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 7,
   "date_range": {
-    "from": "2025-10-25T01:20:19.962372+00:00",
-    "to": "2025-11-01T01:21:17.355350"
+    "from": "2025-10-25T03:09:08.012410+00:00",
+    "to": "2025-11-01T03:09:58.560715"
   },
   "overall_summary": {
     "total_repos": 11,
