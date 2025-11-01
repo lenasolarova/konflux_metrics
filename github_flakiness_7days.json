@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-01T20:16:13.342680",
+  "analysis_date": "2025-11-01T21:13:30.786306",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,14 +15,14 @@
   ],
   "days_analyzed": 7,
   "date_range": {
-    "from": "2025-10-25T20:15:30.943133+00:00",
-    "to": "2025-11-01T20:16:13.342697"
+    "from": "2025-10-25T21:12:49.874094+00:00",
+    "to": "2025-11-01T21:13:30.786321"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 38,
-    "total_commits": 46,
-    "total_runs": 46,
+    "total_prs_analyzed": 40,
+    "total_commits": 48,
+    "total_runs": 48,
     "total_retests": 0,
     "prs_with_retests": 0,
     "pr_retest_rate": 0.0,
@@ -253,6 +253,16 @@
     "RedHatInsights/insights-results-aggregator-cleaner": {
       "prs": [
         {
+          "pr_number": 539,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-01T20:47:05Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
           "pr_number": 538,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-01T16:37:24Z",
@@ -314,9 +324,9 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 6,
-        "total_commits": 6,
-        "total_runs": 6,
+        "total_prs_analyzed": 7,
+        "total_commits": 7,
+        "total_runs": 7,
         "total_retests": 0,
         "prs_with_retests": 0,
         "pr_retest_rate": 0.0,
@@ -445,6 +455,16 @@
     "RedHatInsights/ccx-notification-writer": {
       "prs": [
         {
+          "pr_number": 696,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-01T20:52:30Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "total_runs": 1,
+          "total_retests": 0,
+          "commits_with_retests": 0
+        },
+        {
           "pr_number": 695,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-10-30T16:58:54Z",
@@ -506,9 +526,9 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 6,
-        "total_commits": 6,
-        "total_runs": 6,
+        "total_prs_analyzed": 7,
+        "total_commits": 7,
+        "total_runs": 7,
         "total_retests": 0,
         "prs_with_retests": 0,
         "pr_retest_rate": 0.0,
