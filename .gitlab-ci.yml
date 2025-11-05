@@ -33,7 +33,6 @@ analyze-gitlab-flakiness:
   artifacts:
     paths:
       - gitlab_flakiness_current.json
-      - gitlab_flakiness_history.json
     expire_in: 90 days
 
 push-to-github:
@@ -63,12 +62,11 @@ push-to-github:
       git clone https://github.com/lenasolarova/konflux_metrics.git /tmp/konflux_metrics
       cd /tmp/konflux_metrics
 
-      # Copy the generated JSON files from analysis stage
+      # Copy the generated JSON file from analysis stage
       cp ${CI_PROJECT_DIR}/gitlab_flakiness_current.json .
-      cp ${CI_PROJECT_DIR}/gitlab_flakiness_history.json .
 
-      # Add data files and tracking files
-      git add gitlab_flakiness_current.json gitlab_flakiness_history.json github_pushed_prs.json gitlab_pushed_mrs.json
+      # Add data file
+      git add gitlab_flakiness_current.json
 
       if git diff --cached --quiet; then
         echo "📊 No changes to commit"
