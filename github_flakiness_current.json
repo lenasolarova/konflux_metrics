@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-05T12:19:17.102738",
+  "analysis_date": "2025-11-05T21:24:04.805537",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,18 +15,18 @@
   ],
   "days_analyzed": 7,
   "date_range": {
-    "from": "2025-10-29T12:18:46.880469+00:00",
-    "to": "2025-11-05T12:19:17.102752"
+    "from": "2025-10-29T21:23:33.211321+00:00",
+    "to": "2025-11-05T21:24:04.805552"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 29,
-    "total_commits": 37,
+    "total_prs_analyzed": 28,
+    "total_commits": 36,
     "total_retests": 3,
     "prs_with_retests": 2,
-    "pr_retest_rate": 6.896551724137931,
-    "avg_retests_per_pr": 0.10344827586206896,
-    "avg_retests_per_commit": 0.08108108108108109
+    "pr_retest_rate": 7.142857142857142,
+    "avg_retests_per_pr": 0.10714285714285714,
+    "avg_retests_per_commit": 0.08333333333333333
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -70,21 +70,11 @@
           "total_commits": 3,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/609"
-        },
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 608,
-          "title": "AccountNumber won't be set if no account is defined in the incoming message",
-          "merged_at": "2025-10-29T15:18:42Z",
-          "user": "joselsegura",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/608"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 5,
-        "total_commits": 7,
+        "total_prs_analyzed": 4,
+        "total_commits": 6,
         "total_retests": 0,
         "prs_with_retests": 0,
         "pr_retest_rate": 0.0,
