@@ -1,0 +1,74 @@
+name: Retest Metrics Analysis
+
+on:
+  schedule:
+    # Run twice daily at 9 AM and 9 PM UTC
+    - cron: '0 9,21 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      days_back:
+        description: 'Number of days to analyze'
+        required: false
+        default: '7'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  analyze-github-retests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests prometheus-client
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Analyze GitHub repos for retests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🔍 Analyzing retest metrics for GitHub repos..."
+          python3 analyze_github_flakiness.py
+
+      - name: Commit and push results
+        run: |
+          # Add JSON result file
+          git add github_flakiness_current.json || true
+
+          # Check if there are changes to commit
+          if git diff --cached --quiet; then
+            echo "📊 No changes to commit"
+          else
+            echo "📊 Committing new retest metrics..."
+            git commit -m "chore: update GitHub retest metrics [bot]"
+            git pull --rebase origin main || git pull --rebase origin master || true
+            git push
+          fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: retest-metrics-${{ github.run_number }}
+          path: |
+            github_flakiness_current.json
+          retention-days: 90

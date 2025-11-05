@@ -1,0 +1,369 @@
+{
+  "title": "Konflux Retest Metrics",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Retests per merged PR / MR",
+      "type": "timeseries",
+      "gridPos": { "h": 10, "w": 24, "x": 0, "y": 0 },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource" },
+          "type": "json",
+          "parser": "backend",
+          "source": "url",
+          "format": "table",
+          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/github_flakiness_current.json",
+          "url_options": {
+            "method": "GET"
+          },
+          "root_selector": "$.repositories.*.prs[*]",
+          "columns": [
+            { "selector": "merged_at", "text": "Time", "type": "timestamp" },
+            { "selector": "pr_number", "text": "PR", "type": "number" },
+            { "selector": "repository", "text": "Repository", "type": "string" },
+            { "selector": "total_retests", "text": "Retests", "type": "number" },
+            { "selector": "url", "text": "url", "type": "string" }
+          ]
+        },
+        {
+          "refId": "B",
+          "datasource": { "type": "yesoreyeram-infinity-datasource" },
+          "type": "json",
+          "parser": "backend",
+          "source": "url",
+          "format": "table",
+          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/gitlab_flakiness_current.json",
+          "url_options": {
+            "method": "GET"
+          },
+          "root_selector": "$.projects.*.mrs[*]",
+          "columns": [
+            { "selector": "merged_at", "text": "Time", "type": "timestamp" },
+            { "selector": "mr_iid", "text": "MR", "type": "number" },
+            { "selector": "project", "text": "Project", "type": "string" },
+            { "selector": "total_retests", "text": "Retests", "type": "number" },
+            { "selector": "url", "text": "url", "type": "string" }
+          ]
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" },
+          "custom": {
+            "drawStyle": "points",
+            "lineWidth": 0,
+            "pointSize": 8,
+            "showPoints": "always",
+            "spanNulls": false
+          },
+          "unit": "short"
+        },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "PR" },
+            "properties": [
+              { "id": "custom.hideFrom", "value": { "tooltip": false, "viz": true, "legend": true } }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "MR" },
+            "properties": [
+              { "id": "custom.hideFrom", "value": { "tooltip": false, "viz": true, "legend": true } }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Repository" },
+            "properties": [
+              { "id": "custom.hideFrom", "value": { "tooltip": false, "viz": true, "legend": true } }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Project" },
+            "properties": [
+              { "id": "custom.hideFrom", "value": { "tooltip": false, "viz": true, "legend": true } }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "url" },
+            "properties": [
+              { "id": "custom.hideFrom", "value": { "tooltip": false, "viz": true, "legend": true } }
+            ]
+          },
+          {
+            "matcher": { "id": "byFrameRefID", "options": "A" },
+            "properties": [
+              { "id": "displayName", "value": "PR Retests" },
+              { "id": "color", "value": { "mode": "fixed", "fixedColor": "purple" } },
+              {
+                "id": "links",
+                "value": [
+                  { "title": "Open PR", "url": "${__data.fields.url}" }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": { "id": "byFrameRefID", "options": "B" },
+            "properties": [
+              { "id": "displayName", "value": "MR Retests" },
+              { "id": "color", "value": { "mode": "fixed", "fixedColor": "orange" } },
+              {
+                "id": "links",
+                "value": [
+                  { "title": "Open MR", "url": "${__data.fields.url}" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom", "showLegend": true },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      }
+    },
+
+    {
+      "id": 2,
+      "title": "GitHub Pull Requests (Last 7 Days)",
+      "type": "table",
+      "gridPos": { "h": 12, "w": 12, "x": 0, "y": 10 },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource" },
+          "type": "json",
+          "parser": "backend",
+          "source": "url",
+          "format": "table",
+          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/github_flakiness_current.json",
+          "url_options": {
+            "method": "GET"
+          },
+          "root_selector": "$.repositories.*.prs[*]",
+          "columns": [
+            { "selector": "repository", "text": "repository", "type": "string" },
+            { "selector": "pr_number", "text": "pr_number", "type": "number" },
+            { "selector": "title", "text": "title", "type": "string" },
+            { "selector": "merged_at", "text": "merged_at", "type": "timestamp" },
+            { "selector": "user", "text": "author", "type": "string" },
+            { "selector": "total_commits", "text": "commits", "type": "number" },
+            { "selector": "total_retests", "text": "retests", "type": "number" },
+            { "selector": "url", "text": "url", "type": "string" }
+          ]
+        }
+      ],
+      "transformations": [
+        { "id": "merge", "options": {} },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "labels": true,
+              "ts": true
+            },
+            "indexByName": {
+              "merged_at": 0,
+              "repository": 1,
+              "pr_number": 2,
+              "title": 3,
+              "author": 4,
+              "commits": 5,
+              "retests": 6,
+              "url": 7
+            },
+            "renameByName": {
+              "merged_at": "Merged At",
+              "repository": "Repository",
+              "pr_number": "PR #",
+              "title": "Title",
+              "author": "Author",
+              "commits": "Commits",
+              "retests": "Retests",
+              "url": "URL"
+            }
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "sort": [{ "field": "Merged At", "desc": true }]
+          }
+        }
+      ],
+      "fieldConfig": {
+        "defaults": { "custom": { "align": "auto", "displayMode": "auto" } },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "Repository" },
+            "properties": [{ "id": "custom.width", "value": 250 }]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Title" },
+            "properties": [{ "id": "custom.width", "value": 300 }]
+          },
+          {
+            "matcher": { "id": "byName", "options": "PR #" },
+            "properties": [
+              { "id": "custom.width", "value": 70 },
+              {
+                "id": "links",
+                "value": [
+                  { "title": "Open PR", "url": "${__data.fields.URL}" }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Retests" },
+            "properties": [
+              { "id": "custom.displayMode", "value": "color-background" },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    { "color": "green", "value": null },
+                    { "color": "yellow", "value": 1 },
+                    { "color": "orange", "value": 3 },
+                    { "color": "red", "value": 5 }
+                  ]
+                }
+              },
+              { "id": "custom.width", "value": 80 }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "URL" },
+            "properties": [{ "id": "custom.hidden", "value": true }]
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 3,
+      "title": "GitLab Merge Requests (Last 7 Days)",
+      "type": "table",
+      "gridPos": { "h": 12, "w": 12, "x": 12, "y": 10 },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource" },
+          "type": "json",
+          "parser": "backend",
+          "source": "url",
+          "format": "table",
+          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/gitlab_flakiness_current.json",
+          "url_options": {
+            "method": "GET"
+          },
+          "root_selector": "$.projects.*.mrs[*]",
+          "columns": [
+            { "selector": "project", "text": "project", "type": "string" },
+            { "selector": "mr_iid", "text": "mr_number", "type": "number" },
+            { "selector": "title", "text": "title", "type": "string" },
+            { "selector": "merged_at", "text": "merged_at", "type": "timestamp" },
+            { "selector": "author", "text": "author", "type": "string" },
+            { "selector": "total_commits", "text": "commits", "type": "number" },
+            { "selector": "total_retests", "text": "retests", "type": "number" },
+            { "selector": "url", "text": "url", "type": "string" }
+          ]
+        }
+      ],
+      "transformations": [
+        { "id": "merge", "options": {} },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "labels": true,
+              "ts": true
+            },
+            "indexByName": {
+              "merged_at": 0,
+              "project": 1,
+              "mr_number": 2,
+              "title": 3,
+              "author": 4,
+              "commits": 5,
+              "retests": 6,
+              "url": 7
+            },
+            "renameByName": {
+              "merged_at": "Merged At",
+              "project": "Project",
+              "mr_number": "MR #",
+              "title": "Title",
+              "author": "Author",
+              "commits": "Commits",
+              "retests": "Retests",
+              "url": "URL"
+            }
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "sort": [{ "field": "Merged At", "desc": true }]
+          }
+        }
+      ],
+      "fieldConfig": {
+        "defaults": { "custom": { "align": "auto", "displayMode": "auto" } },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "Project" },
+            "properties": [{ "id": "custom.width", "value": 250 }]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Title" },
+            "properties": [{ "id": "custom.width", "value": 300 }]
+          },
+          {
+            "matcher": { "id": "byName", "options": "MR #" },
+            "properties": [
+              { "id": "custom.width", "value": 70 },
+              {
+                "id": "links",
+                "value": [
+                  { "title": "Open MR", "url": "${__data.fields.URL}" }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Retests" },
+            "properties": [
+              { "id": "custom.displayMode", "value": "color-background" },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    { "color": "green", "value": null },
+                    { "color": "yellow", "value": 1 },
+                    { "color": "orange", "value": 3 },
+                    { "color": "red", "value": 5 }
+                  ]
+                }
+              },
+              { "id": "custom.width", "value": 80 }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "URL" },
+            "properties": [{ "id": "custom.hidden", "value": true }]
+          }
+        ]
+      }
+    }
+  ],
+  "schemaVersion": 38,
+  "version": 1
+}

@@ -1,0 +1,40 @@
+# Local testing environment (kept in local-testing/ folder)
+local-testing/
+
+# Generated result files
+*.json
+!grafana-dashboard-v2.json
+!grafana-dashboard-unwrapped.json
+!github_flakiness_current.json
+!gitlab_flakiness_current.json
+!github_flakiness_history.json
+!gitlab_flakiness_history.json
+!github_pushed_prs.json
+!gitlab_pushed_mrs.json
+
+# personal TODO
+GITLAB_CI_SETUP.md
+GRAFANA_CLOUD_SETUP.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

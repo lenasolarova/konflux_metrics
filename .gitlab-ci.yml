@@ -1,0 +1,91 @@
+# GitLab CI/CD Pipeline for Flakiness Analysis
+# This runs inside gitlab.cee.redhat.com and analyzes the GitLab repos
+# Results are pushed to GitHub repo
+# A separate GitHub Actions workflow handles pushing to Grafana Cloud
+
+stages:
+  - analyze
+  - push
+
+analyze-gitlab-flakiness:
+  stage: analyze
+  image: python:3.11-slim
+  tags:
+    - shared
+    - x86_64
+
+  # Run twice daily at 9 AM and 9 PM UTC (configured in GitLab schedule settings)
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule" # run on schedule (once an hour)
+    - if: $CI_PIPELINE_SOURCE == "web"  # run manually from web UI
+    - if: $CI_PIPELINE_SOURCE == "push"  # run on push
+
+  variables:
+    GIT_STRATEGY: clone
+
+  before_script:
+    - pip3 install --no-cache-dir requests
+
+  script:
+    - echo "🔍 Analyzing GitLab repos for retests..."
+    - python3 analyze_gitlab_flakiness.py
+
+  artifacts:
+    paths:
+      - gitlab_flakiness_current.json
+      - gitlab_flakiness_history.json
+    expire_in: 90 days
+
+push-to-github:
+  stage: push
+  image: python:3.11-slim
+  tags:
+    - shared
+    - x86_64
+
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+  dependencies:
+    - analyze-gitlab-flakiness
+
+  before_script:
+    - apt-get update && apt-get install -y git
+    - git config --global user.name "gitlab-ci[bot]"
+    - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
+
+  script:
+    - echo "📤 Pushing results to GitHub repo..."
+    - |
+      # Clone GitHub repo
+      git clone https://github.com/lenasolarova/konflux_metrics.git /tmp/konflux_metrics
+      cd /tmp/konflux_metrics
+
+      # Copy the generated JSON files from analysis stage
+      cp ${CI_PROJECT_DIR}/gitlab_flakiness_current.json .
+      cp ${CI_PROJECT_DIR}/gitlab_flakiness_history.json .
+
+      # Add data files and tracking files
+      git add gitlab_flakiness_current.json gitlab_flakiness_history.json github_pushed_prs.json gitlab_pushed_mrs.json
+
+      if git diff --cached --quiet; then
+        echo "📊 No changes to commit"
+      else
+        echo "📊 Committing new GitLab retest metrics..."
+        git commit -m "chore: update GitLab retest metrics [gitlab-ci]"
+
+        # Create askpass helper script for authentication
+        echo '#!/bin/sh' > /tmp/askpass.sh
+        echo "echo \$GITHUB_TOKEN" >> /tmp/askpass.sh
+        chmod +x /tmp/askpass.sh
+
+        # Configure git to use askpass script
+        export GIT_ASKPASS=/tmp/askpass.sh
+        export GIT_TERMINAL_PROMPT=0
+
+        # Push to GitHub
+        git push origin main
+        echo "✅ Results pushed to GitHub!"
+      fi
