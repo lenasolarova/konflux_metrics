@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-06T08:03:49.048375",
+  "analysis_date": "2025-11-06T12:46:18.224213",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,18 +12,18 @@
   ],
   "days_analyzed": 7,
   "date_range": {
-    "from": "2025-10-30T08:03:28.264086+00:00",
-    "to": "2025-11-06T08:03:49.048397"
+    "from": "2025-10-30T12:45:59.356092+00:00",
+    "to": "2025-11-06T12:46:18.224265"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 9,
-    "total_commits": 10,
+    "total_mrs_analyzed": 5,
+    "total_commits": 6,
     "total_retests": 3,
     "mrs_with_retests": 1,
-    "mr_retest_rate": 11.11111111111111,
-    "avg_retests_per_mr": 0.3333333333333333,
-    "avg_retests_per_commit": 0.3
+    "mr_retest_rate": 20.0,
+    "avg_retests_per_mr": 0.6,
+    "avg_retests_per_commit": 0.5
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
@@ -80,26 +80,16 @@
           "total_commits": 2,
           "total_retests": 3,
           "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1115"
-        },
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1114,
-          "title": "Update ccx messaging",
-          "merged_at": "2025-10-30T10:57:59.219Z",
-          "author": "jsegural",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1114"
         }
       ],
       "summary": {
-        "total_mrs_analyzed": 4,
-        "total_commits": 5,
+        "total_mrs_analyzed": 3,
+        "total_commits": 4,
         "total_retests": 3,
         "mrs_with_retests": 1,
-        "mr_retest_rate": 25.0,
-        "avg_retests_per_mr": 0.75,
-        "avg_retests_per_commit": 0.6
+        "mr_retest_rate": 33.33333333333333,
+        "avg_retests_per_mr": 1.0,
+        "avg_retests_per_commit": 0.75
       }
     },
     "ccx/content-service": {
@@ -113,31 +103,11 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/838"
-        },
-        {
-          "project": "ccx/content-service",
-          "mr_iid": 835,
-          "title": "Remove Dockerfile-konflux file",
-          "merged_at": "2025-10-30T09:52:37.279Z",
-          "author": "ireyes",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/835"
-        },
-        {
-          "project": "ccx/content-service",
-          "mr_iid": 836,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-10-30T09:52:27.764Z",
-          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/836"
         }
       ],
       "summary": {
-        "total_mrs_analyzed": 3,
-        "total_commits": 3,
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "mrs_with_retests": 0,
         "mr_retest_rate": 0.0,
@@ -158,26 +128,15 @@
       }
     },
     "ccx/parquet-factory": {
-      "mrs": [
-        {
-          "project": "ccx/parquet-factory",
-          "mr_iid": 313,
-          "title": "Update all dependencies",
-          "merged_at": "2025-10-30T09:54:56.259Z",
-          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/313"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 1,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-upgrades-data-eng": {
