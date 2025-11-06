@@ -46,15 +46,17 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to historical data"
           else
-            git commit -m "$(cat <<'EOF'
-          Update historical data (90-day rolling window)
-
-          🤖 Generated with GitHub Actions
-
-          Co-Authored-By: GitHub Actions <noreply@github.com>
-          EOF
-          )"
+            echo "📊 Committing historical retest metrics..."
+            git commit -m "chore: update historical retest metrics [bot]"
             git push
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: historical-metrics-${{ github.run_number }}
+          path: |
+            github_flakiness_historical.json
+            gitlab_flakiness_historical.json
+          retention-days: 90
