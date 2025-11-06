@@ -18,7 +18,7 @@ This tool analyzes CI/CD data to detect flaky tests by counting how many times c
 
 ### Retest Detection
 
-Detection is done using the number of `/retest` comments because we do not have an API from Konflux that would be capable of providing the data directly. While not perfect accuracy-wise, it is the only realistic option without a Konflux API.
+Detection is done using the number of `/retest` comments (and also Branch updates for GitHub repositories) because we do not have an API from Konflux that would be capable of providing the data directly. While not perfect accuracy-wise, it is the only realistic option without a Konflux API.
 
 ## Metrics Collected
 
@@ -30,12 +30,13 @@ Detection is done using the number of `/retest` comments because we do not have 
 ## Dashboard
 
 The Grafana dashboard ([grafana-dashboard-unwrapped.json](grafana-dashboard-unwrapped.json)) displays:
-- **Retests per merged PR/MR** - Time series graph with individual data points
+- **Retests per merged PR/MR** - Time series graph with individual data points (history goes back 90 days)
   - Purple dots for GitHub PRs
   - Orange dots for GitLab MRs
   - Clickable to open the specific PR/MR
-- **GitHub Pull Requests** - Table view of recent GitHub PRs (last 7 days)
-- **GitLab Merge Requests** - Table view of recent GitLab MRs (last 7 days)
+
+- **GitHub Pull Requests** - Table view of recent GitHub PRs
+- **GitLab Merge Requests** - Table view of recent GitLab MRs
 
 ## Repositories Analyzed
 
@@ -64,8 +65,10 @@ The Grafana dashboard ([grafana-dashboard-unwrapped.json](grafana-dashboard-unwr
 ## JSON Output
 
 The analysis scripts generate JSON files that are consumed by the Grafana dashboard via the Infinity datasource:
-- `github_flakiness_current.json` - GitHub PR metrics (last 7 days)
-- `gitlab_flakiness_current.json` - GitLab MR metrics (last 7 days)
+- `github_flakiness_current.json` - GitHub PR metrics (last 24 hours)
+- `gitlab_flakiness_current.json` - GitLab MR metrics (last 24 hours)
+- `github_flakiness_historical.json` - GitHub PR metrics (last 90 days)
+- `gitlab_flakiness_historical.json` - GitLab MR metrics (last 90 days) 
 
 These files are updated twice daily (9 AM and 9 PM UTC) and committed to the repository.
 
@@ -73,6 +76,8 @@ These files are updated twice daily (9 AM and 9 PM UTC) and committed to the rep
 
 ### GitHub Actions
 The workflow (`.github/workflows/retest-metrics.yaml`) runs automatically on schedule and can be triggered manually via workflow_dispatch.
+
+The workflow (`.github/workflows/append-historical.yaml`) runs automatically on schedule (one hour behind the other data collection pipelines) and wrangles the data in the historical files (appending new data and trimming data older than 90 days).
 
 ### GitLab CI
 The pipeline (`.gitlab-ci.yml`) runs on schedule (configured in GitLab settings) and pushes results to the GitHub repository.

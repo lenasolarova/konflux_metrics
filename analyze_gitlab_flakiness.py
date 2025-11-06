@@ -186,8 +186,8 @@ def main():
         "ccx/ccx-upgrades-data-eng",
         "ccx/ccx-upgrades-inference"
     ]
-    # Since we run every hour, only scrape last 3 hours (with buffer for safety)
-    days_back = 7  # Analyze last 7 days to match dashboard timeframe
+    # Analyze last 1 day for incremental updates (24h window to catch overlaps)
+    days_back = 1
 
     # Get token from environment and strip any BOM or whitespace
     token = os.environ.get('GITLAB_TOKEN')
