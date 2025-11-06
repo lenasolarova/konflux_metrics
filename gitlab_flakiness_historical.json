@@ -1,35 +1,901 @@
 {
-  "created_at": "2025-11-06T13:09:57.795550+00:00",
+  "analysis_date": "2025-11-06T15:11:37.145074",
+  "gitlab_url": "https://gitlab.cee.redhat.com",
+  "project_paths": [
+    "insights-qe/iqe-ccx-plugin",
+    "ccx/ccx-data-pipeline",
+    "ccx/content-service",
+    "ccx/ccx-load-test",
+    "ccx/parquet-factory",
+    "ccx/ccx-upgrades-data-eng",
+    "ccx/ccx-upgrades-inference"
+  ],
   "days_analyzed": 90,
+  "date_range": {
+    "from": "2025-08-08T15:11:02.942500+00:00",
+    "to": "2025-11-06T15:11:37.145097"
+  },
+  "overall_summary": {
+    "total_projects": 7,
+    "total_mrs_analyzed": 78,
+    "total_commits": 96,
+    "total_retests": 16,
+    "mrs_with_retests": 12,
+    "mr_retest_rate": 15.384615384615385,
+    "avg_retests_per_mr": 0.20512820512820512,
+    "avg_retests_per_commit": 0.16666666666666666
+  },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": []
+      "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1133,
+          "title": "Bumped ccx-rules-ocp version to 2025.11.04",
+          "merged_at": "2025-11-04T11:20:47.211Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1133"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1130,
+          "title": "Fix fixture as pytest always expects a return value and not StopIteration",
+          "merged_at": "2025-10-24T12:51:41.491Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1130"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1129,
+          "title": "[CCXDEV-12959] Enable URP endpoint testing",
+          "merged_at": "2025-10-23T12:33:12.159Z",
+          "author": "ireyes",
+          "total_commits": 2,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1129"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1127,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-10-24T11:12:06.436Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1127"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1128,
+          "title": "Bumped ccx-rules-ocp version to 2025.10.21",
+          "merged_at": "2025-10-21T08:52:30.296Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1128"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1126,
+          "title": "Bumped ccx-rules-ocp version to 2025.10.06",
+          "merged_at": "2025-10-15T16:36:02.047Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1126"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1107,
+          "title": "[CCXDEV-13084] Add TODO",
+          "merged_at": "2025-10-13T21:28:01.368Z",
+          "author": "ireyes",
+          "total_commits": 3,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1107"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1118,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-10-13T11:09:36.570Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1118"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1119,
+          "title": "[CCXDEV-11930] Run tests that require AMS on ephemeral",
+          "merged_at": "2025-10-13T10:16:53.096Z",
+          "author": "ireyes",
+          "total_commits": 3,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1119"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1124,
+          "title": "Bumped ccx-rules-ocp version to 2025.10.06",
+          "merged_at": "2025-10-06T10:21:16.749Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1124"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1123,
+          "title": "[CCXDEV-14598] Remove test_disconnected_clusters",
+          "merged_at": "2025-09-26T10:43:06.134Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1123"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1122,
+          "title": "Bumped ccx-rules-ocp version to 2025.09.23",
+          "merged_at": "2025-09-23T08:15:43.323Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1122"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1117,
+          "title": "[CCXDEV-15345] Revert \"Double the timeout period for notification test on stage\"",
+          "merged_at": "2025-09-05T10:44:34.483Z",
+          "author": "jdiazsua",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1117"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1115,
+          "title": "[CCXDEV-11930] Run test that require AMS in stage",
+          "merged_at": "2025-09-04T10:58:44.215Z",
+          "author": "ireyes",
+          "total_commits": 3,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1115"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1116,
+          "title": "Simplify and update dockerfiles",
+          "merged_at": "2025-09-04T08:39:51.602Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1116"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1114,
+          "title": "Fix renamed fixture",
+          "merged_at": "2025-09-01T08:38:55.250Z",
+          "author": "jipapous",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1114"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1108,
+          "title": "Drop old method to get user credentials from other envs in favor of...",
+          "merged_at": "2025-08-27T08:05:18.755Z",
+          "author": "ireyes",
+          "total_commits": 6,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1108"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1113,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-08-29T07:52:38.093Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1113"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1110,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-08-27T12:00:29.009Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1110"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1112,
+          "title": "Bumped ccx-rules-ocp version to 2025.08.26",
+          "merged_at": "2025-08-26T11:17:56.557Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1112"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1111,
+          "title": "[CCXDEV-15402]Adding iqe blocker for failing UI test",
+          "merged_at": "2025-08-21T06:38:57.402Z",
+          "author": "jdrobena",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1111"
+        }
+      ],
+      "summary": {
+        "total_mrs_analyzed": 21,
+        "total_commits": 33,
+        "total_retests": 0,
+        "mrs_with_retests": 0,
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
     },
     "ccx/ccx-data-pipeline": {
-      "mrs": []
+      "mrs": [
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1117,
+          "title": "Bumped ccx-rules-ocp version to 2025.11.04",
+          "merged_at": "2025-11-04T10:53:15.005Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1117"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1116,
+          "title": "Fix GitLab CI by using old jupyter-book version",
+          "merged_at": "2025-11-03T09:08:05.514Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1116"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1115,
+          "title": "Bump ccx-messaging version",
+          "merged_at": "2025-11-03T08:13:51.946Z",
+          "author": "jsegural",
+          "total_commits": 2,
+          "total_retests": 3,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1115"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1114,
+          "title": "Update ccx messaging",
+          "merged_at": "2025-10-30T10:57:59.219Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1114"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1113,
+          "title": "Add SENTRY_ENABLED parametrized environment variable to DVO extractor",
+          "merged_at": "2025-10-28T11:30:12.887Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1113"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1112,
+          "title": "Fix deprecation warning from pythonjsonlogger",
+          "merged_at": "2025-10-24T10:29:53.047Z",
+          "author": "jsegural",
+          "total_commits": 2,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1112"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1109,
+          "title": "Ignore check minimum 3 replicas",
+          "merged_at": "2025-10-22T08:32:06.875Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1109"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1110,
+          "title": "Bumped ccx-rules-ocp version to 2025.10.21",
+          "merged_at": "2025-10-21T08:23:57.761Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1110"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1107,
+          "title": "Bumped ccx-rules-ocp version to 2025.10.06",
+          "merged_at": "2025-10-06T11:59:13.649Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1107"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1106,
+          "title": "fix: typo",
+          "merged_at": "2025-09-24T09:40:47.587Z",
+          "author": "jdiazsua",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1106"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1105,
+          "title": "[CCXDEV-14570] fix: don't use a rate for the failures",
+          "merged_at": "2025-09-24T08:38:10.879Z",
+          "author": "jdiazsua",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1105"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1101,
+          "title": "[CCXDEV-15486] Switch from old repository to new nexus.corp",
+          "merged_at": "2025-09-23T13:43:33.307Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1101"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1102,
+          "title": "[CCXDEV-15499] Use remote Konflux pipelines",
+          "merged_at": "2025-09-23T09:51:43.529Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1102"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1104,
+          "title": "[CCXDEV-14570] Monitor our cronjobs",
+          "merged_at": "2025-09-23T09:37:12.014Z",
+          "author": "jdiazsua",
+          "total_commits": 2,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1104"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1103,
+          "title": "Bumped ccx-rules-ocp version to 2025.09.23",
+          "merged_at": "2025-09-23T07:48:31.567Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1103"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1099,
+          "title": "Remove abandoned ocm references",
+          "merged_at": "2025-09-19T14:01:43.960Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1099"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1100,
+          "title": "Updating koflux references",
+          "merged_at": "2025-09-18T08:12:23.928Z",
+          "author": "jdrobena",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1100"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1097,
+          "title": "[CCXDEV-15454] Update deepdiff due to vulnerability",
+          "merged_at": "2025-09-05T11:08:57.505Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1097"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1096,
+          "title": "Bumped ccx-rules-ocp version to 2025.08.26",
+          "merged_at": "2025-08-26T10:51:22.185Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1096"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1094,
+          "title": "[CCXDEV-15290] Parameter to control Glitchtip enablement",
+          "merged_at": "2025-08-13T11:29:52.766Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1094"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1093,
+          "title": "Bumped ccx-rules-ocp version",
+          "merged_at": "2025-08-13T06:08:33.004Z",
+          "author": "jdiazsua",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1093"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1091,
+          "title": "[CCXDEV-15351] retrigger konflux  Merged",
+          "merged_at": "2025-08-12T13:24:29.780Z",
+          "author": "jdiazsua",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1091"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1090,
+          "title": "Bumped ccx-rules-ocp version to 2025.08.12",
+          "merged_at": "2025-08-12T07:29:31.219Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1090"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1089,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-08-11T07:09:57.061Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1089"
+        }
+      ],
+      "summary": {
+        "total_mrs_analyzed": 24,
+        "total_commits": 27,
+        "total_retests": 9,
+        "mrs_with_retests": 7,
+        "mr_retest_rate": 29.166666666666668,
+        "avg_retests_per_mr": 0.375,
+        "avg_retests_per_commit": 0.3333333333333333
+      }
     },
     "ccx/content-service": {
-      "mrs": []
+      "mrs": [
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 838,
+          "title": "Bumped ccx-rules-ocp version to 2025.11.04",
+          "merged_at": "2025-11-04T10:54:25.232Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/838"
+        },
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 835,
+          "title": "Remove Dockerfile-konflux file",
+          "merged_at": "2025-10-30T09:52:37.279Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/835"
+        },
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 836,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-10-30T09:52:27.764Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/836"
+        }
+      ],
+      "summary": {
+        "total_mrs_analyzed": 3,
+        "total_commits": 3,
+        "total_retests": 0,
+        "mrs_with_retests": 0,
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
     },
     "ccx/ccx-load-test": {
-      "mrs": []
+      "mrs": [
+        {
+          "project": "ccx/ccx-load-test",
+          "mr_iid": 100,
+          "title": "[CCXDEV-15499] Use remote Konflux pipelines",
+          "merged_at": "2025-09-25T07:36:11.040Z",
+          "author": "ireyes",
+          "total_commits": 2,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/100"
+        },
+        {
+          "project": "ccx/ccx-load-test",
+          "mr_iid": 94,
+          "title": "chore(deps): update konflux references",
+          "merged_at": "2025-09-20T12:49:36.439Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/94"
+        },
+        {
+          "project": "ccx/ccx-load-test",
+          "mr_iid": 93,
+          "title": "chore(deps): update konflux references",
+          "merged_at": "2025-09-13T08:14:09.966Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/93"
+        },
+        {
+          "project": "ccx/ccx-load-test",
+          "mr_iid": 92,
+          "title": "chore(deps): update konflux references",
+          "merged_at": "2025-09-06T12:09:46.493Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/92"
+        },
+        {
+          "project": "ccx/ccx-load-test",
+          "mr_iid": 91,
+          "title": "Replace total stats checks with separate checks per endpoint",
+          "merged_at": "2025-09-01T10:39:41.387Z",
+          "author": "jipapous",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/91"
+        },
+        {
+          "project": "ccx/ccx-load-test",
+          "mr_iid": 90,
+          "title": "chore(deps): update konflux references",
+          "merged_at": "2025-08-23T08:52:05.305Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/90"
+        }
+      ],
+      "summary": {
+        "total_mrs_analyzed": 6,
+        "total_commits": 7,
+        "total_retests": 1,
+        "mrs_with_retests": 1,
+        "mr_retest_rate": 16.666666666666664,
+        "avg_retests_per_mr": 0.16666666666666666,
+        "avg_retests_per_commit": 0.14285714285714285
+      }
     },
     "ccx/parquet-factory": {
-      "mrs": []
+      "mrs": [
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 313,
+          "title": "Update all dependencies",
+          "merged_at": "2025-10-30T09:54:56.259Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/313"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 312,
+          "title": "Update module github.com/redhatinsights/app-common-go to v1.6.9",
+          "merged_at": "2025-10-27T10:30:32.835Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/312"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 311,
+          "title": "Update module github.com/IBM/sarama to v1.46.3",
+          "merged_at": "2025-10-27T10:30:06.290Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/311"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 308,
+          "title": "Update all dependencies",
+          "merged_at": "2025-10-27T10:25:33.374Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/308"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 310,
+          "title": "Update Shopify/sarama to IBM/sarama",
+          "merged_at": "2025-10-15T10:40:30.555Z",
+          "author": "jipapous",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/310"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 309,
+          "title": "Update docker compose config",
+          "merged_at": "2025-10-15T07:33:32.661Z",
+          "author": "jipapous",
+          "total_commits": 2,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/309"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 307,
+          "title": "Remove toolchain directive from go.mod file",
+          "merged_at": "2025-10-10T12:30:06.730Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/307"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 292,
+          "title": "Update module github.com/spf13/viper to v1.21.0",
+          "merged_at": "2025-10-09T11:14:47.400Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/292"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 304,
+          "title": "Update all dependencies",
+          "merged_at": "2025-10-09T11:13:38.155Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/304"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 303,
+          "title": "Update all dependencies",
+          "merged_at": "2025-10-08T11:19:29.688Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/303"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 302,
+          "title": "Update all dependencies",
+          "merged_at": "2025-10-07T13:55:50.874Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/302"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 293,
+          "title": "Update all dependencies",
+          "merged_at": "2025-10-03T14:18:06.179Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 2,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/293"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 298,
+          "title": "Refactoring Issue \"unable to parse archive path\" generation",
+          "merged_at": "2025-09-29T11:11:10.408Z",
+          "author": "jdrobena",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/298"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 295,
+          "title": "[CCXDEV-15498] Use remote Konflux pipelines",
+          "merged_at": "2025-09-25T07:49:43.266Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 2,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/295"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 289,
+          "title": "[CCXDEV-15240]Updating parquet-go-source library",
+          "merged_at": "2025-09-09T09:57:04.550Z",
+          "author": "jdrobena",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/289"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 290,
+          "title": "Konflux ref update",
+          "merged_at": "2025-09-08T14:26:49.008Z",
+          "author": "jdrobena",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/290"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 284,
+          "title": "Update Konflux references",
+          "merged_at": "2025-09-08T08:50:51.566Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/284"
+        }
+      ],
+      "summary": {
+        "total_mrs_analyzed": 17,
+        "total_commits": 19,
+        "total_retests": 3,
+        "mrs_with_retests": 2,
+        "mr_retest_rate": 11.76470588235294,
+        "avg_retests_per_mr": 0.17647058823529413,
+        "avg_retests_per_commit": 0.15789473684210525
+      }
     },
     "ccx/ccx-upgrades-data-eng": {
-      "mrs": []
+      "mrs": [
+        {
+          "project": "ccx/ccx-upgrades-data-eng",
+          "mr_iid": 206,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-10-13T10:32:39.363Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/206"
+        }
+      ],
+      "summary": {
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
+        "total_retests": 0,
+        "mrs_with_retests": 0,
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
     },
     "ccx/ccx-upgrades-inference": {
-      "mrs": []
+      "mrs": [
+        {
+          "project": "ccx/ccx-upgrades-inference",
+          "mr_iid": 127,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-10-27T10:33:42.755Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/127"
+        },
+        {
+          "project": "ccx/ccx-upgrades-inference",
+          "mr_iid": 128,
+          "title": "Update BDD test image from cloudservices to redhat-services-prod",
+          "merged_at": "2025-10-27T09:34:12.891Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/128"
+        },
+        {
+          "project": "ccx/ccx-upgrades-inference",
+          "mr_iid": 126,
+          "title": "[CCXDEV-15498] Use remote Konflux pipelines",
+          "merged_at": "2025-09-22T12:09:05.761Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/126"
+        },
+        {
+          "project": "ccx/ccx-upgrades-inference",
+          "mr_iid": 125,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-09-22T08:11:37.838Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/125"
+        },
+        {
+          "project": "ccx/ccx-upgrades-inference",
+          "mr_iid": 124,
+          "title": "[CCXDEV-15378] add missing clowdapp",
+          "merged_at": "2025-08-14T06:25:14.652Z",
+          "author": "jdiazsua",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/124"
+        },
+        {
+          "project": "ccx/ccx-upgrades-inference",
+          "mr_iid": 123,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-08-11T06:26:44.061Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 2,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/123"
+        }
+      ],
+      "summary": {
+        "total_mrs_analyzed": 6,
+        "total_commits": 6,
+        "total_retests": 3,
+        "mrs_with_retests": 2,
+        "mr_retest_rate": 33.33333333333333,
+        "avg_retests_per_mr": 0.5,
+        "avg_retests_per_commit": 0.5
+      }
     }
-  },
-  "last_updated": "2025-11-06T13:09:57.806105+00:00",
-  "cutoff_date": "2025-08-08T13:09:57.795555+00:00",
-  "summary": {
-    "total_mrs": 0,
-    "total_retests": 0,
-    "mrs_with_retests": 0,
-    "retest_rate": 0
   }
 }
