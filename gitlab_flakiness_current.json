@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-06T12:50:30.483513",
+  "analysis_date": "2025-11-06T12:53:09.717933",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -10,109 +10,56 @@
     "ccx/ccx-upgrades-data-eng",
     "ccx/ccx-upgrades-inference"
   ],
-  "days_analyzed": 7,
+  "days_analyzed": 1,
   "date_range": {
-    "from": "2025-10-30T12:50:25.824639+00:00",
-    "to": "2025-11-06T12:50:30.483532"
+    "from": "2025-11-05T12:53:05.696399+00:00",
+    "to": "2025-11-06T12:53:09.717959"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 5,
-    "total_commits": 6,
-    "total_retests": 3,
-    "mrs_with_retests": 1,
-    "mr_retest_rate": 20.0,
-    "avg_retests_per_mr": 0.6,
-    "avg_retests_per_commit": 0.5
+    "total_mrs_analyzed": 0,
+    "total_commits": 0,
+    "total_retests": 0,
+    "mrs_with_retests": 0,
+    "mr_retest_rate": 0,
+    "avg_retests_per_mr": 0,
+    "avg_retests_per_commit": 0
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": [
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1133,
-          "title": "Bumped ccx-rules-ocp version to 2025.11.04",
-          "merged_at": "2025-11-04T11:20:47.211Z",
-          "author": "iqe-bot",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1133"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 1,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-data-pipeline": {
-      "mrs": [
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1117,
-          "title": "Bumped ccx-rules-ocp version to 2025.11.04",
-          "merged_at": "2025-11-04T10:53:15.005Z",
-          "author": "ccx-bot",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1117"
-        },
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1116,
-          "title": "Fix GitLab CI by using old jupyter-book version",
-          "merged_at": "2025-11-03T09:08:05.514Z",
-          "author": "jsegural",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1116"
-        },
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1115,
-          "title": "Bump ccx-messaging version",
-          "merged_at": "2025-11-03T08:13:51.946Z",
-          "author": "jsegural",
-          "total_commits": 2,
-          "total_retests": 3,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1115"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 3,
-        "total_commits": 4,
-        "total_retests": 3,
-        "mrs_with_retests": 1,
-        "mr_retest_rate": 33.33333333333333,
-        "avg_retests_per_mr": 1.0,
-        "avg_retests_per_commit": 0.75
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
+        "total_retests": 0,
+        "mrs_with_retests": 0,
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/content-service": {
-      "mrs": [
-        {
-          "project": "ccx/content-service",
-          "mr_iid": 838,
-          "title": "Bumped ccx-rules-ocp version to 2025.11.04",
-          "merged_at": "2025-11-04T10:54:25.232Z",
-          "author": "ccx-bot",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/838"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 1,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-load-test": {
