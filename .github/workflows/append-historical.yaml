@@ -48,6 +48,7 @@ jobs:
           else
             echo "📊 Committing historical retest metrics..."
             git commit -m "chore: update historical retest metrics [bot]"
+            git pull --rebase origin main || git pull --rebase origin master || true
             git push
           fi
 
