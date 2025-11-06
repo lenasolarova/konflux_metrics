@@ -7,6 +7,8 @@ local-testing/
 !grafana-dashboard-unwrapped.json
 !github_flakiness_current.json
 !gitlab_flakiness_current.json
+!github_flakiness_historical.json
+!gitlab_flakiness_historical.json
 !github_flakiness_history.json
 !gitlab_flakiness_history.json
 !github_pushed_prs.json
