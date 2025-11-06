@@ -44,9 +44,9 @@ backfill-gitlab-90days:
     - x86_64
 
   # Manual trigger only - appears in pipeline but requires manual play button
-  when: manual
   rules:
-    - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: manual
 
   variables:
     GIT_STRATEGY: clone
@@ -73,9 +73,9 @@ push-backfill-to-github:
     - x86_64
 
   # Manual trigger only - appears in pipeline but requires manual play button
-  when: manual
   rules:
-    - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: manual
 
   dependencies:
     - backfill-gitlab-90days
