@@ -50,16 +50,6 @@
         },
         {
           "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1129,
-          "title": "[CCXDEV-12959] Enable URP endpoint testing",
-          "merged_at": "2025-10-23T12:33:12.159Z",
-          "author": "ireyes",
-          "total_commits": 2,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1129"
-        },
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
           "mr_iid": 1127,
           "title": "Update pre-commit hooks",
           "merged_at": "2025-10-24T11:12:06.436Z",
@@ -67,6 +57,16 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1127"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1129,
+          "title": "[CCXDEV-12959] Enable URP endpoint testing",
+          "merged_at": "2025-10-23T12:33:12.159Z",
+          "author": "ireyes",
+          "total_commits": 2,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1129"
         },
         {
           "project": "insights-qe/iqe-ccx-plugin",
@@ -190,16 +190,6 @@
         },
         {
           "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1108,
-          "title": "Drop old method to get user credentials from other envs in favor of...",
-          "merged_at": "2025-08-27T08:05:18.755Z",
-          "author": "ireyes",
-          "total_commits": 6,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1108"
-        },
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
           "mr_iid": 1113,
           "title": "Update pre-commit hooks",
           "merged_at": "2025-08-29T07:52:38.093Z",
@@ -217,6 +207,16 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1110"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1108,
+          "title": "Drop old method to get user credentials from other envs in favor of...",
+          "merged_at": "2025-08-27T08:05:18.755Z",
+          "author": "ireyes",
+          "total_commits": 6,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1108"
         },
         {
           "project": "insights-qe/iqe-ccx-plugin",
@@ -897,5 +897,13 @@
         "avg_retests_per_commit": 0.5
       }
     }
+  },
+  "last_updated": "2025-11-06T16:10:52.045686+00:00",
+  "cutoff_date": "2025-08-08T16:10:52.033966+00:00",
+  "summary": {
+    "total_mrs": 78,
+    "total_retests": 16,
+    "mrs_with_retests": 12,
+    "retest_rate": 15.384615384615385
   }
 }
