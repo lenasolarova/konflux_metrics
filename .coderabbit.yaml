@@ -16,6 +16,10 @@ reviews:
   auto_review:
     enabled: true
 
+  # Review individual commits (not just PRs)
+  commit_reviews:
+    enabled: true
+
   # Focus areas for code review
   focus_areas:
     - code_quality

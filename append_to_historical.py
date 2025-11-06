@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Append incremental scrape data to historical files.
+Append new data to historical files.
 
 This script:
 1. Reads the 24h increment files (github_flakiness_current.json, gitlab_flakiness_current.json)

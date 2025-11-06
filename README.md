@@ -4,13 +4,13 @@ Automated analysis of retest/rerun metrics for Konflux CI/CD pipelines across Gi
 
 ## Overview
 
-This tool analyzes CI/CD data to detect flaky tests by counting how many times commits are retested. It runs twice daily and displays metrics in a Grafana dashboard.
+This tool analyzes CI/CD data to detect flaky tests by counting how many times commits are retested. It runs twice a day and displays metrics in a Grafana dashboard.
 
 ## Features
 
 - ✅ **Multi-platform** - Analyzes both GitHub and GitLab repositories
-- ✅ **Grafana dashboard** - Visual representation of retest metrics over time
-- ✅ **Automated analysis** - Runs twice daily (9 AM and 9 PM UTC) via GitHub Actions and GitLab CI
+- ✅ **Grafana dashboard** - Visual representation of retest metrics over time (up to 90 days)
+- ✅ **Automated analysis** - Runs twice a day (9 AM and 9 PM UTC) via GitHub Actions and GitLab CI
 - ✅ **Per-PR metrics** - Track individual PRs/MRs over time
 - ✅ **Clickable links** - Click on data points to open the PR/MR
 
@@ -65,8 +65,12 @@ The Grafana dashboard ([grafana-dashboard-unwrapped.json](grafana-dashboard-unwr
 ## JSON Output
 
 The analysis scripts generate JSON files that are consumed by the Grafana dashboard via the Infinity datasource:
+
+These are used for ammending the historical files only:
 - `github_flakiness_current.json` - GitHub PR metrics (last 24 hours)
 - `gitlab_flakiness_current.json` - GitLab MR metrics (last 24 hours)
+
+These are used directly by Grafana:
 - `github_flakiness_historical.json` - GitHub PR metrics (last 90 days)
 - `gitlab_flakiness_historical.json` - GitLab MR metrics (last 90 days) 
 
@@ -79,5 +83,7 @@ The workflow (`.github/workflows/retest-metrics.yaml`) runs automatically on sch
 
 The workflow (`.github/workflows/append-historical.yaml`) runs automatically on schedule (one hour behind the other data collection pipelines) and wrangles the data in the historical files (appending new data and trimming data older than 90 days).
 
+There is also another workflow (`.github/workflows/retest-metrics.yaml`) which can be run manually to backfill the history (by default set to 90 days).
+
 ### GitLab CI
-The pipeline (`.gitlab-ci.yml`) runs on schedule (configured in GitLab settings) and pushes results to the GitHub repository.
+The pipeline (`.gitlab-ci.yml`) runs on schedule (configured in GitLab settings) and pushes results to the GitHub repository. It also has a manual job that can be run to backfill the 90 days in case of starting fresh / data loss.

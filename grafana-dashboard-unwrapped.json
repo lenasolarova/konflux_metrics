@@ -22,7 +22,7 @@
           "parser": "backend",
           "source": "url",
           "format": "table",
-          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/github_flakiness_current.json",
+          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/github_flakiness_historical.json",
           "url_options": {
             "method": "GET"
           },
@@ -65,7 +65,7 @@
           "parser": "backend",
           "source": "url",
           "format": "table",
-          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/gitlab_flakiness_current.json",
+          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/gitlab_flakiness_historical.json",
           "url_options": {
             "method": "GET"
           },
@@ -107,10 +107,11 @@
           "custom": {
             "drawStyle": "points",
             "lineWidth": 0,
-            "pointSize": 8,
+            "pointSize": 10,
             "showPoints": "always",
             "spanNulls": false
           },
+          "min": 0,
           "unit": "short"
         },
         "overrides": [
@@ -293,7 +294,7 @@
           "parser": "backend",
           "source": "url",
           "format": "table",
-          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/github_flakiness_current.json",
+          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/github_flakiness_historical.json",
           "url_options": {
             "method": "GET"
           },
@@ -537,7 +538,7 @@
           "parser": "backend",
           "source": "url",
           "format": "table",
-          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/gitlab_flakiness_current.json",
+          "url": "https://raw.githubusercontent.com/lenasolarova/konflux_metrics/main/gitlab_flakiness_historical.json",
           "url_options": {
             "method": "GET"
           },
