@@ -1,0 +1,73 @@
+# Code Rabbit AI Configuration
+# https://docs.coderabbit.ai/guides/configure-coderabbit
+
+# Language settings
+language: en-US
+
+# Enable early access features
+early_access: false
+
+# Review settings
+reviews:
+  # Review level: "summary" (high-level), "detailed" (line-by-line)
+  level: detailed
+
+  # Auto-review PRs
+  auto_review:
+    enabled: true
+
+  # Focus areas for code review
+  focus_areas:
+    - code_quality
+    - best_practices
+    - potential_bugs
+    - security
+    - performance
+    - readability
+
+  # Review filters
+  review:
+    # Skip reviewing certain file types
+    exclude:
+      - "*.json"
+      - "*.md"
+      - ".gitignore"
+      - "*.backup"
+
+    # Always review these
+    include:
+      - "**/*.py"
+      - "**/*.yaml"
+      - "**/*.yml"
+
+# Chat features
+chat:
+  # Enable CodeRabbit chat in PR comments
+  enabled: true
+
+# Auto-approve settings (disabled for safety)
+auto_approve:
+  enabled: false
+
+# Tone of reviews
+tone_instructions: |
+  - Be friendly and constructive
+  - Focus on teaching, not just pointing out issues
+  - Provide clear examples when suggesting improvements
+  - Prioritize important issues over nitpicks
+  - Celebrate good code patterns
+
+# Path-specific instructions
+path_instructions:
+  - path: "**/*.py"
+    instructions: |
+      - Check for proper error handling
+      - Verify API rate limiting is handled
+      - Look for potential security issues (credentials, tokens)
+      - Suggest pythonic improvements
+
+  - path: ".github/workflows/*.yaml"
+    instructions: |
+      - Verify secrets are properly referenced
+      - Check for security best practices
+      - Ensure workflows have proper error handling
