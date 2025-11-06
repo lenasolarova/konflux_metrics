@@ -42,11 +42,14 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to historical data"
           else
-            git commit -m "Update historical data (90-day rolling window)
+            git commit -m "$(cat <<'EOF'
+          Update historical data (90-day rolling window)
 
-🤖 Generated with GitHub Actions
+          🤖 Generated with GitHub Actions
 
-Co-Authored-By: GitHub Actions <noreply@github.com>"
+          Co-Authored-By: GitHub Actions <noreply@github.com>
+          EOF
+          )"
             git push
           fi
         env:
