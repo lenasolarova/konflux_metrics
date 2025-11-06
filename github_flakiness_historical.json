@@ -1,0 +1,49 @@
+{
+  "created_at": "2025-11-06T13:09:57.778184+00:00",
+  "days_analyzed": 90,
+  "repositories": {
+    "RedHatInsights/insights-ccx-messaging": {
+      "prs": []
+    },
+    "RedHatInsights/insights-results-aggregator": {
+      "prs": []
+    },
+    "RedHatInsights/insights-results-aggregator-exporter": {
+      "prs": []
+    },
+    "RedHatInsights/insights-content-template-renderer": {
+      "prs": []
+    },
+    "RedHatInsights/insights-behavioral-spec": {
+      "prs": []
+    },
+    "RedHatInsights/insights-results-aggregator-cleaner": {
+      "prs": []
+    },
+    "RedHatInsights/insights-operator-gathering-conditions-service": {
+      "prs": []
+    },
+    "RedHatInsights/ccx-notification-service": {
+      "prs": []
+    },
+    "RedHatInsights/ccx-notification-writer": {
+      "prs": []
+    },
+    "RedHatInsights/obsint-mocks": {
+      "prs": []
+    },
+    "RedHatInsights/insights-results-smart-proxy": {
+      "prs": []
+    }
+  },
+  "last_updated": "2025-11-06T13:09:57.795215+00:00",
+  "cutoff_date": "2025-08-08T13:09:57.778194+00:00",
+  "summary": {
+    "total_prs": 0,
+    "total_retests": 0,
+    "prs_with_retests": 0,
+    "retest_rate": 0,
+    "retest_comments": 0,
+    "update_branch_actions": 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "created_at": "2025-11-06T13:09:57.795550+00:00",
+  "days_analyzed": 90,
+  "projects": {
+    "insights-qe/iqe-ccx-plugin": {
+      "mrs": []
+    },
+    "ccx/ccx-data-pipeline": {
+      "mrs": []
+    },
+    "ccx/content-service": {
+      "mrs": []
+    },
+    "ccx/ccx-load-test": {
+      "mrs": []
+    },
+    "ccx/parquet-factory": {
+      "mrs": []
+    },
+    "ccx/ccx-upgrades-data-eng": {
+      "mrs": []
+    },
+    "ccx/ccx-upgrades-inference": {
+      "mrs": []
+    }
+  },
+  "last_updated": "2025-11-06T13:09:57.806105+00:00",
+  "cutoff_date": "2025-08-08T13:09:57.795555+00:00",
+  "summary": {
+    "total_mrs": 0,
+    "total_retests": 0,
+    "mrs_with_retests": 0,
+    "retest_rate": 0
+  }
+}
