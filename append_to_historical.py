@@ -152,7 +152,8 @@ def merge_data(increment_file, historical_file, output_file, platform='github', 
     }
 
     cfg = config[platform]
-    print(f"{'📊' if platform == 'github' else '\n📊'} Merging {cfg['label']} data...")
+    prefix = '📊' if platform == 'github' else '\n📊'
+    print(f"{prefix} Merging {cfg['label']} data...")
 
     #load small and big data
     increment = load_json(increment_file)
