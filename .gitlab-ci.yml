@@ -5,6 +5,7 @@
 
 stages:
   - analyze
+  - backfill
   - push
 
 analyze-gitlab-flakiness:
@@ -34,6 +35,87 @@ analyze-gitlab-flakiness:
     paths:
       - gitlab_flakiness_current.json
     expire_in: 90 days
+
+backfill-gitlab-90days:
+  stage: backfill
+  image: python:3.11-slim
+  tags:
+    - shared
+    - x86_64
+
+  # Manual trigger only
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "web"
+      when: manual
+
+  variables:
+    GIT_STRATEGY: clone
+    DAYS_BACK: "90"
+
+  before_script:
+    - pip3 install --no-cache-dir requests
+
+  script:
+    - echo "🔄 Running 90-day backfill for GitLab repos..."
+    - python3 analyze_gitlab_flakiness.py
+    - cp gitlab_flakiness_current.json gitlab_flakiness_historical.json
+
+  artifacts:
+    paths:
+      - gitlab_flakiness_historical.json
+    expire_in: 90 days
+
+push-backfill-to-github:
+  stage: push
+  image: python:3.11-slim
+  tags:
+    - shared
+    - x86_64
+
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "web"
+      when: manual
+
+  dependencies:
+    - backfill-gitlab-90days
+
+  before_script:
+    - apt-get update && apt-get install -y git
+    - git config --global user.name "gitlab-ci[bot]"
+    - git config --global user.email "gitlab-ci[bot]@gitlab.cee.redhat.com"
+
+  script:
+    - echo "📤 Pushing backfill results to GitHub repo..."
+    - |
+      # Clone GitHub repo
+      git clone https://github.com/lenasolarova/konflux_metrics.git /tmp/konflux_metrics
+      cd /tmp/konflux_metrics
+
+      # Copy the generated historical file
+      cp ${CI_PROJECT_DIR}/gitlab_flakiness_historical.json .
+
+      # Add historical file
+      git add gitlab_flakiness_historical.json
+
+      if git diff --cached --quiet; then
+        echo "📊 No changes to commit"
+      else
+        echo "📊 Committing GitLab 90-day backfill..."
+        git commit -m "chore: backfill 90-day GitLab historical data [gitlab-ci]"
+
+        # Create askpass helper script for authentication
+        echo '#!/bin/sh' > /tmp/askpass.sh
+        echo "echo \$GITHUB_TOKEN" >> /tmp/askpass.sh
+        chmod +x /tmp/askpass.sh
+
+        # Configure git to use askpass script
+        export GIT_ASKPASS=/tmp/askpass.sh
+        export GIT_TERMINAL_PROMPT=0
+
+        # Push to GitHub
+        git push origin main
+        echo "✅ Backfill results pushed to GitHub!"
+      fi
 
 push-to-github:
   stage: push

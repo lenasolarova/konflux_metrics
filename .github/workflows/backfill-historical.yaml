@@ -33,25 +33,17 @@ jobs:
         run: |
           python3 analyze_github_flakiness.py
 
-      - name: Run 90-day backfill for GitLab
-        env:
-          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
-          DAYS_BACK: 90
-        run: |
-          python3 analyze_gitlab_flakiness.py
-
-      - name: Rename to historical files
+      - name: Rename to historical file
         run: |
           cp github_flakiness_current.json github_flakiness_historical.json
-          cp gitlab_flakiness_current.json gitlab_flakiness_historical.json
 
       - name: Commit and push historical files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Add the historical files
-          git add github_flakiness_historical.json gitlab_flakiness_historical.json
+          # Add the historical file
+          git add github_flakiness_historical.json
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then
@@ -70,5 +62,4 @@ jobs:
           name: backfill-results-${{ github.run_number }}
           path: |
             github_flakiness_historical.json
-            gitlab_flakiness_historical.json
           retention-days: 30
