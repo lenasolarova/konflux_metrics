@@ -7,6 +7,9 @@ on:
     - cron: '0 10,22 * * *'
   workflow_dispatch:  # Allow manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   append-historical:
     runs-on: ubuntu-latest
@@ -15,6 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          persist-credentials: true
           fetch-depth: 0  # Need full history to commit
 
       - name: Set up Python
