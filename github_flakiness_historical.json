@@ -1238,18 +1238,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/447"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 446,
-          "title": "chore(deps): update konflux references",
-          "merged_at": "2025-08-09T13:14:57Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/446"
         }
       ],
       "summary": {
@@ -1959,6 +1947,18 @@
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 514,
+          "title": "Add needed configuration to ConfigMap in order to make them configurable",
+          "merged_at": "2025-11-07T16:24:31Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/514"
+        },
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 513,
@@ -3089,8 +3089,8 @@
       }
     }
   },
-  "last_updated": "2025-11-07T10:27:58.070130+00:00",
-  "cutoff_date": "2025-08-09T10:27:58.047595+00:00",
+  "last_updated": "2025-11-07T22:23:17.014886+00:00",
+  "cutoff_date": "2025-08-09T22:23:16.992563+00:00",
   "summary": {
     "total_prs": 241,
     "total_retests": 42,
