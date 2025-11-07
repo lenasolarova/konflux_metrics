@@ -89,7 +89,7 @@ push-backfill-to-github:
     - echo "📤 Pushing backfill results to GitHub repo..."
     - |
       # Clone GitHub repo
-      git clone https://github.com/lenasolarova/konflux_metrics.git /tmp/konflux_metrics
+      git clone https://github.com/RedHatInsights/konflux_metrics.git /tmp/konflux_metrics
       cd /tmp/konflux_metrics
 
       # Copy the generated historical file
@@ -142,7 +142,7 @@ push-to-github:
     - echo "📤 Pushing results to GitHub repo..."
     - |
       # Clone GitHub repo
-      git clone https://github.com/lenasolarova/konflux_metrics.git /tmp/konflux_metrics
+      git clone https://github.com/RedHatInsights/konflux_metrics.git /tmp/konflux_metrics
       cd /tmp/konflux_metrics
 
       # Copy the generated JSON file from analysis stage
