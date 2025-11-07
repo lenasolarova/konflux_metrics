@@ -1,4 +1,11 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-dashboard-konflux-retest-metrics
+  labels:
+    grafana_dashboard: "true"
+  annotations:
+    grafana-folder: /grafana-dashboard-definitions/Insights
 data:
   konflux-retest-metrics-grafana.json: |-
     {
@@ -911,10 +918,3 @@ data:
       "version": 2,
       "weekStart": ""
     }
-kind: ConfigMap
-metadata:
-  name: grafana-dashboard-konflux-retest-metrics
-  labels:
-    grafana_dashboard: "true"
-  annotations:
-    grafana-folder: /grafana-dashboard-definitions/Insights
