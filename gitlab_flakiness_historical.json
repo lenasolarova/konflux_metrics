@@ -480,16 +480,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1090"
-        },
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1089,
-          "title": "Update pre-commit hooks version",
-          "merged_at": "2025-08-11T07:09:57.061Z",
-          "author": "ccx-bot",
-          "total_commits": 1,
-          "total_retests": 1,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1089"
         }
       ],
       "summary": {
@@ -875,16 +865,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/124"
-        },
-        {
-          "project": "ccx/ccx-upgrades-inference",
-          "mr_iid": 123,
-          "title": "Update pre-commit hooks version",
-          "merged_at": "2025-08-11T06:26:44.061Z",
-          "author": "ccx-bot",
-          "total_commits": 1,
-          "total_retests": 2,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/123"
         }
       ],
       "summary": {
@@ -898,12 +878,12 @@
       }
     }
   },
-  "last_updated": "2025-11-08T22:06:42.214086+00:00",
-  "cutoff_date": "2025-08-10T22:06:42.202040+00:00",
+  "last_updated": "2025-11-09T10:07:38.483186+00:00",
+  "cutoff_date": "2025-08-11T10:07:38.471562+00:00",
   "summary": {
-    "total_mrs": 78,
-    "total_retests": 16,
-    "mrs_with_retests": 12,
-    "retest_rate": 15.384615384615385
+    "total_mrs": 76,
+    "total_retests": 13,
+    "mrs_with_retests": 10,
+    "retest_rate": 13.157894736842104
   }
 }
