@@ -209,8 +209,14 @@ def merge_data(increment_file, historical_file, output_file, platform='github', 
         print(f"  ✓ {name}: {len(new_items)} new, {len(filtered_items)} total (after trim)")
 
     #update metadata
-    historical['last_updated'] = datetime.now(timezone.utc).isoformat()
+    now = datetime.now(timezone.utc)
+    historical['last_updated'] = now.isoformat()
     historical['cutoff_date'] = cutoff_iso
+    historical['analysis_date'] = now.isoformat()
+    historical['date_range'] = {
+        'from': cutoff_iso,
+        'to': now.isoformat()
+    }
 
     #calculate overall summary
     all_items = []
