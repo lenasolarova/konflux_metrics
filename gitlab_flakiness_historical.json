@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-10T10:09:48.661176+00:00",
+  "analysis_date": "2025-11-10T22:08:34.931060+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-12T10:09:48.649094+00:00",
-    "to": "2025-11-10T10:09:48.661176+00:00"
+    "from": "2025-08-12T22:08:34.918985+00:00",
+    "to": "2025-11-10T22:08:34.931060+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -28,6 +28,26 @@
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
       "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1131,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-11-10T14:58:41.573Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1131"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1120,
+          "title": "first part of the nexus migration",
+          "merged_at": "2025-11-10T14:43:53.467Z",
+          "author": "rpfannsc",
+          "total_commits": 3,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1120"
+        },
         {
           "project": "insights-qe/iqe-ccx-plugin",
           "mr_iid": 1133,
@@ -460,16 +480,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1093"
-        },
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1091,
-          "title": "[CCXDEV-15351] retrigger konflux  Merged",
-          "merged_at": "2025-08-12T13:24:29.780Z",
-          "author": "jdiazsua",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1091"
         }
       ],
       "summary": {
@@ -484,6 +494,16 @@
     },
     "ccx/content-service": {
       "mrs": [
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 837,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-10T10:31:53.358Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/837"
+        },
         {
           "project": "ccx/content-service",
           "mr_iid": 838,
@@ -600,6 +620,26 @@
     },
     "ccx/parquet-factory": {
       "mrs": [
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 300,
+          "title": "Remove reflect and using plain channels",
+          "merged_at": "2025-11-10T10:36:43.706Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/300"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 314,
+          "title": "Update all dependencies",
+          "merged_at": "2025-11-10T10:32:08.369Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/314"
+        },
         {
           "project": "ccx/parquet-factory",
           "mr_iid": 313,
@@ -868,12 +908,12 @@
       }
     }
   },
-  "last_updated": "2025-11-10T10:09:48.661176+00:00",
-  "cutoff_date": "2025-08-12T10:09:48.649094+00:00",
+  "last_updated": "2025-11-10T22:08:34.931060+00:00",
+  "cutoff_date": "2025-08-12T22:08:34.918985+00:00",
   "summary": {
-    "total_mrs": 75,
+    "total_mrs": 79,
     "total_retests": 13,
     "mrs_with_retests": 10,
-    "retest_rate": 13.333333333333334
+    "retest_rate": 12.658227848101266
   }
 }

@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-10T10:09:48.645201+00:00",
+  "analysis_date": "2025-11-10T22:08:34.915086+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-12T10:09:48.622178+00:00",
-    "to": "2025-11-10T10:09:48.645201+00:00"
+    "from": "2025-08-12T22:08:34.892411+00:00",
+    "to": "2025-11-10T22:08:34.915086+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -528,6 +528,42 @@
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2317,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-10T21:02:00Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2317"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2315,
+          "title": "fix(deps): update module golang.org/x/sync to v0.18.0",
+          "merged_at": "2025-11-10T10:49:41Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 1,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2315"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2312,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-10T10:30:15Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2312"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2311,
@@ -1949,6 +1985,42 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 518,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-10T20:56:18Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/518"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 516,
+          "title": "fix(deps): update module golang.org/x/sync to v0.18.0",
+          "merged_at": "2025-11-10T09:50:48Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 1,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/516"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 515,
+          "title": "Add and fix environment variables in the deployment",
+          "merged_at": "2025-11-10T09:18:26Z",
+          "user": "joselsegura",
+          "total_commits": 2,
+          "retest_comments": 1,
+          "update_branch_count": 1,
+          "total_retests": 2,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/515"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 517,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-08T12:43:10Z",
@@ -2226,6 +2298,18 @@
     },
     "RedHatInsights/ccx-notification-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-service",
+          "pr_number": 1038,
+          "title": "fix(deps): update module github.com/openshift-online/ocm-sdk-go to v0.1.481",
+          "merged_at": "2025-11-10T10:04:36Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 1,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1038"
+        },
         {
           "repository": "RedHatInsights/ccx-notification-service",
           "pr_number": 1037,
@@ -2529,6 +2613,30 @@
     },
     "RedHatInsights/ccx-notification-writer": {
       "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 702,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-10T21:04:17Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/702"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 701,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-10T10:01:24Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 1,
+          "update_branch_count": 0,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/701"
+        },
         {
           "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 700,
@@ -2957,6 +3065,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1624,
+          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.481 to 0.1.482",
+          "merged_at": "2025-11-10T17:55:42Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1624"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1623,
           "title": "fix(deps): update module github.com/openshift-online/ocm-sdk-go to v0.1.481",
           "merged_at": "2025-11-05T04:44:32Z",
@@ -3101,14 +3221,14 @@
       }
     }
   },
-  "last_updated": "2025-11-10T10:09:48.645201+00:00",
-  "cutoff_date": "2025-08-12T10:09:48.622178+00:00",
+  "last_updated": "2025-11-10T22:08:34.915086+00:00",
+  "cutoff_date": "2025-08-12T22:08:34.892411+00:00",
   "summary": {
-    "total_prs": 242,
-    "total_retests": 42,
-    "prs_with_retests": 27,
-    "retest_rate": 11.15702479338843,
-    "retest_comments": 31,
-    "update_branch_actions": 11
+    "total_prs": 252,
+    "total_retests": 48,
+    "prs_with_retests": 32,
+    "retest_rate": 12.698412698412698,
+    "retest_comments": 33,
+    "update_branch_actions": 15
   }
 }
