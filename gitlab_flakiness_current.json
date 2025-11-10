@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-10T08:05:24.987845",
+  "analysis_date": "2025-11-10T20:04:16.164171",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,30 +12,51 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-09T08:05:22.432567+00:00",
-    "to": "2025-11-10T08:05:24.987866"
+    "from": "2025-11-09T20:03:55.837921+00:00",
+    "to": "2025-11-10T20:04:16.164196"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 0,
-    "total_commits": 0,
+    "total_mrs_analyzed": 5,
+    "total_commits": 7,
     "total_retests": 0,
     "mrs_with_retests": 0,
-    "mr_retest_rate": 0,
-    "avg_retests_per_mr": 0,
-    "avg_retests_per_commit": 0
+    "mr_retest_rate": 0.0,
+    "avg_retests_per_mr": 0.0,
+    "avg_retests_per_commit": 0.0
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1131,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-11-10T14:58:41.573Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1131"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1120,
+          "title": "first part of the nexus migration",
+          "merged_at": "2025-11-10T14:43:53.467Z",
+          "author": "rpfannsc",
+          "total_commits": 3,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1120"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 2,
+        "total_commits": 4,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/ccx-data-pipeline": {
@@ -51,15 +72,26 @@
       }
     },
     "ccx/content-service": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 837,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-10T10:31:53.358Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/837"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/ccx-load-test": {
@@ -75,15 +107,36 @@
       }
     },
     "ccx/parquet-factory": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 300,
+          "title": "Remove reflect and using plain channels",
+          "merged_at": "2025-11-10T10:36:43.706Z",
+          "author": "jsegural",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/300"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 314,
+          "title": "Update all dependencies",
+          "merged_at": "2025-11-10T10:32:08.369Z",
+          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/314"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/ccx-upgrades-data-eng": {
