@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-06T15:18:27.486873",
+  "analysis_date": "2025-11-10T10:09:48.645201+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-08T15:15:00.891040+00:00",
-    "to": "2025-11-06T15:18:27.486889"
+    "from": "2025-08-12T10:09:48.622178+00:00",
+    "to": "2025-11-10T10:09:48.645201+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -33,6 +33,18 @@
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 614,
+          "title": "build(deps): update boto3 requirement from <1.40.65,>=1.34.1 to >=1.34.1,<1.40.70",
+          "merged_at": "2025-11-10T07:19:08Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/614"
+        },
         {
           "repository": "RedHatInsights/insights-ccx-messaging",
           "pr_number": 610,
@@ -3089,13 +3101,13 @@
       }
     }
   },
-  "last_updated": "2025-11-09T22:07:23.177457+00:00",
-  "cutoff_date": "2025-08-11T22:07:23.154827+00:00",
+  "last_updated": "2025-11-10T10:09:48.645201+00:00",
+  "cutoff_date": "2025-08-12T10:09:48.622178+00:00",
   "summary": {
-    "total_prs": 241,
+    "total_prs": 242,
     "total_retests": 42,
     "prs_with_retests": 27,
-    "retest_rate": 11.20331950207469,
+    "retest_rate": 11.15702479338843,
     "retest_comments": 31,
     "update_branch_actions": 11
   }
