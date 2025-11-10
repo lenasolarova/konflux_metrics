@@ -9,43 +9,6 @@ metadata:
 data:
   konflux-retest-metrics-grafana.json: |-
     {
-      "__inputs": [
-        {
-          "name": "DS_INFINITY-ANY-URL",
-          "label": "infinity-any-url",
-          "description": "",
-          "type": "datasource",
-          "pluginId": "yesoreyeram-infinity-datasource",
-          "pluginName": "Infinity"
-        }
-      ],
-      "__elements": {},
-      "__requires": [
-        {
-          "type": "grafana",
-          "id": "grafana",
-          "name": "Grafana",
-          "version": "11.6.3"
-        },
-        {
-          "type": "panel",
-          "id": "table",
-          "name": "Table",
-          "version": ""
-        },
-        {
-          "type": "panel",
-          "id": "timeseries",
-          "name": "Time series",
-          "version": ""
-        },
-        {
-          "type": "datasource",
-          "id": "yesoreyeram-infinity-datasource",
-          "name": "Infinity",
-          "version": "3.6.0"
-        }
-      ],
       "annotations": {
         "list": [
           {
@@ -314,7 +277,7 @@ data:
               ],
               "datasource": {
                 "type": "yesoreyeram-infinity-datasource",
-                "uid": "${DS_INFINITY-ANY-URL}"
+                "uid": "infinity-any-url"
               },
               "format": "table",
               "parser": "backend",
@@ -357,7 +320,7 @@ data:
               ],
               "datasource": {
                 "type": "yesoreyeram-infinity-datasource",
-                "uid": "${DS_INFINITY-ANY-URL}"
+                "uid": "infinity-any-url"
               },
               "format": "table",
               "parser": "backend",
@@ -566,7 +529,7 @@ data:
               ],
               "datasource": {
                 "type": "yesoreyeram-infinity-datasource",
-                "uid": "${DS_INFINITY-ANY-URL}"
+                "uid": "infinity-any-url"
               },
               "format": "table",
               "parser": "backend",
@@ -826,7 +789,7 @@ data:
               ],
               "datasource": {
                 "type": "yesoreyeram-infinity-datasource",
-                "uid": "${DS_INFINITY-ANY-URL}"
+                "uid": "infinity-any-url"
               },
               "format": "table",
               "parser": "backend",
