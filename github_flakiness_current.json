@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-10T21:07:37.543042",
+  "analysis_date": "2025-11-11T09:09:30.206455",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,51 +15,50 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-09T21:07:04.805552+00:00",
-    "to": "2025-11-10T21:07:37.543056"
+    "from": "2025-11-10T09:09:02.992755+00:00",
+    "to": "2025-11-11T09:09:30.206471"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 11,
-    "total_commits": 16,
+    "total_prs_analyzed": 13,
+    "total_commits": 18,
     "total_retests": 6,
     "retest_comments": 2,
     "update_branch_actions": 4,
     "prs_with_retests": 5,
-    "pr_retest_rate": 45.45454545454545,
-    "avg_retests_per_pr": 0.5454545454545454,
-    "avg_retests_per_commit": 0.375
+    "pr_retest_rate": 38.46153846153847,
+    "avg_retests_per_pr": 0.46153846153846156,
+    "avg_retests_per_commit": 0.3333333333333333
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 614,
-          "title": "build(deps): update boto3 requirement from <1.40.65,>=1.34.1 to >=1.34.1,<1.40.70",
-          "merged_at": "2025-11-10T07:19:08Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/614"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2318,
+          "title": "Add parameter to enable/disable Glitchtip",
+          "merged_at": "2025-11-11T09:07:15Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2318"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2317,
@@ -98,15 +97,15 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 3,
-        "total_commits": 5,
+        "total_prs_analyzed": 4,
+        "total_commits": 6,
         "total_retests": 1,
         "retest_comments": 0,
         "update_branch_actions": 1,
         "prs_with_retests": 1,
-        "pr_retest_rate": 33.33333333333333,
-        "avg_retests_per_pr": 0.3333333333333333,
-        "avg_retests_per_commit": 0.2
+        "pr_retest_rate": 25.0,
+        "avg_retests_per_pr": 0.25,
+        "avg_retests_per_commit": 0.16666666666666666
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
@@ -124,17 +123,42 @@
       }
     },
     "RedHatInsights/insights-content-template-renderer": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 232,
+          "title": "Bump pytest from 8.4.2 to 9.0.0",
+          "merged_at": "2025-11-10T23:46:46Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/232"
+        },
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 231,
+          "title": "Bump fastapi from 0.121.0 to 0.121.1",
+          "merged_at": "2025-11-10T23:22:54Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/231"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-behavioral-spec": {
