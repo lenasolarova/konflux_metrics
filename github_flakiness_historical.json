@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-10T22:08:34.915086+00:00",
+  "analysis_date": "2025-11-11T10:08:59.876339+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-12T22:08:34.892411+00:00",
-    "to": "2025-11-10T22:08:34.915086+00:00"
+    "from": "2025-08-13T10:08:59.853566+00:00",
+    "to": "2025-11-11T10:08:59.876339+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -528,6 +528,18 @@
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2318,
+          "title": "Add parameter to enable/disable Glitchtip",
+          "merged_at": "2025-11-11T09:07:15Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2318"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2317,
@@ -1266,6 +1278,30 @@
     },
     "RedHatInsights/insights-content-template-renderer": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 232,
+          "title": "Bump pytest from 8.4.2 to 9.0.0",
+          "merged_at": "2025-11-10T23:46:46Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/232"
+        },
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 231,
+          "title": "Bump fastapi from 0.121.0 to 0.121.1",
+          "merged_at": "2025-11-10T23:22:54Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/231"
+        },
         {
           "repository": "RedHatInsights/insights-content-template-renderer",
           "pr_number": 230,
@@ -3035,18 +3071,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/obsint-mocks/pull/153"
-        },
-        {
-          "repository": "RedHatInsights/obsint-mocks",
-          "pr_number": 152,
-          "title": "[CCXDEV-15282] conf: add cpu and memory limits and requests",
-          "merged_at": "2025-08-13T10:08:28Z",
-          "user": "juandspy",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/152"
         }
       ],
       "summary": {
@@ -3221,13 +3245,13 @@
       }
     }
   },
-  "last_updated": "2025-11-10T22:08:34.915086+00:00",
-  "cutoff_date": "2025-08-12T22:08:34.892411+00:00",
+  "last_updated": "2025-11-11T10:08:59.876339+00:00",
+  "cutoff_date": "2025-08-13T10:08:59.853566+00:00",
   "summary": {
-    "total_prs": 252,
+    "total_prs": 254,
     "total_retests": 48,
     "prs_with_retests": 32,
-    "retest_rate": 12.698412698412698,
+    "retest_rate": 12.598425196850393,
     "retest_comments": 33,
     "update_branch_actions": 15
   }
