@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-11T10:08:59.876339+00:00",
+  "analysis_date": "2025-11-11T22:26:14.255749+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-13T10:08:59.853566+00:00",
-    "to": "2025-11-11T10:08:59.876339+00:00"
+    "from": "2025-08-13T22:26:14.232319+00:00",
+    "to": "2025-11-11T22:26:14.255749+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -530,6 +530,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2320,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-11T21:06:37Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2320"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2319,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-11T17:07:51Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2319"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2318,
           "title": "Add parameter to enable/disable Glitchtip",
           "merged_at": "2025-11-11T09:07:15Z",
@@ -879,6 +903,42 @@
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 483,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-11T20:44:38Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/483"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 482,
+          "title": "chore(deps): update module golang.org/x/text to v0.31.0",
+          "merged_at": "2025-11-11T16:43:00Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/482"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 481,
+          "title": "Add parameter to handle DSN secret name in the deployment",
+          "merged_at": "2025-11-11T11:30:39Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/481"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator-exporter",
           "pr_number": 480,
@@ -1658,6 +1718,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 546,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-11T11:18:44Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/546"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
           "pr_number": 544,
           "title": "fix(deps): update module github.com/olekukonko/tablewriter to v1.1.1",
           "merged_at": "2025-11-09T13:03:04Z",
@@ -2019,6 +2091,30 @@
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 520,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-11T20:58:33Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/520"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 519,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-11T17:09:23Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/519"
+        },
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 518,
@@ -2651,6 +2747,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 703,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-11T21:04:18Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/703"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 702,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-10T21:04:17Z",
@@ -3245,13 +3353,13 @@
       }
     }
   },
-  "last_updated": "2025-11-11T10:08:59.876339+00:00",
-  "cutoff_date": "2025-08-13T10:08:59.853566+00:00",
+  "last_updated": "2025-11-11T22:26:14.255749+00:00",
+  "cutoff_date": "2025-08-13T22:26:14.232319+00:00",
   "summary": {
-    "total_prs": 254,
+    "total_prs": 263,
     "total_retests": 48,
     "prs_with_retests": 32,
-    "retest_rate": 12.598425196850393,
+    "retest_rate": 12.167300380228136,
     "retest_comments": 33,
     "update_branch_actions": 15
   }

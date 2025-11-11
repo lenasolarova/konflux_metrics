@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-11T10:08:59.892144+00:00",
+  "analysis_date": "2025-11-11T22:26:14.271584+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-13T10:08:59.880065+00:00",
-    "to": "2025-11-11T10:08:59.892144+00:00"
+    "from": "2025-08-13T22:26:14.259609+00:00",
+    "to": "2025-11-11T22:26:14.271584+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -460,16 +460,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1096"
-        },
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1094,
-          "title": "[CCXDEV-15290] Parameter to control Glitchtip enablement",
-          "merged_at": "2025-08-13T11:29:52.766Z",
-          "author": "jsegural",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1094"
         }
       ],
       "summary": {
@@ -898,12 +888,12 @@
       }
     }
   },
-  "last_updated": "2025-11-11T10:08:59.892144+00:00",
-  "cutoff_date": "2025-08-13T10:08:59.880065+00:00",
+  "last_updated": "2025-11-11T22:26:14.271584+00:00",
+  "cutoff_date": "2025-08-13T22:26:14.259609+00:00",
   "summary": {
-    "total_mrs": 78,
+    "total_mrs": 77,
     "total_retests": 13,
     "mrs_with_retests": 10,
-    "retest_rate": 12.82051282051282
+    "retest_rate": 12.987012987012985
   }
 }
