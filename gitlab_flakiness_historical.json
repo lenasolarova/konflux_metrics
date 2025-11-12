@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-11T22:26:14.271584+00:00",
+  "analysis_date": "2025-11-12T10:09:11.835097+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-13T22:26:14.259609+00:00",
-    "to": "2025-11-11T22:26:14.271584+00:00"
+    "from": "2025-08-14T10:09:11.823151+00:00",
+    "to": "2025-11-12T10:09:11.835097+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -865,16 +865,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/125"
-        },
-        {
-          "project": "ccx/ccx-upgrades-inference",
-          "mr_iid": 124,
-          "title": "[CCXDEV-15378] add missing clowdapp",
-          "merged_at": "2025-08-14T06:25:14.652Z",
-          "author": "jdiazsua",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/124"
         }
       ],
       "summary": {
@@ -888,12 +878,12 @@
       }
     }
   },
-  "last_updated": "2025-11-11T22:26:14.271584+00:00",
-  "cutoff_date": "2025-08-13T22:26:14.259609+00:00",
+  "last_updated": "2025-11-12T10:09:11.835097+00:00",
+  "cutoff_date": "2025-08-14T10:09:11.823151+00:00",
   "summary": {
-    "total_mrs": 77,
+    "total_mrs": 76,
     "total_retests": 13,
     "mrs_with_retests": 10,
-    "retest_rate": 12.987012987012985
+    "retest_rate": 13.157894736842104
   }
 }
