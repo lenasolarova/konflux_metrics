@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-13T10:09:14.205610+00:00",
+  "analysis_date": "2025-11-13T22:08:29.408283+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-15T10:09:14.182501+00:00",
-    "to": "2025-11-13T10:09:14.205610+00:00"
+    "from": "2025-08-15T22:08:29.385267+00:00",
+    "to": "2025-11-13T22:08:29.408283+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -939,6 +939,18 @@
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 484,
+          "title": "chore(deps): update module github.com/getsentry/sentry-go to v0.37.0",
+          "merged_at": "2025-11-13T16:59:34Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/484"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator-exporter",
           "pr_number": 483,
@@ -2129,6 +2141,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 524,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-13T17:21:00Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/524"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 523,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-13T00:52:24Z",
@@ -2819,6 +2843,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 706,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-13T17:25:26Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/706"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 705,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-13T01:04:08Z",
@@ -3449,13 +3485,13 @@
       }
     }
   },
-  "last_updated": "2025-11-13T10:09:14.205610+00:00",
-  "cutoff_date": "2025-08-15T10:09:14.182501+00:00",
+  "last_updated": "2025-11-13T22:08:29.408283+00:00",
+  "cutoff_date": "2025-08-15T22:08:29.385267+00:00",
   "summary": {
-    "total_prs": 271,
+    "total_prs": 274,
     "total_retests": 48,
     "prs_with_retests": 32,
-    "retest_rate": 11.808118081180812,
+    "retest_rate": 11.678832116788321,
     "retest_comments": 33,
     "update_branch_actions": 15
   }
