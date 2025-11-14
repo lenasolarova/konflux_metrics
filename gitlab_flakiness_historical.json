@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-14T10:09:31.245877+00:00",
+  "analysis_date": "2025-11-14T22:07:44.055320+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-16T10:09:31.233511+00:00",
-    "to": "2025-11-14T10:09:31.245877+00:00"
+    "from": "2025-08-16T22:07:44.043139+00:00",
+    "to": "2025-11-14T22:07:44.055320+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -28,6 +28,16 @@
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
       "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1135,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-11-14T11:13:29.678Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1135"
+        },
         {
           "project": "insights-qe/iqe-ccx-plugin",
           "mr_iid": 1134,
@@ -898,12 +908,12 @@
       }
     }
   },
-  "last_updated": "2025-11-14T10:09:31.245877+00:00",
-  "cutoff_date": "2025-08-16T10:09:31.233511+00:00",
+  "last_updated": "2025-11-14T22:07:44.055320+00:00",
+  "cutoff_date": "2025-08-16T22:07:44.043139+00:00",
   "summary": {
-    "total_mrs": 78,
+    "total_mrs": 79,
     "total_retests": 13,
     "mrs_with_retests": 10,
-    "retest_rate": 12.82051282051282
+    "retest_rate": 12.658227848101266
   }
 }
