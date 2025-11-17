@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-16T22:07:26.810057+00:00",
+  "analysis_date": "2025-11-17T10:23:10.732323+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-18T22:07:26.786756+00:00",
-    "to": "2025-11-16T22:07:26.810057+00:00"
+    "from": "2025-08-19T10:23:10.709021+00:00",
+    "to": "2025-11-17T10:23:10.732323+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -33,6 +33,30 @@
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 616,
+          "title": "build(deps): bump aiobotocore from 2.25.1 to 2.25.2",
+          "merged_at": "2025-11-17T07:22:08Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/616"
+        },
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 615,
+          "title": "build(deps): update boto3 requirement from <1.40.70,>=1.34.1 to >=1.34.1,<1.40.75",
+          "merged_at": "2025-11-17T07:21:55Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/615"
+        },
         {
           "repository": "RedHatInsights/insights-ccx-messaging",
           "pr_number": 614,
@@ -3485,13 +3509,13 @@
       }
     }
   },
-  "last_updated": "2025-11-16T22:07:26.810057+00:00",
-  "cutoff_date": "2025-08-18T22:07:26.786756+00:00",
+  "last_updated": "2025-11-17T10:23:10.732323+00:00",
+  "cutoff_date": "2025-08-19T10:23:10.709021+00:00",
   "summary": {
-    "total_prs": 274,
+    "total_prs": 276,
     "total_retests": 48,
     "prs_with_retests": 32,
-    "retest_rate": 11.678832116788321,
+    "retest_rate": 11.594202898550725,
     "retest_comments": 33,
     "update_branch_actions": 15
   }
