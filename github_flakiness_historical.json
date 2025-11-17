@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-17T10:23:10.732323+00:00",
+  "analysis_date": "2025-11-17T22:07:59.007567+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-19T10:23:10.709021+00:00",
-    "to": "2025-11-17T10:23:10.732323+00:00"
+    "from": "2025-08-19T22:07:58.984344+00:00",
+    "to": "2025-11-17T22:07:59.007567+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -977,6 +977,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 485,
+          "title": "chore(deps): update module github.com/getsentry/sentry-go to v0.38.0",
+          "merged_at": "2025-11-17T20:51:27Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/485"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
           "pr_number": 484,
           "title": "chore(deps): update module github.com/getsentry/sentry-go to v0.37.0",
           "merged_at": "2025-11-13T16:59:34Z",
@@ -1370,18 +1382,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/451"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 450,
-          "title": "Enabling Glitchtip for aggregator exporter",
-          "merged_at": "2025-08-19T13:11:59Z",
-          "user": "Jakub007d",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/450"
         }
       ],
       "summary": {
@@ -1398,6 +1398,30 @@
     },
     "RedHatInsights/insights-content-template-renderer": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 233,
+          "title": "Better handling rendering errors",
+          "merged_at": "2025-11-17T14:55:53Z",
+          "user": "joselsegura",
+          "total_commits": 5,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/233"
+        },
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 234,
+          "title": "Update versions for actions and Python in CI",
+          "merged_at": "2025-11-17T11:29:42Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 1,
+          "update_branch_count": 0,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/234"
+        },
         {
           "repository": "RedHatInsights/insights-content-template-renderer",
           "pr_number": 232,
@@ -2151,6 +2175,18 @@
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 525,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-17T21:00:28Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/525"
+        },
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 524,
@@ -3509,14 +3545,14 @@
       }
     }
   },
-  "last_updated": "2025-11-17T10:23:10.732323+00:00",
-  "cutoff_date": "2025-08-19T10:23:10.709021+00:00",
+  "last_updated": "2025-11-17T22:07:59.007567+00:00",
+  "cutoff_date": "2025-08-19T22:07:58.984344+00:00",
   "summary": {
-    "total_prs": 276,
-    "total_retests": 48,
-    "prs_with_retests": 32,
-    "retest_rate": 11.594202898550725,
-    "retest_comments": 33,
+    "total_prs": 279,
+    "total_retests": 49,
+    "prs_with_retests": 33,
+    "retest_rate": 11.827956989247312,
+    "retest_comments": 34,
     "update_branch_actions": 15
   }
 }
