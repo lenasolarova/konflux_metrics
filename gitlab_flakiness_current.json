@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-17T20:06:45.284907",
+  "analysis_date": "2025-11-18T08:05:32.400814",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,22 +12,32 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-16T20:06:25.929392+00:00",
-    "to": "2025-11-17T20:06:45.284931"
+    "from": "2025-11-17T08:05:13.807275+00:00",
+    "to": "2025-11-18T08:05:32.400835"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 1,
-    "total_commits": 15,
-    "total_retests": 0,
-    "mrs_with_retests": 0,
-    "mr_retest_rate": 0.0,
-    "avg_retests_per_mr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "total_mrs_analyzed": 3,
+    "total_commits": 17,
+    "total_retests": 4,
+    "mrs_with_retests": 1,
+    "mr_retest_rate": 33.33333333333333,
+    "avg_retests_per_mr": 1.3333333333333333,
+    "avg_retests_per_commit": 0.23529411764705882
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
       "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1136,
+          "title": "[CCXDEV-15706] Workaround fixture resolution issue on ephemeral",
+          "merged_at": "2025-11-17T20:25:27.058Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1136"
+        },
         {
           "project": "insights-qe/iqe-ccx-plugin",
           "mr_iid": 1132,
@@ -40,8 +50,8 @@
         }
       ],
       "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 15,
+        "total_mrs_analyzed": 2,
+        "total_commits": 16,
         "total_retests": 0,
         "mrs_with_retests": 0,
         "mr_retest_rate": 0.0,
@@ -110,15 +120,26 @@
       }
     },
     "ccx/ccx-upgrades-inference": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/ccx-upgrades-inference",
+          "mr_iid": 129,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-11-17T22:32:44.697Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 4,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/129"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
+        "total_retests": 4,
+        "mrs_with_retests": 1,
+        "mr_retest_rate": 100.0,
+        "avg_retests_per_mr": 4.0,
+        "avg_retests_per_commit": 4.0
       }
     }
   }
