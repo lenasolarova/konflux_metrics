@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-18T22:08:07.417551+00:00",
+  "analysis_date": "2025-11-19T10:09:00.890563+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-20T22:08:07.405336+00:00",
-    "to": "2025-11-18T22:08:07.417551+00:00"
+    "from": "2025-08-21T10:09:00.878179+00:00",
+    "to": "2025-11-19T10:09:00.890563+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -307,16 +307,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1112"
-        },
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1111,
-          "title": "[CCXDEV-15402]Adding iqe blocker for failing UI test",
-          "merged_at": "2025-08-21T06:38:57.402Z",
-          "author": "jdrobena",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1111"
         }
       ],
       "summary": {
@@ -988,12 +978,12 @@
       }
     }
   },
-  "last_updated": "2025-11-18T22:08:07.417551+00:00",
-  "cutoff_date": "2025-08-20T22:08:07.405336+00:00",
+  "last_updated": "2025-11-19T10:09:00.890563+00:00",
+  "cutoff_date": "2025-08-21T10:09:00.878179+00:00",
   "summary": {
-    "total_mrs": 87,
+    "total_mrs": 86,
     "total_retests": 17,
     "mrs_with_retests": 11,
-    "retest_rate": 12.643678160919542
+    "retest_rate": 12.790697674418606
   }
 }
