@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-19T09:09:38.059800",
+  "analysis_date": "2025-11-19T21:07:14.875080",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-18T09:09:17.889489+00:00",
-    "to": "2025-11-19T09:09:38.059819"
+    "from": "2025-11-18T21:06:47.213594+00:00",
+    "to": "2025-11-19T21:07:14.875097"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 4,
-    "total_commits": 5,
+    "total_prs_analyzed": 7,
+    "total_commits": 8,
     "total_retests": 1,
     "retest_comments": 0,
     "update_branch_actions": 1,
     "prs_with_retests": 1,
-    "pr_retest_rate": 25.0,
-    "avg_retests_per_pr": 0.25,
-    "avg_retests_per_commit": 0.2
+    "pr_retest_rate": 14.285714285714285,
+    "avg_retests_per_pr": 0.14285714285714285,
+    "avg_retests_per_commit": 0.125
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -73,17 +73,30 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 486,
+          "title": "chore(deps): update module golang.org/x/crypto to v0.45.0",
+          "merged_at": "2025-11-19T20:48:19Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/486"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-content-template-renderer": {
@@ -132,6 +145,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 529,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-19T20:56:52Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/529"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 527,
           "title": "Reduce log level for several errors.",
           "merged_at": "2025-11-19T08:46:07Z",
@@ -156,15 +181,15 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 3,
+        "total_prs_analyzed": 3,
+        "total_commits": 4,
         "total_retests": 1,
         "retest_comments": 0,
         "update_branch_actions": 1,
         "prs_with_retests": 1,
-        "pr_retest_rate": 50.0,
-        "avg_retests_per_pr": 0.5,
-        "avg_retests_per_commit": 0.3333333333333333
+        "pr_retest_rate": 33.33333333333333,
+        "avg_retests_per_pr": 0.3333333333333333,
+        "avg_retests_per_commit": 0.25
       }
     },
     "RedHatInsights/ccx-notification-service": {
@@ -209,17 +234,30 @@
       }
     },
     "RedHatInsights/obsint-mocks": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/obsint-mocks",
+          "pr_number": 157,
+          "title": "[CCXDEV-15130] Support IN clause for AMS org ID queries",
+          "merged_at": "2025-11-19T14:25:49Z",
+          "user": "ikerreyes",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/157"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-results-smart-proxy": {
