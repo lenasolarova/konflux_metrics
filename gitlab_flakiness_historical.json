@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-19T10:09:00.890563+00:00",
+  "analysis_date": "2025-11-19T22:08:00.599302+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-21T10:09:00.878179+00:00",
-    "to": "2025-11-19T10:09:00.890563+00:00"
+    "from": "2025-08-21T22:08:00.587146+00:00",
+    "to": "2025-11-19T22:08:00.599302+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -895,6 +895,26 @@
       "mrs": [
         {
           "project": "ccx/ccx-upgrades-data-eng",
+          "mr_iid": 209,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-11-19T14:21:36.467Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 4,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/209"
+        },
+        {
+          "project": "ccx/ccx-upgrades-data-eng",
+          "mr_iid": 210,
+          "title": "Add SA for konflux tekton pipelines",
+          "merged_at": "2025-11-19T13:06:28.068Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/210"
+        },
+        {
+          "project": "ccx/ccx-upgrades-data-eng",
           "mr_iid": 206,
           "title": "Update pre-commit hooks version",
           "merged_at": "2025-10-13T10:32:39.363Z",
@@ -978,12 +998,12 @@
       }
     }
   },
-  "last_updated": "2025-11-19T10:09:00.890563+00:00",
-  "cutoff_date": "2025-08-21T10:09:00.878179+00:00",
+  "last_updated": "2025-11-19T22:08:00.599302+00:00",
+  "cutoff_date": "2025-08-21T22:08:00.587146+00:00",
   "summary": {
-    "total_mrs": 86,
-    "total_retests": 17,
-    "mrs_with_retests": 11,
-    "retest_rate": 12.790697674418606
+    "total_mrs": 88,
+    "total_retests": 21,
+    "mrs_with_retests": 12,
+    "retest_rate": 13.636363636363635
   }
 }
