@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-19T08:05:17.782535",
+  "analysis_date": "2025-11-19T20:05:29.247578",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,107 +12,54 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-18T08:04:55.127946+00:00",
-    "to": "2025-11-19T08:05:17.782564"
+    "from": "2025-11-18T20:05:09.826462+00:00",
+    "to": "2025-11-19T20:05:29.247604"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 5,
-    "total_commits": 12,
-    "total_retests": 0,
-    "mrs_with_retests": 0,
-    "mr_retest_rate": 0.0,
-    "avg_retests_per_mr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "total_mrs_analyzed": 2,
+    "total_commits": 2,
+    "total_retests": 4,
+    "mrs_with_retests": 1,
+    "mr_retest_rate": 50.0,
+    "avg_retests_per_mr": 2.0,
+    "avg_retests_per_commit": 2.0
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": [
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1138,
-          "title": "Bumped ccx-rules-ocp version to 2025.11.18",
-          "merged_at": "2025-11-18T15:15:21.988Z",
-          "author": "iqe-bot",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1138"
-        },
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1137,
-          "title": "Fix index url for rules installation",
-          "merged_at": "2025-11-18T14:30:03.001Z",
-          "author": "ireyes",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1137"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 2,
-        "total_commits": 2,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-data-pipeline": {
-      "mrs": [
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1120,
-          "title": "Bumped ccx-rules-ocp version to 2025.11.18",
-          "merged_at": "2025-11-18T09:13:46.025Z",
-          "author": "ccx-bot",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1120"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 1,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/content-service": {
-      "mrs": [
-        {
-          "project": "ccx/content-service",
-          "mr_iid": 849,
-          "title": "Bumped ccx-rules-ocp version to 2025.11.18",
-          "merged_at": "2025-11-18T14:09:22.619Z",
-          "author": "ireyes",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/849"
-        },
-        {
-          "project": "ccx/content-service",
-          "mr_iid": 847,
-          "title": "Update linting job",
-          "merged_at": "2025-11-18T13:22:46.796Z",
-          "author": "ireyes",
-          "total_commits": 8,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/847"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 2,
-        "total_commits": 9,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-load-test": {
@@ -140,15 +87,36 @@
       }
     },
     "ccx/ccx-upgrades-data-eng": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/ccx-upgrades-data-eng",
+          "mr_iid": 209,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-11-19T14:21:36.467Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 4,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/209"
+        },
+        {
+          "project": "ccx/ccx-upgrades-data-eng",
+          "mr_iid": 210,
+          "title": "Add SA for konflux tekton pipelines",
+          "merged_at": "2025-11-19T13:06:28.068Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/210"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "total_mrs_analyzed": 2,
+        "total_commits": 2,
+        "total_retests": 4,
+        "mrs_with_retests": 1,
+        "mr_retest_rate": 50.0,
+        "avg_retests_per_mr": 2.0,
+        "avg_retests_per_commit": 2.0
       }
     },
     "ccx/ccx-upgrades-inference": {
