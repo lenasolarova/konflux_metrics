@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-20T09:10:19.766462",
+  "analysis_date": "2025-11-20T21:08:14.628969",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-19T09:09:53.645995+00:00",
-    "to": "2025-11-20T09:10:19.766479"
+    "from": "2025-11-19T21:07:52.407382+00:00",
+    "to": "2025-11-20T21:08:14.628985"
   },
   "overall_summary": {
     "total_repos": 11,
     "total_prs_analyzed": 11,
     "total_commits": 11,
-    "total_retests": 0,
-    "retest_comments": 0,
+    "total_retests": 3,
+    "retest_comments": 3,
     "update_branch_actions": 0,
-    "prs_with_retests": 0,
-    "pr_retest_rate": 0.0,
-    "avg_retests_per_pr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "prs_with_retests": 2,
+    "pr_retest_rate": 18.181818181818183,
+    "avg_retests_per_pr": 0.2727272727272727,
+    "avg_retests_per_commit": 0.2727272727272727
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -46,6 +46,33 @@
       }
     },
     "RedHatInsights/insights-results-aggregator": {
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2329,
+          "title": "Bump golang.org/x/crypto from 0.44.0 to 0.45.0",
+          "merged_at": "2025-11-20T14:19:46Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 2,
+          "update_branch_count": 0,
+          "total_retests": 2,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2329"
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
+        "total_retests": 2,
+        "retest_comments": 2,
+        "update_branch_actions": 0,
+        "prs_with_retests": 1,
+        "pr_retest_rate": 100.0,
+        "avg_retests_per_pr": 2.0,
+        "avg_retests_per_commit": 2.0
+      }
+    },
+    "RedHatInsights/insights-results-aggregator-exporter": {
       "prs": [],
       "summary": {
         "total_prs_analyzed": 0,
@@ -57,33 +84,6 @@
         "pr_retest_rate": 0,
         "avg_retests_per_pr": 0,
         "avg_retests_per_commit": 0
-      }
-    },
-    "RedHatInsights/insights-results-aggregator-exporter": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 486,
-          "title": "chore(deps): update module golang.org/x/crypto to v0.45.0",
-          "merged_at": "2025-11-19T20:48:19Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/486"
-        }
-      ],
-      "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
-        "total_retests": 0,
-        "retest_comments": 0,
-        "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-content-template-renderer": {
@@ -166,23 +166,11 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/530"
-        },
-        {
-          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 529,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-11-19T20:56:52Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/529"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 3,
-        "total_commits": 3,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
@@ -283,33 +271,6 @@
       }
     },
     "RedHatInsights/obsint-mocks": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/obsint-mocks",
-          "pr_number": 157,
-          "title": "[CCXDEV-15130] Support IN clause for AMS org ID queries",
-          "merged_at": "2025-11-19T14:25:49Z",
-          "user": "ikerreyes",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/157"
-        }
-      ],
-      "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
-        "total_retests": 0,
-        "retest_comments": 0,
-        "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
-      }
-    },
-    "RedHatInsights/insights-results-smart-proxy": {
       "prs": [],
       "summary": {
         "total_prs_analyzed": 0,
@@ -321,6 +282,45 @@
         "pr_retest_rate": 0,
         "avg_retests_per_pr": 0,
         "avg_retests_per_commit": 0
+      }
+    },
+    "RedHatInsights/insights-results-smart-proxy": {
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1628,
+          "title": "Bump github.com/redis/go-redis/v9 from 9.16.0 to 9.17.0",
+          "merged_at": "2025-11-20T17:30:41Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1628"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1626,
+          "title": "Bump golang.org/x/crypto from 0.43.0 to 0.45.0",
+          "merged_at": "2025-11-20T14:27:32Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 1,
+          "update_branch_count": 0,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1626"
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
+        "total_retests": 1,
+        "retest_comments": 1,
+        "update_branch_actions": 0,
+        "prs_with_retests": 1,
+        "pr_retest_rate": 50.0,
+        "avg_retests_per_pr": 0.5,
+        "avg_retests_per_commit": 0.5
       }
     }
   }
