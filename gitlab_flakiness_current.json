@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-20T08:05:02.472079",
+  "analysis_date": "2025-11-20T20:06:26.644660",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,42 +12,64 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-19T08:03:31.673936+00:00",
-    "to": "2025-11-20T08:05:02.472106"
+    "from": "2025-11-19T20:06:04.098337+00:00",
+    "to": "2025-11-20T20:06:26.644702"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 2,
-    "total_commits": 2,
-    "total_retests": 4,
-    "mrs_with_retests": 1,
-    "mr_retest_rate": 50.0,
-    "avg_retests_per_mr": 2.0,
-    "avg_retests_per_commit": 2.0
+    "total_mrs_analyzed": 3,
+    "total_commits": 4,
+    "total_retests": 0,
+    "mrs_with_retests": 0,
+    "mr_retest_rate": 0.0,
+    "avg_retests_per_mr": 0.0,
+    "avg_retests_per_commit": 0.0
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1139,
+          "title": "Add org ID to mock AMS queries",
+          "merged_at": "2025-11-20T13:22:19.978Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1139"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/ccx-data-pipeline": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1118,
+          "title": "[CCXDEV-15661] GitLab runners tag change",
+          "merged_at": "2025-11-20T12:48:14.284Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1118"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/content-service": {
@@ -90,33 +112,23 @@
       "mrs": [
         {
           "project": "ccx/ccx-upgrades-data-eng",
-          "mr_iid": 209,
-          "title": "Update pre-commit hooks version",
-          "merged_at": "2025-11-19T14:21:36.467Z",
-          "author": "ccx-bot",
-          "total_commits": 1,
-          "total_retests": 4,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/209"
-        },
-        {
-          "project": "ccx/ccx-upgrades-data-eng",
-          "mr_iid": 210,
-          "title": "Add SA for konflux tekton pipelines",
-          "merged_at": "2025-11-19T13:06:28.068Z",
+          "mr_iid": 207,
+          "title": "[CCXDEV-15661] GitLab runners tag change",
+          "merged_at": "2025-11-20T13:20:22.893Z",
           "author": "ireyes",
-          "total_commits": 1,
+          "total_commits": 2,
           "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/210"
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/207"
         }
       ],
       "summary": {
-        "total_mrs_analyzed": 2,
+        "total_mrs_analyzed": 1,
         "total_commits": 2,
-        "total_retests": 4,
-        "mrs_with_retests": 1,
-        "mr_retest_rate": 50.0,
-        "avg_retests_per_mr": 2.0,
-        "avg_retests_per_commit": 2.0
+        "total_retests": 0,
+        "mrs_with_retests": 0,
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/ccx-upgrades-inference": {
