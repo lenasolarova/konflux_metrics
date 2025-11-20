@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-19T22:08:00.582958+00:00",
+  "analysis_date": "2025-11-20T10:08:55.356982+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-21T22:08:00.559460+00:00",
-    "to": "2025-11-19T22:08:00.582958+00:00"
+    "from": "2025-08-22T10:08:55.333565+00:00",
+    "to": "2025-11-20T10:08:55.356982+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -1814,6 +1814,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 548,
+          "title": "build(deps): bump golang.org/x/crypto from 0.43.0 to 0.45.0",
+          "merged_at": "2025-11-20T02:56:48Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/548"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
           "pr_number": 546,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-11T11:18:44Z",
@@ -2187,6 +2199,30 @@
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 531,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-20T04:55:20Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/531"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 530,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-20T00:57:03Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/530"
+        },
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 529,
@@ -2636,6 +2672,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-service",
+          "pr_number": 1040,
+          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.481 to 0.1.482",
+          "merged_at": "2025-11-20T07:22:36Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1040"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-service",
+          "pr_number": 1039,
+          "title": "Bump golang.org/x/crypto from 0.43.0 to 0.45.0",
+          "merged_at": "2025-11-20T03:08:19Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1039"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-service",
           "pr_number": 1038,
           "title": "fix(deps): update module github.com/openshift-online/ocm-sdk-go to v0.1.481",
           "merged_at": "2025-11-10T10:04:36Z",
@@ -2949,6 +3009,42 @@
     },
     "RedHatInsights/ccx-notification-writer": {
       "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 714,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-20T05:10:23Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/714"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 713,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-20T01:10:27Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/713"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 712,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-19T21:13:31Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/712"
+        },
         {
           "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 710,
@@ -3653,13 +3749,13 @@
       }
     }
   },
-  "last_updated": "2025-11-19T22:08:00.582958+00:00",
-  "cutoff_date": "2025-08-21T22:08:00.559460+00:00",
+  "last_updated": "2025-11-20T10:08:55.356982+00:00",
+  "cutoff_date": "2025-08-22T10:08:55.333565+00:00",
   "summary": {
-    "total_prs": 288,
+    "total_prs": 296,
     "total_retests": 36,
     "prs_with_retests": 30,
-    "retest_rate": 10.416666666666668,
+    "retest_rate": 10.135135135135135,
     "retest_comments": 20,
     "update_branch_actions": 16
   }
