@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-20T10:08:55.356982+00:00",
+  "analysis_date": "2025-11-20T22:07:58.664920+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-22T10:08:55.333565+00:00",
-    "to": "2025-11-20T10:08:55.356982+00:00"
+    "from": "2025-08-22T22:07:58.641205+00:00",
+    "to": "2025-11-20T22:07:58.664920+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -504,6 +504,18 @@
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2329,
+          "title": "Bump golang.org/x/crypto from 0.44.0 to 0.45.0",
+          "merged_at": "2025-11-20T14:19:46Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 2,
+          "update_branch_count": 0,
+          "total_retests": 2,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2329"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2327,
@@ -3593,6 +3605,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1628,
+          "title": "Bump github.com/redis/go-redis/v9 from 9.16.0 to 9.17.0",
+          "merged_at": "2025-11-20T17:30:41Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1628"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1626,
+          "title": "Bump golang.org/x/crypto from 0.43.0 to 0.45.0",
+          "merged_at": "2025-11-20T14:27:32Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 1,
+          "update_branch_count": 0,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1626"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1624,
           "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.481 to 0.1.482",
           "merged_at": "2025-11-10T17:55:42Z",
@@ -3749,14 +3785,14 @@
       }
     }
   },
-  "last_updated": "2025-11-20T10:08:55.356982+00:00",
-  "cutoff_date": "2025-08-22T10:08:55.333565+00:00",
+  "last_updated": "2025-11-20T22:07:58.664920+00:00",
+  "cutoff_date": "2025-08-22T22:07:58.641205+00:00",
   "summary": {
-    "total_prs": 296,
-    "total_retests": 36,
-    "prs_with_retests": 30,
-    "retest_rate": 10.135135135135135,
-    "retest_comments": 20,
+    "total_prs": 299,
+    "total_retests": 39,
+    "prs_with_retests": 32,
+    "retest_rate": 10.702341137123746,
+    "retest_comments": 23,
     "update_branch_actions": 16
   }
 }
