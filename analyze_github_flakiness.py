@@ -77,8 +77,29 @@ class HistoricalFlakinessAnalyzer:
 
     def get_pr_comments(self, pr_number):
         """Get comments for a PR"""
-        url = f"{self.base_url}/issues/{pr_number}/comments"
-        return self._api_request(url)
+        all_comments = []
+        page = 1
+
+        while True:
+            url = f"{self.base_url}/issues/{pr_number}/comments?per_page=100&page={page}"
+
+            try:
+                comments = self._api_request(url)
+                if not comments:
+                    break
+
+                all_comments.extend(comments)
+                page += 1
+
+                # If we got less than 100, we're on the last page
+                if len(comments) < 100:
+                    break
+
+            except Exception as e:
+                print(f"    ⚠️  Error fetching comments: {e}")
+                break
+
+        return all_comments
 
     def count_retest_comments(self, pr_number):
         """Count /retest comments in a PR

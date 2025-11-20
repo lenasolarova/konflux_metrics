@@ -116,14 +116,29 @@ class GitLabFlakinessAnalyzer:
 
     def get_mr_notes(self, mr_iid):
         """Get discussion notes (comments) for an MR"""
-        url = f"{self.api_base}/projects/{self.project_id}/merge_requests/{mr_iid}/notes"
+        all_notes = []
+        page = 1
 
-        try:
-            notes = self._api_request(url)
-            return notes
-        except Exception as e:
-            print(f"    ⚠️  Error fetching notes: {e}")
-            return []
+        while True:
+            url = f"{self.api_base}/projects/{self.project_id}/merge_requests/{mr_iid}/notes?per_page=100&page={page}"
+
+            try:
+                notes = self._api_request(url)
+                if not notes:
+                    break
+
+                all_notes.extend(notes)
+                page += 1
+
+                # If we got less than 100, we're on the last page
+                if len(notes) < 100:
+                    break
+
+            except Exception as e:
+                print(f"    ⚠️  Error fetching notes: {e}")
+                break
+
+        return all_notes
 
     def count_retest_comments(self, mr_iid):
         """Count /retest comments in a MR
