@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-20T22:07:58.664920+00:00",
+  "analysis_date": "2025-11-21T10:08:41.728044+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-22T22:07:58.641205+00:00",
-    "to": "2025-11-20T22:07:58.664920+00:00"
+    "from": "2025-08-23T10:08:41.704074+00:00",
+    "to": "2025-11-21T10:08:41.728044+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -504,6 +504,18 @@
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2328,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-21T08:21:19Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2328"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2329,
@@ -1382,18 +1394,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/453"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 451,
-          "title": "chore(deps): update konflux references",
-          "merged_at": "2025-08-23T09:28:14Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/451"
         }
       ],
       "summary": {
@@ -2684,6 +2684,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-service",
+          "pr_number": 1041,
+          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.482 to 0.1.483",
+          "merged_at": "2025-11-21T07:22:59Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1041"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-service",
           "pr_number": 1040,
           "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.481 to 0.1.482",
           "merged_at": "2025-11-20T07:22:36Z",
@@ -3021,6 +3033,18 @@
     },
     "RedHatInsights/ccx-notification-writer": {
       "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 711,
+          "title": "[CCXDEV-15719] Removing double error message",
+          "merged_at": "2025-11-21T07:25:16Z",
+          "user": "joselsegura",
+          "total_commits": 2,
+          "retest_comments": 4,
+          "update_branch_count": 1,
+          "total_retests": 5,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/711"
+        },
         {
           "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 714,
@@ -3605,6 +3629,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1627,
+          "title": "[CCXDEV-14277] Reduce log level for error",
+          "merged_at": "2025-11-21T09:00:19Z",
+          "user": "joselsegura",
+          "total_commits": 2,
+          "retest_comments": 2,
+          "update_branch_count": 1,
+          "total_retests": 3,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1627"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1628,
           "title": "Bump github.com/redis/go-redis/v9 from 9.16.0 to 9.17.0",
           "merged_at": "2025-11-20T17:30:41Z",
@@ -3785,14 +3821,14 @@
       }
     }
   },
-  "last_updated": "2025-11-20T22:07:58.664920+00:00",
-  "cutoff_date": "2025-08-22T22:07:58.641205+00:00",
+  "last_updated": "2025-11-21T10:08:41.728044+00:00",
+  "cutoff_date": "2025-08-23T10:08:41.704074+00:00",
   "summary": {
-    "total_prs": 299,
-    "total_retests": 39,
-    "prs_with_retests": 32,
-    "retest_rate": 10.702341137123746,
-    "retest_comments": 23,
-    "update_branch_actions": 16
+    "total_prs": 302,
+    "total_retests": 47,
+    "prs_with_retests": 34,
+    "retest_rate": 11.258278145695364,
+    "retest_comments": 29,
+    "update_branch_actions": 18
   }
 }
