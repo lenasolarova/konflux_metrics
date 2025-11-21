@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-21T09:09:08.279006",
+  "analysis_date": "2025-11-21T21:07:50.183444",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-20T09:08:45.902568+00:00",
-    "to": "2025-11-21T09:09:08.279020"
+    "from": "2025-11-20T21:07:15.786864+00:00",
+    "to": "2025-11-21T21:07:50.183456"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 7,
-    "total_commits": 9,
-    "total_retests": 11,
-    "retest_comments": 9,
+    "total_prs_analyzed": 9,
+    "total_commits": 11,
+    "total_retests": 8,
+    "retest_comments": 6,
     "update_branch_actions": 2,
-    "prs_with_retests": 4,
-    "pr_retest_rate": 57.14285714285714,
-    "avg_retests_per_pr": 1.5714285714285714,
-    "avg_retests_per_commit": 1.2222222222222223
+    "prs_with_retests": 2,
+    "pr_retest_rate": 22.22222222222222,
+    "avg_retests_per_pr": 0.8888888888888888,
+    "avg_retests_per_commit": 0.7272727272727273
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -58,30 +58,18 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2328"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator",
-          "pr_number": 2329,
-          "title": "Bump golang.org/x/crypto from 0.44.0 to 0.45.0",
-          "merged_at": "2025-11-20T14:19:46Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 2,
-          "update_branch_count": 0,
-          "total_retests": 2,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2329"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
-        "total_retests": 2,
-        "retest_comments": 2,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
+        "total_retests": 0,
+        "retest_comments": 0,
         "update_branch_actions": 0,
-        "prs_with_retests": 1,
-        "pr_retest_rate": 50.0,
-        "avg_retests_per_pr": 1.0,
-        "avg_retests_per_commit": 1.0
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
@@ -141,17 +129,42 @@
       }
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 533,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-21T21:00:35Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/533"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 532,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-21T17:03:13Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/532"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/ccx-notification-service": {
@@ -185,6 +198,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 715,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-21T17:13:29Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/715"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 711,
           "title": "[CCXDEV-15719] Removing double error message",
           "merged_at": "2025-11-21T07:25:16Z",
@@ -197,15 +222,15 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 2,
+        "total_prs_analyzed": 2,
+        "total_commits": 3,
         "total_retests": 5,
         "retest_comments": 4,
         "update_branch_actions": 1,
         "prs_with_retests": 1,
-        "pr_retest_rate": 100.0,
-        "avg_retests_per_pr": 5.0,
-        "avg_retests_per_commit": 2.5
+        "pr_retest_rate": 50.0,
+        "avg_retests_per_pr": 2.5,
+        "avg_retests_per_commit": 1.6666666666666667
       }
     },
     "RedHatInsights/obsint-mocks": {
@@ -226,6 +251,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1631,
+          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.482 to 0.1.483",
+          "merged_at": "2025-11-21T17:26:46Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1631"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1629,
+          "title": "[CCXDEV-14276] Avoid error on non-error situations",
+          "merged_at": "2025-11-21T11:39:02Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1629"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1627,
           "title": "[CCXDEV-14277] Reduce log level for error",
           "merged_at": "2025-11-21T09:00:19Z",
@@ -235,42 +284,18 @@
           "update_branch_count": 1,
           "total_retests": 3,
           "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1627"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-smart-proxy",
-          "pr_number": 1628,
-          "title": "Bump github.com/redis/go-redis/v9 from 9.16.0 to 9.17.0",
-          "merged_at": "2025-11-20T17:30:41Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1628"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-smart-proxy",
-          "pr_number": 1626,
-          "title": "Bump golang.org/x/crypto from 0.43.0 to 0.45.0",
-          "merged_at": "2025-11-20T14:27:32Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 1,
-          "update_branch_count": 0,
-          "total_retests": 1,
-          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1626"
         }
       ],
       "summary": {
         "total_prs_analyzed": 3,
         "total_commits": 4,
-        "total_retests": 4,
-        "retest_comments": 3,
+        "total_retests": 3,
+        "retest_comments": 2,
         "update_branch_actions": 1,
-        "prs_with_retests": 2,
-        "pr_retest_rate": 66.66666666666666,
-        "avg_retests_per_pr": 1.3333333333333333,
-        "avg_retests_per_commit": 1.0
+        "prs_with_retests": 1,
+        "pr_retest_rate": 33.33333333333333,
+        "avg_retests_per_pr": 1.0,
+        "avg_retests_per_commit": 0.75
       }
     }
   }
