@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-21T10:08:41.745612+00:00",
+  "analysis_date": "2025-11-21T22:07:54.611768+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-23T10:08:41.732565+00:00",
-    "to": "2025-11-21T10:08:41.745612+00:00"
+    "from": "2025-08-23T22:07:54.599414+00:00",
+    "to": "2025-11-21T22:07:54.611768+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -556,6 +556,16 @@
       "mrs": [
         {
           "project": "ccx/content-service",
+          "mr_iid": 839,
+          "title": "[CCXDEV-15661] GitLab runners tag change",
+          "merged_at": "2025-11-21T13:10:22.198Z",
+          "author": "ireyes",
+          "total_commits": 2,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/839"
+        },
+        {
+          "project": "ccx/content-service",
           "mr_iid": 849,
           "title": "Bumped ccx-rules-ocp version to 2025.11.18",
           "merged_at": "2025-11-18T14:09:22.619Z",
@@ -905,6 +915,16 @@
       "mrs": [
         {
           "project": "ccx/ccx-upgrades-data-eng",
+          "mr_iid": 208,
+          "title": "[CCXDEV-15661] Remove tag for GL runner",
+          "merged_at": "2025-11-21T13:29:24.997Z",
+          "author": "ireyes",
+          "total_commits": 2,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/208"
+        },
+        {
+          "project": "ccx/ccx-upgrades-data-eng",
           "mr_iid": 207,
           "title": "[CCXDEV-15661] GitLab runners tag change",
           "merged_at": "2025-11-20T13:20:22.893Z",
@@ -1018,12 +1038,12 @@
       }
     }
   },
-  "last_updated": "2025-11-21T10:08:41.745612+00:00",
-  "cutoff_date": "2025-08-23T10:08:41.732565+00:00",
+  "last_updated": "2025-11-21T22:07:54.611768+00:00",
+  "cutoff_date": "2025-08-23T22:07:54.599414+00:00",
   "summary": {
-    "total_mrs": 90,
-    "total_retests": 21,
-    "mrs_with_retests": 12,
-    "retest_rate": 13.333333333333334
+    "total_mrs": 92,
+    "total_retests": 22,
+    "mrs_with_retests": 13,
+    "retest_rate": 14.130434782608695
   }
 }

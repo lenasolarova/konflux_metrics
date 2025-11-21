@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-21T10:08:41.728044+00:00",
+  "analysis_date": "2025-11-21T22:07:54.594795+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-23T10:08:41.704074+00:00",
-    "to": "2025-11-21T10:08:41.728044+00:00"
+    "from": "2025-08-23T22:07:54.570633+00:00",
+    "to": "2025-11-21T22:07:54.594795+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -2213,6 +2213,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 533,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-21T21:00:35Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/533"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 532,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-21T17:03:13Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/532"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 531,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-20T04:55:20Z",
@@ -3035,6 +3059,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 715,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-21T17:13:29Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/715"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 711,
           "title": "[CCXDEV-15719] Removing double error message",
           "merged_at": "2025-11-21T07:25:16Z",
@@ -3629,6 +3665,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1631,
+          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.482 to 0.1.483",
+          "merged_at": "2025-11-21T17:26:46Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1631"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1629,
+          "title": "[CCXDEV-14276] Avoid error on non-error situations",
+          "merged_at": "2025-11-21T11:39:02Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1629"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1627,
           "title": "[CCXDEV-14277] Reduce log level for error",
           "merged_at": "2025-11-21T09:00:19Z",
@@ -3821,13 +3881,13 @@
       }
     }
   },
-  "last_updated": "2025-11-21T10:08:41.728044+00:00",
-  "cutoff_date": "2025-08-23T10:08:41.704074+00:00",
+  "last_updated": "2025-11-21T22:07:54.594795+00:00",
+  "cutoff_date": "2025-08-23T22:07:54.570633+00:00",
   "summary": {
-    "total_prs": 302,
+    "total_prs": 307,
     "total_retests": 47,
     "prs_with_retests": 34,
-    "retest_rate": 11.258278145695364,
+    "retest_rate": 11.074918566775244,
     "retest_comments": 29,
     "update_branch_actions": 18
   }
