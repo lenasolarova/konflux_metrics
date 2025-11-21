@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-21T08:04:45.600345",
+  "analysis_date": "2025-11-21T20:05:01.434591",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,67 +12,21 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-20T08:04:24.765674+00:00",
-    "to": "2025-11-21T08:04:45.600363"
+    "from": "2025-11-20T20:04:42.260016+00:00",
+    "to": "2025-11-21T20:05:01.434611"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 3,
+    "total_mrs_analyzed": 2,
     "total_commits": 4,
-    "total_retests": 0,
-    "mrs_with_retests": 0,
-    "mr_retest_rate": 0.0,
-    "avg_retests_per_mr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "total_retests": 1,
+    "mrs_with_retests": 1,
+    "mr_retest_rate": 50.0,
+    "avg_retests_per_mr": 0.5,
+    "avg_retests_per_commit": 0.25
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": [
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1139,
-          "title": "Add org ID to mock AMS queries",
-          "merged_at": "2025-11-20T13:22:19.978Z",
-          "author": "ireyes",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1139"
-        }
-      ],
-      "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 1,
-        "total_retests": 0,
-        "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
-      }
-    },
-    "ccx/ccx-data-pipeline": {
-      "mrs": [
-        {
-          "project": "ccx/ccx-data-pipeline",
-          "mr_iid": 1118,
-          "title": "[CCXDEV-15661] GitLab runners tag change",
-          "merged_at": "2025-11-20T12:48:14.284Z",
-          "author": "ireyes",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1118"
-        }
-      ],
-      "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 1,
-        "total_retests": 0,
-        "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
-      }
-    },
-    "ccx/content-service": {
       "mrs": [],
       "summary": {
         "total_mrs_analyzed": 0,
@@ -82,6 +36,41 @@
         "mr_retest_rate": 0,
         "avg_retests_per_mr": 0,
         "avg_retests_per_commit": 0
+      }
+    },
+    "ccx/ccx-data-pipeline": {
+      "mrs": [],
+      "summary": {
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
+        "total_retests": 0,
+        "mrs_with_retests": 0,
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
+      }
+    },
+    "ccx/content-service": {
+      "mrs": [
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 839,
+          "title": "[CCXDEV-15661] GitLab runners tag change",
+          "merged_at": "2025-11-21T13:10:22.198Z",
+          "author": "ireyes",
+          "total_commits": 2,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/839"
+        }
+      ],
+      "summary": {
+        "total_mrs_analyzed": 1,
+        "total_commits": 2,
+        "total_retests": 1,
+        "mrs_with_retests": 1,
+        "mr_retest_rate": 100.0,
+        "avg_retests_per_mr": 1.0,
+        "avg_retests_per_commit": 0.5
       }
     },
     "ccx/ccx-load-test": {
@@ -112,13 +101,13 @@
       "mrs": [
         {
           "project": "ccx/ccx-upgrades-data-eng",
-          "mr_iid": 207,
-          "title": "[CCXDEV-15661] GitLab runners tag change",
-          "merged_at": "2025-11-20T13:20:22.893Z",
+          "mr_iid": 208,
+          "title": "[CCXDEV-15661] Remove tag for GL runner",
+          "merged_at": "2025-11-21T13:29:24.997Z",
           "author": "ireyes",
           "total_commits": 2,
           "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/207"
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/208"
         }
       ],
       "summary": {
