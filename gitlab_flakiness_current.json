@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-22T08:04:30.878437",
+  "analysis_date": "2025-11-22T20:05:34.451241",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,18 +12,18 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-21T08:04:14.057220+00:00",
-    "to": "2025-11-22T08:04:30.878456"
+    "from": "2025-11-21T20:04:22.780006+00:00",
+    "to": "2025-11-22T20:05:34.451260"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 2,
-    "total_commits": 4,
-    "total_retests": 1,
-    "mrs_with_retests": 1,
-    "mr_retest_rate": 50.0,
-    "avg_retests_per_mr": 0.5,
-    "avg_retests_per_commit": 0.25
+    "total_mrs_analyzed": 0,
+    "total_commits": 0,
+    "total_retests": 0,
+    "mrs_with_retests": 0,
+    "mr_retest_rate": 0,
+    "avg_retests_per_mr": 0,
+    "avg_retests_per_commit": 0
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
@@ -51,26 +51,15 @@
       }
     },
     "ccx/content-service": {
-      "mrs": [
-        {
-          "project": "ccx/content-service",
-          "mr_iid": 839,
-          "title": "[CCXDEV-15661] GitLab runners tag change",
-          "merged_at": "2025-11-21T13:10:22.198Z",
-          "author": "ireyes",
-          "total_commits": 2,
-          "total_retests": 1,
-          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/839"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 2,
-        "total_retests": 1,
-        "mrs_with_retests": 1,
-        "mr_retest_rate": 100.0,
-        "avg_retests_per_mr": 1.0,
-        "avg_retests_per_commit": 0.5
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
+        "total_retests": 0,
+        "mrs_with_retests": 0,
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-load-test": {
@@ -98,26 +87,15 @@
       }
     },
     "ccx/ccx-upgrades-data-eng": {
-      "mrs": [
-        {
-          "project": "ccx/ccx-upgrades-data-eng",
-          "mr_iid": 208,
-          "title": "[CCXDEV-15661] Remove tag for GL runner",
-          "merged_at": "2025-11-21T13:29:24.997Z",
-          "author": "ireyes",
-          "total_commits": 2,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/208"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 1,
-        "total_commits": 2,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-upgrades-inference": {
