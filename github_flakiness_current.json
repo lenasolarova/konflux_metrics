@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-22T09:07:53.710742",
+  "analysis_date": "2025-11-22T21:06:45.758741",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,13 +15,13 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-21T09:07:35.118868+00:00",
-    "to": "2025-11-22T09:07:53.710758"
+    "from": "2025-11-21T21:06:31.845598+00:00",
+    "to": "2025-11-22T21:06:45.758757"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 6,
-    "total_commits": 6,
+    "total_prs_analyzed": 1,
+    "total_commits": 1,
     "total_retests": 0,
     "retest_comments": 0,
     "update_branch_actions": 0,
@@ -116,42 +116,17 @@
       }
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 533,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-11-21T21:00:35Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/533"
-        },
-        {
-          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 532,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-11-21T17:03:13Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/532"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/ccx-notification-service": {
@@ -181,23 +156,11 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/716"
-        },
-        {
-          "repository": "RedHatInsights/ccx-notification-writer",
-          "pr_number": 715,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-11-21T17:13:29Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/715"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
@@ -222,42 +185,17 @@
       }
     },
     "RedHatInsights/insights-results-smart-proxy": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-results-smart-proxy",
-          "pr_number": 1631,
-          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.482 to 0.1.483",
-          "merged_at": "2025-11-21T17:26:46Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1631"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-smart-proxy",
-          "pr_number": 1629,
-          "title": "[CCXDEV-14276] Avoid error on non-error situations",
-          "merged_at": "2025-11-21T11:39:02Z",
-          "user": "joselsegura",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1629"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     }
   }
