@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-21T22:07:54.594795+00:00",
+  "analysis_date": "2025-11-22T10:07:38.204186+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-23T22:07:54.570633+00:00",
-    "to": "2025-11-21T22:07:54.594795+00:00"
+    "from": "2025-08-24T10:07:38.180380+00:00",
+    "to": "2025-11-22T10:07:38.204186+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -3059,6 +3059,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 716,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-21T21:10:15Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/716"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 715,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-21T17:13:29Z",
@@ -3881,13 +3893,13 @@
       }
     }
   },
-  "last_updated": "2025-11-21T22:07:54.594795+00:00",
-  "cutoff_date": "2025-08-23T22:07:54.570633+00:00",
+  "last_updated": "2025-11-22T10:07:38.204186+00:00",
+  "cutoff_date": "2025-08-24T10:07:38.180380+00:00",
   "summary": {
-    "total_prs": 307,
+    "total_prs": 308,
     "total_retests": 47,
     "prs_with_retests": 34,
-    "retest_rate": 11.074918566775244,
+    "retest_rate": 11.03896103896104,
     "retest_comments": 29,
     "update_branch_actions": 18
   }
