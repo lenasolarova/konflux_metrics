@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-23T22:07:36.969961+00:00",
+  "analysis_date": "2025-11-24T10:09:54.673776+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-25T22:07:36.946872+00:00",
-    "to": "2025-11-23T22:07:36.969961+00:00"
+    "from": "2025-08-26T10:09:54.650560+00:00",
+    "to": "2025-11-24T10:09:54.673776+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -33,6 +33,30 @@
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 618,
+          "title": "build(deps): update boto3 requirement from <1.40.75,>=1.34.1 to >=1.34.1,<1.41.3",
+          "merged_at": "2025-11-24T07:21:29Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/618"
+        },
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 617,
+          "title": "[CCXDEV-15630] Add metrics gathering (archive size and processing time) to idp",
+          "merged_at": "2025-11-24T06:36:22Z",
+          "user": "lenasolarova",
+          "total_commits": 4,
+          "retest_comments": 2,
+          "update_branch_count": 0,
+          "total_retests": 2,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/617"
+        },
         {
           "repository": "RedHatInsights/insights-ccx-messaging",
           "pr_number": 616,
@@ -3602,6 +3626,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/obsint-mocks",
+          "pr_number": 158,
+          "title": "Do not use AMS as the main app",
+          "merged_at": "2025-11-24T09:04:35Z",
+          "user": "ikerreyes",
+          "total_commits": 3,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/158"
+        },
+        {
+          "repository": "RedHatInsights/obsint-mocks",
           "pr_number": 157,
           "title": "[CCXDEV-15130] Support IN clause for AMS org ID queries",
           "merged_at": "2025-11-19T14:25:49Z",
@@ -3893,14 +3929,14 @@
       }
     }
   },
-  "last_updated": "2025-11-23T22:07:36.969961+00:00",
-  "cutoff_date": "2025-08-25T22:07:36.946872+00:00",
+  "last_updated": "2025-11-24T10:09:54.673776+00:00",
+  "cutoff_date": "2025-08-26T10:09:54.650560+00:00",
   "summary": {
-    "total_prs": 308,
-    "total_retests": 47,
-    "prs_with_retests": 34,
-    "retest_rate": 11.03896103896104,
-    "retest_comments": 29,
+    "total_prs": 311,
+    "total_retests": 49,
+    "prs_with_retests": 35,
+    "retest_rate": 11.254019292604502,
+    "retest_comments": 31,
     "update_branch_actions": 18
   }
 }
