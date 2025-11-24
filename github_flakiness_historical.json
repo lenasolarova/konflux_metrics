@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-24T10:09:54.673776+00:00",
+  "analysis_date": "2025-11-24T22:07:06.592831+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-26T10:09:54.650560+00:00",
-    "to": "2025-11-24T10:09:54.673776+00:00"
+    "from": "2025-08-26T22:07:06.568702+00:00",
+    "to": "2025-11-24T22:07:06.592831+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -1011,6 +1011,18 @@
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 487,
+          "title": "chore(deps): update module github.com/getsentry/sentry-go to v0.39.0",
+          "merged_at": "2025-11-24T16:59:40Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/487"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator-exporter",
           "pr_number": 486,
@@ -2235,6 +2247,30 @@
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 535,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-24T17:06:56Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/535"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 534,
+          "title": "New stable and canary version",
+          "merged_at": "2025-11-24T12:30:13Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/534"
+        },
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 533,
@@ -3626,6 +3662,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/obsint-mocks",
+          "pr_number": 159,
+          "title": "Add single-cluster management endpoints and simplify RHOBS API",
+          "merged_at": "2025-11-24T09:29:55Z",
+          "user": "ikerreyes",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/159"
+        },
+        {
+          "repository": "RedHatInsights/obsint-mocks",
           "pr_number": 158,
           "title": "Do not use AMS as the main app",
           "merged_at": "2025-11-24T09:04:35Z",
@@ -3929,13 +3977,13 @@
       }
     }
   },
-  "last_updated": "2025-11-24T10:09:54.673776+00:00",
-  "cutoff_date": "2025-08-26T10:09:54.650560+00:00",
+  "last_updated": "2025-11-24T22:07:06.592831+00:00",
+  "cutoff_date": "2025-08-26T22:07:06.568702+00:00",
   "summary": {
-    "total_prs": 311,
+    "total_prs": 315,
     "total_retests": 49,
     "prs_with_retests": 35,
-    "retest_rate": 11.254019292604502,
+    "retest_rate": 11.11111111111111,
     "retest_comments": 31,
     "update_branch_actions": 18
   }
