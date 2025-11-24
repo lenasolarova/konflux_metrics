@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-23T21:07:20.752193",
+  "analysis_date": "2025-11-24T09:10:56.209116",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,34 +15,59 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-22T21:07:02.499702+00:00",
-    "to": "2025-11-23T21:07:20.752210"
+    "from": "2025-11-23T09:10:36.571172+00:00",
+    "to": "2025-11-24T09:10:56.209133"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 0,
-    "total_commits": 0,
-    "total_retests": 0,
-    "retest_comments": 0,
+    "total_prs_analyzed": 3,
+    "total_commits": 8,
+    "total_retests": 2,
+    "retest_comments": 2,
     "update_branch_actions": 0,
-    "prs_with_retests": 0,
-    "pr_retest_rate": 0,
-    "avg_retests_per_pr": 0,
-    "avg_retests_per_commit": 0
+    "prs_with_retests": 1,
+    "pr_retest_rate": 33.33333333333333,
+    "avg_retests_per_pr": 0.6666666666666666,
+    "avg_retests_per_commit": 0.25
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 618,
+          "title": "build(deps): update boto3 requirement from <1.40.75,>=1.34.1 to >=1.34.1,<1.41.3",
+          "merged_at": "2025-11-24T07:21:29Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/618"
+        },
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 617,
+          "title": "[CCXDEV-15630] Add metrics gathering (archive size and processing time) to idp",
+          "merged_at": "2025-11-24T06:36:22Z",
+          "user": "lenasolarova",
+          "total_commits": 4,
+          "retest_comments": 2,
+          "update_branch_count": 0,
+          "total_retests": 2,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/617"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "retest_comments": 0,
+        "total_prs_analyzed": 2,
+        "total_commits": 5,
+        "total_retests": 2,
+        "retest_comments": 2,
         "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "prs_with_retests": 1,
+        "pr_retest_rate": 50.0,
+        "avg_retests_per_pr": 1.0,
+        "avg_retests_per_commit": 0.4
       }
     },
     "RedHatInsights/insights-results-aggregator": {
@@ -158,17 +183,30 @@
       }
     },
     "RedHatInsights/obsint-mocks": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/obsint-mocks",
+          "pr_number": 158,
+          "title": "Do not use AMS as the main app",
+          "merged_at": "2025-11-24T09:04:35Z",
+          "user": "ikerreyes",
+          "total_commits": 3,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/158"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 3,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-results-smart-proxy": {
