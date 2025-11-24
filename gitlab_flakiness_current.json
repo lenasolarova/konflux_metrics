@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-24T08:04:52.414882",
+  "analysis_date": "2025-11-24T20:06:20.171191",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,54 +12,107 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-23T08:04:34.617081+00:00",
-    "to": "2025-11-24T08:04:52.415480"
+    "from": "2025-11-23T20:05:44.741155+00:00",
+    "to": "2025-11-24T20:06:20.171211"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 0,
-    "total_commits": 0,
-    "total_retests": 0,
-    "mrs_with_retests": 0,
-    "mr_retest_rate": 0,
-    "avg_retests_per_mr": 0,
-    "avg_retests_per_commit": 0
+    "total_mrs_analyzed": 7,
+    "total_commits": 7,
+    "total_retests": 2,
+    "mrs_with_retests": 2,
+    "mr_retest_rate": 28.57142857142857,
+    "avg_retests_per_mr": 0.2857142857142857,
+    "avg_retests_per_commit": 0.2857142857142857
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1141,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-11-24T14:51:31.890Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1141"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1140,
+          "title": "Adapt mock RHOBS config to new changes",
+          "merged_at": "2025-11-24T11:00:51.129Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1140"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/ccx-data-pipeline": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1119,
+          "title": "[CCXDEV-15661] Remove tag for GL runner",
+          "merged_at": "2025-11-24T09:02:04.225Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1119"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
+        "total_retests": 1,
+        "mrs_with_retests": 1,
+        "mr_retest_rate": 100.0,
+        "avg_retests_per_mr": 1.0,
+        "avg_retests_per_commit": 1.0
       }
     },
     "ccx/content-service": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 850,
+          "title": "[CCXDEV-15661] Remove tag for GL runner",
+          "merged_at": "2025-11-24T09:31:18.224Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 1,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/850"
+        },
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 848,
+          "title": "Update certs in base image",
+          "merged_at": "2025-11-24T09:03:00.016Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/848"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "total_mrs_analyzed": 2,
+        "total_commits": 2,
+        "total_retests": 1,
+        "mrs_with_retests": 1,
+        "mr_retest_rate": 50.0,
+        "avg_retests_per_mr": 0.5,
+        "avg_retests_per_commit": 0.5
       }
     },
     "ccx/ccx-load-test": {
@@ -87,27 +140,49 @@
       }
     },
     "ccx/ccx-upgrades-data-eng": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/ccx-upgrades-data-eng",
+          "mr_iid": 211,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-11-24T09:38:38.584Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/211"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/ccx-upgrades-inference": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "ccx/ccx-upgrades-inference",
+          "mr_iid": 130,
+          "title": "Update pre-commit hooks version",
+          "merged_at": "2025-11-24T10:04:03.309Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/130"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     }
   }
