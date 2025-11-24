@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-24T09:10:56.209116",
+  "analysis_date": "2025-11-24T21:08:18.936991",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-23T09:10:36.571172+00:00",
-    "to": "2025-11-24T09:10:56.209133"
+    "from": "2025-11-23T21:07:53.099030+00:00",
+    "to": "2025-11-24T21:08:18.937008"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 3,
-    "total_commits": 8,
+    "total_prs_analyzed": 7,
+    "total_commits": 13,
     "total_retests": 2,
     "retest_comments": 2,
     "update_branch_actions": 0,
     "prs_with_retests": 1,
-    "pr_retest_rate": 33.33333333333333,
-    "avg_retests_per_pr": 0.6666666666666666,
-    "avg_retests_per_commit": 0.25
+    "pr_retest_rate": 14.285714285714285,
+    "avg_retests_per_pr": 0.2857142857142857,
+    "avg_retests_per_commit": 0.15384615384615385
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -85,17 +85,30 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 487,
+          "title": "chore(deps): update module github.com/getsentry/sentry-go to v0.39.0",
+          "merged_at": "2025-11-24T16:59:40Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/487"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-content-template-renderer": {
@@ -141,17 +154,42 @@
       }
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 535,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-24T17:06:56Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/535"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 534,
+          "title": "New stable and canary version",
+          "merged_at": "2025-11-24T12:30:13Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/534"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/ccx-notification-service": {
@@ -186,6 +224,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/obsint-mocks",
+          "pr_number": 159,
+          "title": "Add single-cluster management endpoints and simplify RHOBS API",
+          "merged_at": "2025-11-24T09:29:55Z",
+          "user": "ikerreyes",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/159"
+        },
+        {
+          "repository": "RedHatInsights/obsint-mocks",
           "pr_number": 158,
           "title": "Do not use AMS as the main app",
           "merged_at": "2025-11-24T09:04:35Z",
@@ -198,8 +248,8 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 3,
+        "total_prs_analyzed": 2,
+        "total_commits": 5,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
