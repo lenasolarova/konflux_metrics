@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-24T22:07:06.592831+00:00",
+  "analysis_date": "2025-11-25T10:09:36.221434+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-26T22:07:06.568702+00:00",
-    "to": "2025-11-24T22:07:06.592831+00:00"
+    "from": "2025-08-27T10:09:36.197264+00:00",
+    "to": "2025-11-25T10:09:36.221434+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -488,30 +488,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/578"
-        },
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 576,
-          "title": "[CCXDEV-15330] Add archive sync ols copy deploy file",
-          "merged_at": "2025-08-27T10:06:45Z",
-          "user": "lenasolarova",
-          "total_commits": 3,
-          "retest_comments": 1,
-          "update_branch_count": 0,
-          "total_retests": 1,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/576"
-        },
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 577,
-          "title": "build(deps): update boto3 requirement from <1.40.12,>=1.34.1 to >=1.34.1,<1.40.17",
-          "merged_at": "2025-08-27T08:09:13Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 1,
-          "update_branch_count": 0,
-          "total_retests": 1,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/577"
         }
       ],
       "summary": {
@@ -1448,6 +1424,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 237,
+          "title": "Bump fastapi from 0.121.2 to 0.122.0",
+          "merged_at": "2025-11-24T23:40:49Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/237"
+        },
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
           "pr_number": 236,
           "title": "Bump fastapi from 0.121.1 to 0.121.2",
           "merged_at": "2025-11-17T23:40:06Z",
@@ -2247,6 +2235,18 @@
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 536,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-25T01:00:24Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/536"
+        },
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 535,
@@ -3119,6 +3119,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 717,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-25T01:19:19Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/717"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 716,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-21T21:10:15Z",
@@ -3761,6 +3773,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1630,
+          "title": "Correcting several log levels",
+          "merged_at": "2025-11-25T08:29:43Z",
+          "user": "joselsegura",
+          "total_commits": 2,
+          "retest_comments": 1,
+          "update_branch_count": 1,
+          "total_retests": 2,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1630"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1631,
           "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.482 to 0.1.483",
           "merged_at": "2025-11-21T17:26:46Z",
@@ -3977,14 +4001,14 @@
       }
     }
   },
-  "last_updated": "2025-11-24T22:07:06.592831+00:00",
-  "cutoff_date": "2025-08-26T22:07:06.568702+00:00",
+  "last_updated": "2025-11-25T10:09:36.221434+00:00",
+  "cutoff_date": "2025-08-27T10:09:36.197264+00:00",
   "summary": {
-    "total_prs": 315,
+    "total_prs": 317,
     "total_retests": 49,
-    "prs_with_retests": 35,
-    "retest_rate": 11.11111111111111,
-    "retest_comments": 31,
-    "update_branch_actions": 18
+    "prs_with_retests": 34,
+    "retest_rate": 10.725552050473187,
+    "retest_comments": 30,
+    "update_branch_actions": 19
   }
 }

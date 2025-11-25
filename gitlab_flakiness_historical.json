@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-24T22:07:06.609903+00:00",
+  "analysis_date": "2025-11-25T10:09:36.238603+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-26T22:07:06.597517+00:00",
-    "to": "2025-11-24T22:07:06.609903+00:00"
+    "from": "2025-08-27T10:09:36.226258+00:00",
+    "to": "2025-11-25T10:09:36.238603+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -317,16 +317,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1110"
-        },
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1108,
-          "title": "Drop old method to get user credentials from other envs in favor of...",
-          "merged_at": "2025-08-27T08:05:18.755Z",
-          "author": "ireyes",
-          "total_commits": 6,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1108"
         }
       ],
       "summary": {
@@ -1088,12 +1078,12 @@
       }
     }
   },
-  "last_updated": "2025-11-24T22:07:06.609903+00:00",
-  "cutoff_date": "2025-08-26T22:07:06.597517+00:00",
+  "last_updated": "2025-11-25T10:09:36.238603+00:00",
+  "cutoff_date": "2025-08-27T10:09:36.226258+00:00",
   "summary": {
-    "total_mrs": 97,
+    "total_mrs": 96,
     "total_retests": 24,
     "mrs_with_retests": 15,
-    "retest_rate": 15.463917525773196
+    "retest_rate": 15.625
   }
 }
