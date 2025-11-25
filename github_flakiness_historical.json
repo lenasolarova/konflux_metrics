@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-25T10:09:36.221434+00:00",
+  "analysis_date": "2025-11-25T22:08:03.436591+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-27T10:09:36.197264+00:00",
-    "to": "2025-11-25T10:09:36.221434+00:00"
+    "from": "2025-08-27T22:08:03.412011+00:00",
+    "to": "2025-11-25T22:08:03.436591+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -476,18 +476,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/580"
-        },
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 578,
-          "title": "Fix dsn name",
-          "merged_at": "2025-08-27T10:46:41Z",
-          "user": "lenasolarova",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/578"
         }
       ],
       "summary": {
@@ -504,6 +492,18 @@
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2330,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-25T14:13:22Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2330"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2328,
@@ -2237,6 +2237,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 539,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-25T20:59:26Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/539"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 537,
+          "title": "Update stable version",
+          "merged_at": "2025-11-25T15:02:59Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 1,
+          "update_branch_count": 0,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/537"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 536,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-25T01:00:24Z",
@@ -3773,6 +3797,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1632,
+          "title": "[CCXDEV-14258] Reduce log level to avoid duplicate Glitchtip events",
+          "merged_at": "2025-11-25T12:53:43Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1632"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1630,
           "title": "Correcting several log levels",
           "merged_at": "2025-11-25T08:29:43Z",
@@ -4001,14 +4037,14 @@
       }
     }
   },
-  "last_updated": "2025-11-25T10:09:36.221434+00:00",
-  "cutoff_date": "2025-08-27T10:09:36.197264+00:00",
+  "last_updated": "2025-11-25T22:08:03.436591+00:00",
+  "cutoff_date": "2025-08-27T22:08:03.412011+00:00",
   "summary": {
-    "total_prs": 317,
-    "total_retests": 49,
-    "prs_with_retests": 34,
-    "retest_rate": 10.725552050473187,
-    "retest_comments": 30,
+    "total_prs": 320,
+    "total_retests": 50,
+    "prs_with_retests": 35,
+    "retest_rate": 10.9375,
+    "retest_comments": 31,
     "update_branch_actions": 19
   }
 }
