@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-26T09:10:11.996326",
+  "analysis_date": "2025-11-26T21:07:46.005030",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-25T09:09:43.301982+00:00",
-    "to": "2025-11-26T09:10:11.996342"
+    "from": "2025-11-25T21:07:23.853852+00:00",
+    "to": "2025-11-26T21:07:46.005047"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 9,
-    "total_commits": 9,
-    "total_retests": 1,
-    "retest_comments": 1,
-    "update_branch_actions": 0,
-    "prs_with_retests": 1,
-    "pr_retest_rate": 11.11111111111111,
-    "avg_retests_per_pr": 0.1111111111111111,
-    "avg_retests_per_commit": 0.1111111111111111
+    "total_prs_analyzed": 10,
+    "total_commits": 11,
+    "total_retests": 4,
+    "retest_comments": 3,
+    "update_branch_actions": 1,
+    "prs_with_retests": 2,
+    "pr_retest_rate": 20.0,
+    "avg_retests_per_pr": 0.4,
+    "avg_retests_per_commit": 0.36363636363636365
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -47,6 +47,18 @@
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2301,
+          "title": "Add dependency for dvo-writer",
+          "merged_at": "2025-11-26T11:34:05Z",
+          "user": "ikerreyes",
+          "total_commits": 1,
+          "retest_comments": 3,
+          "update_branch_count": 0,
+          "total_retests": 3,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2301"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2332,
@@ -70,30 +82,18 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2331"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator",
-          "pr_number": 2330,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-11-25T14:13:22Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2330"
         }
       ],
       "summary": {
         "total_prs_analyzed": 3,
         "total_commits": 3,
-        "total_retests": 0,
-        "retest_comments": 0,
+        "total_retests": 3,
+        "retest_comments": 3,
         "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "prs_with_retests": 1,
+        "pr_retest_rate": 33.33333333333333,
+        "avg_retests_per_pr": 1.0,
+        "avg_retests_per_commit": 1.0
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
@@ -156,6 +156,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 538,
+          "title": "[CCXDEV-14330] Reduce log level for non-error scenarios",
+          "merged_at": "2025-11-26T09:52:51Z",
+          "user": "joselsegura",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 1,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/538"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 540,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-26T00:59:23Z",
@@ -165,41 +177,17 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/540"
-        },
-        {
-          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 539,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-11-25T20:59:26Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/539"
-        },
-        {
-          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 537,
-          "title": "Update stable version",
-          "merged_at": "2025-11-25T15:02:59Z",
-          "user": "joselsegura",
-          "total_commits": 1,
-          "retest_comments": 1,
-          "update_branch_count": 0,
-          "total_retests": 1,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/537"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 3,
+        "total_prs_analyzed": 2,
         "total_commits": 3,
         "total_retests": 1,
-        "retest_comments": 1,
-        "update_branch_actions": 0,
+        "retest_comments": 0,
+        "update_branch_actions": 1,
         "prs_with_retests": 1,
-        "pr_retest_rate": 33.33333333333333,
-        "avg_retests_per_pr": 0.3333333333333333,
+        "pr_retest_rate": 50.0,
+        "avg_retests_per_pr": 0.5,
         "avg_retests_per_commit": 0.3333333333333333
       }
     },
@@ -257,37 +245,62 @@
       }
     },
     "RedHatInsights/obsint-mocks": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/obsint-mocks",
+          "pr_number": 160,
+          "title": "Removed unused clowdapp file.",
+          "merged_at": "2025-11-26T11:16:40Z",
+          "user": "ikerreyes",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/160"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-results-smart-proxy": {
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
-          "pr_number": 1632,
-          "title": "[CCXDEV-14258] Reduce log level to avoid duplicate Glitchtip events",
-          "merged_at": "2025-11-25T12:53:43Z",
-          "user": "joselsegura",
+          "pr_number": 1634,
+          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.483 to 0.1.484",
+          "merged_at": "2025-11-26T17:55:15Z",
+          "user": "dependabot[bot]",
           "total_commits": 1,
           "retest_comments": 0,
           "update_branch_count": 0,
           "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1632"
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1634"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1635,
+          "title": "Bump github.com/redis/go-redis/v9 from 9.17.0 to 9.17.1",
+          "merged_at": "2025-11-26T17:26:27Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1635"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
