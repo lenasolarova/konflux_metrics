@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-26T10:09:19.281823+00:00",
+  "analysis_date": "2025-11-26T22:07:54.608224+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-28T10:09:19.257476+00:00",
-    "to": "2025-11-26T10:09:19.281823+00:00"
+    "from": "2025-08-28T22:07:54.583942+00:00",
+    "to": "2025-11-26T22:07:54.608224+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -492,6 +492,18 @@
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2301,
+          "title": "Add dependency for dvo-writer",
+          "merged_at": "2025-11-26T11:34:05Z",
+          "user": "ikerreyes",
+          "total_commits": 1,
+          "retest_comments": 3,
+          "update_branch_count": 0,
+          "total_retests": 3,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2301"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2332,
@@ -2249,6 +2261,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 538,
+          "title": "[CCXDEV-14330] Reduce log level for non-error scenarios",
+          "merged_at": "2025-11-26T09:52:51Z",
+          "user": "joselsegura",
+          "total_commits": 2,
+          "retest_comments": 0,
+          "update_branch_count": 1,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/538"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 540,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-11-26T00:59:23Z",
@@ -3746,6 +3770,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/obsint-mocks",
+          "pr_number": 160,
+          "title": "Removed unused clowdapp file.",
+          "merged_at": "2025-11-26T11:16:40Z",
+          "user": "ikerreyes",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/160"
+        },
+        {
+          "repository": "RedHatInsights/obsint-mocks",
           "pr_number": 159,
           "title": "Add single-cluster management endpoints and simplify RHOBS API",
           "merged_at": "2025-11-24T09:29:55Z",
@@ -3843,6 +3879,30 @@
     },
     "RedHatInsights/insights-results-smart-proxy": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1634,
+          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.483 to 0.1.484",
+          "merged_at": "2025-11-26T17:55:15Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1634"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1635,
+          "title": "Bump github.com/redis/go-redis/v9 from 9.17.0 to 9.17.1",
+          "merged_at": "2025-11-26T17:26:27Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1635"
+        },
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1632,
@@ -4085,14 +4145,14 @@
       }
     }
   },
-  "last_updated": "2025-11-26T10:09:19.281823+00:00",
-  "cutoff_date": "2025-08-28T10:09:19.257476+00:00",
+  "last_updated": "2025-11-26T22:07:54.608224+00:00",
+  "cutoff_date": "2025-08-28T22:07:54.583942+00:00",
   "summary": {
-    "total_prs": 324,
-    "total_retests": 50,
-    "prs_with_retests": 35,
-    "retest_rate": 10.802469135802468,
-    "retest_comments": 31,
-    "update_branch_actions": 19
+    "total_prs": 329,
+    "total_retests": 54,
+    "prs_with_retests": 37,
+    "retest_rate": 11.246200607902736,
+    "retest_comments": 34,
+    "update_branch_actions": 20
   }
 }
