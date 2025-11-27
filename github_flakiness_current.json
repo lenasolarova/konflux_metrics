@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-27T09:09:38.816727",
+  "analysis_date": "2025-11-27T21:07:42.802936",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-26T09:09:10.908754+00:00",
-    "to": "2025-11-27T09:09:38.816744"
+    "from": "2025-11-26T21:07:23.012113+00:00",
+    "to": "2025-11-27T21:07:42.802953"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 6,
-    "total_commits": 7,
-    "total_retests": 4,
-    "retest_comments": 3,
-    "update_branch_actions": 1,
-    "prs_with_retests": 2,
-    "pr_retest_rate": 33.33333333333333,
-    "avg_retests_per_pr": 0.6666666666666666,
-    "avg_retests_per_commit": 0.5714285714285714
+    "total_prs_analyzed": 4,
+    "total_commits": 4,
+    "total_retests": 0,
+    "retest_comments": 0,
+    "update_branch_actions": 0,
+    "prs_with_retests": 0,
+    "pr_retest_rate": 0.0,
+    "avg_retests_per_pr": 0.0,
+    "avg_retests_per_commit": 0.0
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -46,33 +46,6 @@
       }
     },
     "RedHatInsights/insights-results-aggregator": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-results-aggregator",
-          "pr_number": 2301,
-          "title": "Add dependency for dvo-writer",
-          "merged_at": "2025-11-26T11:34:05Z",
-          "user": "ikerreyes",
-          "total_commits": 1,
-          "retest_comments": 3,
-          "update_branch_count": 0,
-          "total_retests": 3,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2301"
-        }
-      ],
-      "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
-        "total_retests": 3,
-        "retest_comments": 3,
-        "update_branch_actions": 0,
-        "prs_with_retests": 1,
-        "pr_retest_rate": 100.0,
-        "avg_retests_per_pr": 3.0,
-        "avg_retests_per_commit": 3.0
-      }
-    },
-    "RedHatInsights/insights-results-aggregator-exporter": {
       "prs": [],
       "summary": {
         "total_prs_analyzed": 0,
@@ -84,6 +57,33 @@
         "pr_retest_rate": 0,
         "avg_retests_per_pr": 0,
         "avg_retests_per_commit": 0
+      }
+    },
+    "RedHatInsights/insights-results-aggregator-exporter": {
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 488,
+          "title": "chore(deps): update module github.com/getsentry/sentry-go to v0.40.0",
+          "merged_at": "2025-11-27T16:54:44Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/488"
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
+        "total_retests": 0,
+        "retest_comments": 0,
+        "update_branch_actions": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-content-template-renderer": {
@@ -132,27 +132,27 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 538,
-          "title": "[CCXDEV-14330] Reduce log level for non-error scenarios",
-          "merged_at": "2025-11-26T09:52:51Z",
-          "user": "joselsegura",
-          "total_commits": 2,
+          "pr_number": 541,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-27T17:02:47Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
           "retest_comments": 0,
-          "update_branch_count": 1,
-          "total_retests": 1,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/538"
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/541"
         }
       ],
       "summary": {
         "total_prs_analyzed": 1,
-        "total_commits": 2,
-        "total_retests": 1,
+        "total_commits": 1,
+        "total_retests": 0,
         "retest_comments": 0,
-        "update_branch_actions": 1,
-        "prs_with_retests": 1,
-        "pr_retest_rate": 100.0,
-        "avg_retests_per_pr": 1.0,
-        "avg_retests_per_commit": 0.5
+        "update_branch_actions": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/ccx-notification-service": {
@@ -183,32 +183,18 @@
       }
     },
     "RedHatInsights/ccx-notification-writer": {
-      "prs": [],
-      "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "retest_comments": 0,
-        "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
-      }
-    },
-    "RedHatInsights/obsint-mocks": {
       "prs": [
         {
-          "repository": "RedHatInsights/obsint-mocks",
-          "pr_number": 160,
-          "title": "Removed unused clowdapp file.",
-          "merged_at": "2025-11-26T11:16:40Z",
-          "user": "ikerreyes",
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 720,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-27T17:22:18Z",
+          "user": "red-hat-konflux[bot]",
           "total_commits": 1,
           "retest_comments": 0,
           "update_branch_count": 0,
           "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/160"
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/720"
         }
       ],
       "summary": {
@@ -223,43 +209,32 @@
         "avg_retests_per_commit": 0.0
       }
     },
-    "RedHatInsights/insights-results-smart-proxy": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-results-smart-proxy",
-          "pr_number": 1634,
-          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.483 to 0.1.484",
-          "merged_at": "2025-11-26T17:55:15Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1634"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-smart-proxy",
-          "pr_number": 1635,
-          "title": "Bump github.com/redis/go-redis/v9 from 9.17.0 to 9.17.1",
-          "merged_at": "2025-11-26T17:26:27Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1635"
-        }
-      ],
+    "RedHatInsights/obsint-mocks": {
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
+      }
+    },
+    "RedHatInsights/insights-results-smart-proxy": {
+      "prs": [],
+      "summary": {
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
+        "total_retests": 0,
+        "retest_comments": 0,
+        "update_branch_actions": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     }
   }
