@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-27T10:08:52.444884+00:00",
+  "analysis_date": "2025-11-27T22:07:44.541702+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-29T10:08:52.420543+00:00",
-    "to": "2025-11-27T10:08:52.444884+00:00"
+    "from": "2025-08-29T22:07:44.517386+00:00",
+    "to": "2025-11-27T22:07:44.541702+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -1023,6 +1023,18 @@
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 488,
+          "title": "chore(deps): update module github.com/getsentry/sentry-go to v0.40.0",
+          "merged_at": "2025-11-27T16:54:44Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/488"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator-exporter",
           "pr_number": 487,
@@ -2261,6 +2273,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 541,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-27T17:02:47Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/541"
+        },
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 538,
           "title": "[CCXDEV-14330] Reduce log level for non-error scenarios",
           "merged_at": "2025-11-26T09:52:51Z",
@@ -3201,6 +3225,18 @@
     },
     "RedHatInsights/ccx-notification-writer": {
       "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 720,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-27T17:22:18Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/720"
+        },
         {
           "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 719,
@@ -4157,13 +4193,13 @@
       }
     }
   },
-  "last_updated": "2025-11-27T10:08:52.444884+00:00",
-  "cutoff_date": "2025-08-29T10:08:52.420543+00:00",
+  "last_updated": "2025-11-27T22:07:44.541702+00:00",
+  "cutoff_date": "2025-08-29T22:07:44.517386+00:00",
   "summary": {
-    "total_prs": 330,
+    "total_prs": 333,
     "total_retests": 54,
     "prs_with_retests": 37,
-    "retest_rate": 11.212121212121213,
+    "retest_rate": 11.11111111111111,
     "retest_comments": 34,
     "update_branch_actions": 20
   }
