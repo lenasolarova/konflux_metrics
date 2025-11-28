@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-28T10:08:55.913929+00:00",
+  "analysis_date": "2025-11-28T22:07:28.935765+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-30T10:08:55.901616+00:00",
-    "to": "2025-11-28T10:08:55.913929+00:00"
+    "from": "2025-08-30T22:07:28.923391+00:00",
+    "to": "2025-11-28T22:07:28.935765+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -331,6 +331,16 @@
     },
     "ccx/ccx-data-pipeline": {
       "mrs": [
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1121,
+          "title": "Remove CPU limit from deploy file",
+          "merged_at": "2025-11-28T08:29:47.744Z",
+          "author": "lsolarov",
+          "total_commits": 4,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1121"
+        },
         {
           "project": "ccx/ccx-data-pipeline",
           "mr_iid": 1119,
@@ -1078,12 +1088,12 @@
       }
     }
   },
-  "last_updated": "2025-11-28T10:08:55.913929+00:00",
-  "cutoff_date": "2025-08-30T10:08:55.901616+00:00",
+  "last_updated": "2025-11-28T22:07:28.935765+00:00",
+  "cutoff_date": "2025-08-30T22:07:28.923391+00:00",
   "summary": {
-    "total_mrs": 96,
+    "total_mrs": 97,
     "total_retests": 24,
     "mrs_with_retests": 15,
-    "retest_rate": 15.625
+    "retest_rate": 15.463917525773196
   }
 }
