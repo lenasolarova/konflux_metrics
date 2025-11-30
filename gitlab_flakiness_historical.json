@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-30T10:07:58.277980+00:00",
+  "analysis_date": "2025-11-30T22:07:40.456212+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-01T10:07:58.265620+00:00",
-    "to": "2025-11-30T10:07:58.277980+00:00"
+    "from": "2025-09-01T22:07:40.443841+00:00",
+    "to": "2025-11-30T22:07:40.456212+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -696,16 +696,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/92"
-        },
-        {
-          "project": "ccx/ccx-load-test",
-          "mr_iid": 91,
-          "title": "Replace total stats checks with separate checks per endpoint",
-          "merged_at": "2025-09-01T10:39:41.387Z",
-          "author": "jipapous",
-          "total_commits": 1,
-          "total_retests": 1,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/91"
         }
       ],
       "summary": {
@@ -1078,12 +1068,12 @@
       }
     }
   },
-  "last_updated": "2025-11-30T10:07:58.277980+00:00",
-  "cutoff_date": "2025-09-01T10:07:58.265620+00:00",
+  "last_updated": "2025-11-30T22:07:40.456212+00:00",
+  "cutoff_date": "2025-09-01T22:07:40.443841+00:00",
   "summary": {
-    "total_mrs": 96,
-    "total_retests": 24,
-    "mrs_with_retests": 15,
-    "retest_rate": 15.625
+    "total_mrs": 95,
+    "total_retests": 23,
+    "mrs_with_retests": 14,
+    "retest_rate": 14.736842105263156
   }
 }

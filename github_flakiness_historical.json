@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-30T10:07:58.260627+00:00",
+  "analysis_date": "2025-11-30T22:07:40.438953+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-01T10:07:58.236144+00:00",
-    "to": "2025-11-30T10:07:58.260627+00:00"
+    "from": "2025-09-01T22:07:40.414508+00:00",
+    "to": "2025-11-30T22:07:40.438953+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -464,18 +464,6 @@
           "update_branch_count": 0,
           "total_retests": 1,
           "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/579"
-        },
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 580,
-          "title": "build(deps): update boto3 requirement from <1.40.17,>=1.34.1 to >=1.34.1,<1.40.22",
-          "merged_at": "2025-09-01T12:27:56Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/580"
         }
       ],
       "summary": {
@@ -1884,6 +1872,30 @@
     },
     "RedHatInsights/insights-results-aggregator-cleaner": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 550,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-30T20:58:12Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/550"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 551,
+          "title": "fix(deps): update module github.com/olekukonko/tablewriter to v1.1.2",
+          "merged_at": "2025-11-30T16:54:53Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/551"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator-cleaner",
           "pr_number": 548,
@@ -4193,13 +4205,13 @@
       }
     }
   },
-  "last_updated": "2025-11-30T10:07:58.260627+00:00",
-  "cutoff_date": "2025-09-01T10:07:58.236144+00:00",
+  "last_updated": "2025-11-30T22:07:40.438953+00:00",
+  "cutoff_date": "2025-09-01T22:07:40.414508+00:00",
   "summary": {
-    "total_prs": 333,
+    "total_prs": 334,
     "total_retests": 55,
     "prs_with_retests": 38,
-    "retest_rate": 11.411411411411411,
+    "retest_rate": 11.377245508982035,
     "retest_comments": 35,
     "update_branch_actions": 20
   }
