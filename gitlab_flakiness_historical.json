@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-29T22:07:27.794074+00:00",
+  "analysis_date": "2025-11-30T10:07:58.277980+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-08-31T22:07:27.781764+00:00",
-    "to": "2025-11-29T22:07:27.794074+00:00"
+    "from": "2025-09-01T10:07:58.265620+00:00",
+    "to": "2025-11-30T10:07:58.277980+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -307,16 +307,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1116"
-        },
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1114,
-          "title": "Fix renamed fixture",
-          "merged_at": "2025-09-01T08:38:55.250Z",
-          "author": "jipapous",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1114"
         }
       ],
       "summary": {
@@ -1088,12 +1078,12 @@
       }
     }
   },
-  "last_updated": "2025-11-29T22:07:27.794074+00:00",
-  "cutoff_date": "2025-08-31T22:07:27.781764+00:00",
+  "last_updated": "2025-11-30T10:07:58.277980+00:00",
+  "cutoff_date": "2025-09-01T10:07:58.265620+00:00",
   "summary": {
-    "total_mrs": 97,
+    "total_mrs": 96,
     "total_retests": 24,
     "mrs_with_retests": 15,
-    "retest_rate": 15.463917525773196
+    "retest_rate": 15.625
   }
 }
