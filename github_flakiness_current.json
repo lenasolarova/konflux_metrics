@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-30T09:07:45.591564",
+  "analysis_date": "2025-11-30T21:06:56.422652",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-29T09:07:30.950088+00:00",
-    "to": "2025-11-30T09:07:45.591577"
+    "from": "2025-11-29T21:06:40.833124+00:00",
+    "to": "2025-11-30T21:06:56.422667"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 0,
-    "total_commits": 0,
+    "total_prs_analyzed": 2,
+    "total_commits": 2,
     "total_retests": 0,
     "retest_comments": 0,
     "update_branch_actions": 0,
     "prs_with_retests": 0,
-    "pr_retest_rate": 0,
-    "avg_retests_per_pr": 0,
-    "avg_retests_per_commit": 0
+    "pr_retest_rate": 0.0,
+    "avg_retests_per_pr": 0.0,
+    "avg_retests_per_commit": 0.0
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -102,17 +102,42 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-cleaner": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 550,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-11-30T20:58:12Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/550"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 551,
+          "title": "fix(deps): update module github.com/olekukonko/tablewriter to v1.1.2",
+          "merged_at": "2025-11-30T16:54:53Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/551"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
