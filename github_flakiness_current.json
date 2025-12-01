@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-30T21:06:56.422652",
+  "analysis_date": "2025-12-01T09:13:03.349109",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,13 +15,13 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-11-29T21:06:40.833124+00:00",
-    "to": "2025-11-30T21:06:56.422667"
+    "from": "2025-11-30T09:12:43.350204+00:00",
+    "to": "2025-12-01T09:13:03.349127"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 2,
-    "total_commits": 2,
+    "total_prs_analyzed": 4,
+    "total_commits": 4,
     "total_retests": 0,
     "retest_comments": 0,
     "update_branch_actions": 0,
@@ -32,17 +32,42 @@
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 621,
+          "title": "build(deps): bump aiobotocore from 2.25.2 to 2.26.0",
+          "merged_at": "2025-12-01T08:57:39Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/621"
+        },
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 622,
+          "title": "build(deps): update boto3 requirement from <1.41.3,>=1.34.1 to >=1.34.1,<1.42.1",
+          "merged_at": "2025-12-01T08:57:23Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/622"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-results-aggregator": {
