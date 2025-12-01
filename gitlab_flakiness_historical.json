@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-01T10:09:54.738145+00:00",
+  "analysis_date": "2025-12-01T22:07:17.435559+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-02T10:09:54.725950+00:00",
-    "to": "2025-12-01T10:09:54.738145+00:00"
+    "from": "2025-09-02T22:07:17.423154+00:00",
+    "to": "2025-12-01T22:07:17.435559+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -28,6 +28,16 @@
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
       "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1148,
+          "title": "Bumped ccx-rules-ocp version to 2025.12.01",
+          "merged_at": "2025-12-01T09:52:07.153Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1148"
+        },
         {
           "project": "insights-qe/iqe-ccx-plugin",
           "mr_iid": 1143,
@@ -323,6 +333,26 @@
       "mrs": [
         {
           "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1123,
+          "title": "Revert to stable resource configuration",
+          "merged_at": "2025-12-01T10:31:06.098Z",
+          "author": "lsolarov",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1123"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
+          "mr_iid": 1124,
+          "title": "Bumped ccx-rules-ocp version to 2025.12.01",
+          "merged_at": "2025-12-01T09:23:48.450Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1124"
+        },
+        {
+          "project": "ccx/ccx-data-pipeline",
           "mr_iid": 1121,
           "title": "Remove CPU limit from deploy file",
           "merged_at": "2025-11-28T08:29:47.744Z",
@@ -554,6 +584,16 @@
     },
     "ccx/content-service": {
       "mrs": [
+        {
+          "project": "ccx/content-service",
+          "mr_iid": 851,
+          "title": "Bumped ccx-rules-ocp version to 2025.12.01",
+          "merged_at": "2025-12-01T09:26:00.479Z",
+          "author": "ccx-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/851"
+        },
         {
           "project": "ccx/content-service",
           "mr_iid": 850,
@@ -1068,12 +1108,12 @@
       }
     }
   },
-  "last_updated": "2025-12-01T10:09:54.738145+00:00",
-  "cutoff_date": "2025-09-02T10:09:54.725950+00:00",
+  "last_updated": "2025-12-01T22:07:17.435559+00:00",
+  "cutoff_date": "2025-09-02T22:07:17.423154+00:00",
   "summary": {
-    "total_mrs": 95,
+    "total_mrs": 99,
     "total_retests": 23,
     "mrs_with_retests": 14,
-    "retest_rate": 14.736842105263156
+    "retest_rate": 14.14141414141414
   }
 }
