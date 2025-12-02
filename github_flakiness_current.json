@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-02T09:12:04.558602",
+  "analysis_date": "2025-12-02T21:08:33.087132",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,13 +15,13 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-01T09:11:32.806160+00:00",
-    "to": "2025-12-02T09:12:04.558619"
+    "from": "2025-12-01T21:08:11.808378+00:00",
+    "to": "2025-12-02T21:08:33.087150"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 8,
-    "total_commits": 11,
+    "total_prs_analyzed": 4,
+    "total_commits": 4,
     "total_retests": 0,
     "retest_comments": 0,
     "update_branch_actions": 0,
@@ -32,30 +32,17 @@
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 619,
-          "title": "[CCXDEV-15630] Add processing time and archive size metrics into idp grafana",
-          "merged_at": "2025-12-01T13:42:00Z",
-          "user": "lenasolarova",
-          "total_commits": 4,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/619"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 4,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/insights-results-aggregator": {
@@ -73,30 +60,17 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 489,
-          "title": "chore(deps): update module github.com/klauspost/compress to v1.18.2",
-          "merged_at": "2025-12-01T13:02:26Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/489"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/insights-content-template-renderer": {
@@ -144,32 +118,20 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator-cleaner",
-          "pr_number": 553,
+          "pr_number": 554,
           "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-01T21:02:42Z",
+          "merged_at": "2025-12-02T21:01:50Z",
           "user": "red-hat-konflux[bot]",
           "total_commits": 1,
           "retest_comments": 0,
           "update_branch_count": 0,
           "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/553"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
-          "pr_number": 552,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-01T13:12:44Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/552"
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/554"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
@@ -183,15 +145,15 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 542,
+          "pr_number": 543,
           "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-01T21:00:49Z",
+          "merged_at": "2025-12-02T20:58:54Z",
           "user": "red-hat-konflux[bot]",
           "total_commits": 1,
           "retest_comments": 0,
           "update_branch_count": 0,
           "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/542"
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/543"
         }
       ],
       "summary": {
@@ -233,23 +195,11 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/722"
-        },
-        {
-          "repository": "RedHatInsights/ccx-notification-writer",
-          "pr_number": 721,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-01T13:25:11Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/721"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
