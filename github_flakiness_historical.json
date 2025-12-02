@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-02T10:09:24.198662+00:00",
+  "analysis_date": "2025-12-02T22:08:00.361128+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-03T10:09:24.174088+00:00",
-    "to": "2025-12-02T10:09:24.198662+00:00"
+    "from": "2025-09-03T22:08:00.336404+00:00",
+    "to": "2025-12-02T22:08:00.361128+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -488,18 +488,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/581"
-        },
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 579,
-          "title": "[CCXDEV-15428] Add archive-sync-ols-copy to pr_check.py",
-          "merged_at": "2025-09-03T11:24:42Z",
-          "user": "lenasolarova",
-          "total_commits": 1,
-          "retest_comments": 1,
-          "update_branch_count": 0,
-          "total_retests": 1,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/579"
         }
       ],
       "summary": {
@@ -1454,30 +1442,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/457"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 456,
-          "title": "chore(deps): update module github.com/spf13/pflag to v1.0.8",
-          "merged_at": "2025-09-03T11:34:35Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 2,
-          "retest_comments": 0,
-          "update_branch_count": 1,
-          "total_retests": 1,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/456"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 454,
-          "title": "chore(deps): update konflux references",
-          "merged_at": "2025-09-03T11:14:32Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 2,
-          "retest_comments": 0,
-          "update_branch_count": 1,
-          "total_retests": 1,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/454"
         }
       ],
       "summary": {
@@ -1934,6 +1898,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 554,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-02T21:01:50Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/554"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
           "pr_number": 553,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-12-01T21:02:42Z",
@@ -2367,6 +2343,18 @@
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
+          "pr_number": 543,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-02T20:58:54Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/543"
+        },
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
           "pr_number": 542,
@@ -4325,14 +4313,14 @@
       }
     }
   },
-  "last_updated": "2025-12-02T10:09:24.198662+00:00",
-  "cutoff_date": "2025-09-03T10:09:24.174088+00:00",
+  "last_updated": "2025-12-02T22:08:00.361128+00:00",
+  "cutoff_date": "2025-09-03T22:08:00.336404+00:00",
   "summary": {
-    "total_prs": 344,
-    "total_retests": 55,
-    "prs_with_retests": 38,
-    "retest_rate": 11.046511627906977,
-    "retest_comments": 35,
-    "update_branch_actions": 20
+    "total_prs": 343,
+    "total_retests": 52,
+    "prs_with_retests": 35,
+    "retest_rate": 10.204081632653061,
+    "retest_comments": 34,
+    "update_branch_actions": 18
   }
 }
