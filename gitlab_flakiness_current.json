@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-03T08:05:59.724745",
+  "analysis_date": "2025-12-03T20:06:41.388146",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,30 +12,61 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-02T08:03:37.206905+00:00",
-    "to": "2025-12-03T08:05:59.724779"
+    "from": "2025-12-02T20:03:23.633670+00:00",
+    "to": "2025-12-03T20:06:41.388165"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 0,
-    "total_commits": 0,
+    "total_mrs_analyzed": 3,
+    "total_commits": 9,
     "total_retests": 0,
     "mrs_with_retests": 0,
-    "mr_retest_rate": 0,
-    "avg_retests_per_mr": 0,
-    "avg_retests_per_commit": 0
+    "mr_retest_rate": 0.0,
+    "avg_retests_per_mr": 0.0,
+    "avg_retests_per_commit": 0.0
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": [],
+      "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1144,
+          "title": "[CCXDEV-11331] Add test to check that request ID is found after uploading archive",
+          "merged_at": "2025-12-03T12:14:32.383Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1144"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1146,
+          "title": "Fix UI tests",
+          "merged_at": "2025-12-03T11:25:29.513Z",
+          "author": "ireyes",
+          "total_commits": 7,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1146"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1145,
+          "title": "Introduce a new nav target to OCM",
+          "merged_at": "2025-12-03T10:51:07.115Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1145"
+        }
+      ],
       "summary": {
-        "total_mrs_analyzed": 0,
-        "total_commits": 0,
+        "total_mrs_analyzed": 3,
+        "total_commits": 9,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0,
-        "avg_retests_per_mr": 0,
-        "avg_retests_per_commit": 0
+        "mr_retest_rate": 0.0,
+        "avg_retests_per_mr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "ccx/ccx-data-pipeline": {
