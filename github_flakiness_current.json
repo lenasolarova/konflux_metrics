@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-03T09:11:26.253854",
+  "analysis_date": "2025-12-03T21:08:28.678355",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,34 +15,47 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-02T09:11:03.001018+00:00",
-    "to": "2025-12-03T09:11:26.253871"
+    "from": "2025-12-02T21:08:03.719348+00:00",
+    "to": "2025-12-03T21:08:28.678374"
   },
   "overall_summary": {
     "total_repos": 11,
     "total_prs_analyzed": 4,
-    "total_commits": 4,
-    "total_retests": 0,
-    "retest_comments": 0,
+    "total_commits": 5,
+    "total_retests": 2,
+    "retest_comments": 2,
     "update_branch_actions": 0,
-    "prs_with_retests": 0,
-    "pr_retest_rate": 0.0,
-    "avg_retests_per_pr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "prs_with_retests": 1,
+    "pr_retest_rate": 25.0,
+    "avg_retests_per_pr": 0.5,
+    "avg_retests_per_commit": 0.4
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 620,
+          "title": "[CCXDEV-15619] Add AGENTS.md",
+          "merged_at": "2025-12-03T11:08:21Z",
+          "user": "joselsegura",
+          "total_commits": 2,
+          "retest_comments": 2,
+          "update_branch_count": 0,
+          "total_retests": 2,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/620"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "retest_comments": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 2,
+        "total_retests": 2,
+        "retest_comments": 2,
         "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "prs_with_retests": 1,
+        "pr_retest_rate": 100.0,
+        "avg_retests_per_pr": 2.0,
+        "avg_retests_per_commit": 1.0
       }
     },
     "RedHatInsights/insights-results-aggregator": {
@@ -115,45 +128,32 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-cleaner": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
-          "pr_number": 554,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-02T21:01:50Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/554"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
       "prs": [
         {
           "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 543,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-02T20:58:54Z",
-          "user": "red-hat-konflux[bot]",
+          "pr_number": 544,
+          "title": "[CCXDEV-14330] Handle different server responses as warnings instead of errors",
+          "merged_at": "2025-12-03T13:25:34Z",
+          "user": "joselsegura",
           "total_commits": 1,
           "retest_comments": 0,
           "update_branch_count": 0,
           "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/543"
+          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/544"
         }
       ],
       "summary": {
