@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-03T10:09:30.554267+00:00",
+  "analysis_date": "2025-12-03T22:08:31.573068+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-04T10:09:30.541950+00:00",
-    "to": "2025-12-03T10:09:30.554267+00:00"
+    "from": "2025-09-04T22:08:31.560732+00:00",
+    "to": "2025-12-03T22:08:31.573068+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -28,6 +28,36 @@
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
       "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1144,
+          "title": "[CCXDEV-11331] Add test to check that request ID is found after uploading archive",
+          "merged_at": "2025-12-03T12:14:32.383Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1144"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1146,
+          "title": "Fix UI tests",
+          "merged_at": "2025-12-03T11:25:29.513Z",
+          "author": "ireyes",
+          "total_commits": 7,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1146"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1145,
+          "title": "Introduce a new nav target to OCM",
+          "merged_at": "2025-12-03T10:51:07.115Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1145"
+        },
         {
           "project": "insights-qe/iqe-ccx-plugin",
           "mr_iid": 1148,
@@ -297,16 +327,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1117"
-        },
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1115,
-          "title": "[CCXDEV-11930] Run test that require AMS in stage",
-          "merged_at": "2025-09-04T10:58:44.215Z",
-          "author": "ireyes",
-          "total_commits": 3,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1115"
         }
       ],
       "summary": {
@@ -1098,12 +1118,12 @@
       }
     }
   },
-  "last_updated": "2025-12-03T10:09:30.554267+00:00",
-  "cutoff_date": "2025-09-04T10:09:30.541950+00:00",
+  "last_updated": "2025-12-03T22:08:31.573068+00:00",
+  "cutoff_date": "2025-09-04T22:08:31.560732+00:00",
   "summary": {
-    "total_mrs": 98,
+    "total_mrs": 100,
     "total_retests": 23,
     "mrs_with_retests": 14,
-    "retest_rate": 14.285714285714285
+    "retest_rate": 14.000000000000002
   }
 }
