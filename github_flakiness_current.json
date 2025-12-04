@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-04T09:11:26.745347",
+  "analysis_date": "2025-12-04T21:08:34.753139",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,47 +15,34 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-03T09:11:04.020223+00:00",
-    "to": "2025-12-04T09:11:26.745363"
+    "from": "2025-12-03T21:08:06.332064+00:00",
+    "to": "2025-12-04T21:08:34.753155"
   },
   "overall_summary": {
     "total_repos": 11,
     "total_prs_analyzed": 2,
-    "total_commits": 3,
-    "total_retests": 2,
-    "retest_comments": 2,
+    "total_commits": 2,
+    "total_retests": 0,
+    "retest_comments": 0,
     "update_branch_actions": 0,
-    "prs_with_retests": 1,
-    "pr_retest_rate": 50.0,
-    "avg_retests_per_pr": 1.0,
-    "avg_retests_per_commit": 0.6666666666666666
+    "prs_with_retests": 0,
+    "pr_retest_rate": 0.0,
+    "avg_retests_per_pr": 0.0,
+    "avg_retests_per_commit": 0.0
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 620,
-          "title": "[CCXDEV-15619] Add AGENTS.md",
-          "merged_at": "2025-12-03T11:08:21Z",
-          "user": "joselsegura",
-          "total_commits": 2,
-          "retest_comments": 2,
-          "update_branch_count": 0,
-          "total_retests": 2,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/620"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 2,
-        "total_retests": 2,
-        "retest_comments": 2,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
+        "total_retests": 0,
+        "retest_comments": 0,
         "update_branch_actions": 0,
-        "prs_with_retests": 1,
-        "pr_retest_rate": 100.0,
-        "avg_retests_per_pr": 2.0,
-        "avg_retests_per_commit": 1.0
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/insights-results-aggregator": {
@@ -73,17 +60,42 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 491,
+          "title": "chore(deps): update module github.com/tinylib/msgp to v1.6.1",
+          "merged_at": "2025-12-04T20:52:00Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/491"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 490,
+          "title": "chore(deps): update module github.com/tinylib/msgp to v1.6.0",
+          "merged_at": "2025-12-04T16:54:44Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/490"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-content-template-renderer": {
@@ -129,30 +141,17 @@
       }
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-operator-gathering-conditions-service",
-          "pr_number": 544,
-          "title": "[CCXDEV-14330] Handle different server responses as warnings instead of errors",
-          "merged_at": "2025-12-03T13:25:34Z",
-          "user": "joselsegura",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/544"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/ccx-notification-service": {
