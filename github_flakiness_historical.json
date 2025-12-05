@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-05T10:08:51.739074+00:00",
+  "analysis_date": "2025-12-05T22:07:56.844024+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-06T10:08:51.713961+00:00",
-    "to": "2025-12-05T10:08:51.739074+00:00"
+    "from": "2025-09-06T22:07:56.818910+00:00",
+    "to": "2025-12-05T22:07:56.844024+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -1484,6 +1484,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 238,
+          "title": "[CCXDEV-15708] Replace js2py with pythonmonkey",
+          "merged_at": "2025-12-05T10:13:42Z",
+          "user": "JiriPapousek",
+          "total_commits": 8,
+          "retest_comments": 1,
+          "update_branch_count": 0,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/238"
+        },
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
           "pr_number": 239,
           "title": "Bump fastapi from 0.122.0 to 0.123.0",
           "merged_at": "2025-12-02T02:22:26Z",
@@ -1737,6 +1749,30 @@
     },
     "RedHatInsights/insights-behavioral-spec": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-behavioral-spec",
+          "pr_number": 725,
+          "title": "[CCXDEV-15621] feat: add AGENTS.md",
+          "merged_at": "2025-12-05T10:38:11Z",
+          "user": "juandspy",
+          "total_commits": 4,
+          "retest_comments": 0,
+          "update_branch_count": 1,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-behavioral-spec/pull/725"
+        },
+        {
+          "repository": "RedHatInsights/insights-behavioral-spec",
+          "pr_number": 726,
+          "title": "[CCXDEV-15708] Add npm as dependency",
+          "merged_at": "2025-12-05T09:45:52Z",
+          "user": "JiriPapousek",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-behavioral-spec/pull/726"
+        },
         {
           "repository": "RedHatInsights/insights-behavioral-spec",
           "pr_number": 724,
@@ -2994,6 +3030,18 @@
     },
     "RedHatInsights/ccx-notification-service": {
       "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-service",
+          "pr_number": 1043,
+          "title": "[CCXDEV-15686] Update WriteReadError logging to use Warn level",
+          "merged_at": "2025-12-05T13:01:13Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1043"
+        },
         {
           "repository": "RedHatInsights/ccx-notification-service",
           "pr_number": 1042,
@@ -4361,14 +4409,14 @@
       }
     }
   },
-  "last_updated": "2025-12-05T10:08:51.739074+00:00",
-  "cutoff_date": "2025-09-06T10:08:51.713961+00:00",
+  "last_updated": "2025-12-05T22:07:56.844024+00:00",
+  "cutoff_date": "2025-09-06T22:07:56.818910+00:00",
   "summary": {
-    "total_prs": 347,
-    "total_retests": 54,
-    "prs_with_retests": 36,
-    "retest_rate": 10.37463976945245,
-    "retest_comments": 36,
-    "update_branch_actions": 18
+    "total_prs": 351,
+    "total_retests": 56,
+    "prs_with_retests": 38,
+    "retest_rate": 10.826210826210826,
+    "retest_comments": 37,
+    "update_branch_actions": 19
   }
 }
