@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-05T09:09:53.716658",
+  "analysis_date": "2025-12-05T21:07:52.071319",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-04T09:09:32.628123+00:00",
-    "to": "2025-12-05T09:09:53.716673"
+    "from": "2025-12-04T21:07:33.743570+00:00",
+    "to": "2025-12-05T21:07:52.071335"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 2,
-    "total_commits": 2,
-    "total_retests": 0,
-    "retest_comments": 0,
-    "update_branch_actions": 0,
-    "prs_with_retests": 0,
-    "pr_retest_rate": 0.0,
-    "avg_retests_per_pr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "total_prs_analyzed": 4,
+    "total_commits": 14,
+    "total_retests": 2,
+    "retest_comments": 1,
+    "update_branch_actions": 1,
+    "prs_with_retests": 2,
+    "pr_retest_rate": 50.0,
+    "avg_retests_per_pr": 0.5,
+    "avg_retests_per_commit": 0.14285714285714285
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -60,70 +60,83 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
+      "prs": [],
+      "summary": {
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
+        "total_retests": 0,
+        "retest_comments": 0,
+        "update_branch_actions": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
+      }
+    },
+    "RedHatInsights/insights-content-template-renderer": {
       "prs": [
         {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 491,
-          "title": "chore(deps): update module github.com/tinylib/msgp to v1.6.1",
-          "merged_at": "2025-12-04T20:52:00Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 238,
+          "title": "[CCXDEV-15708] Replace js2py with pythonmonkey",
+          "merged_at": "2025-12-05T10:13:42Z",
+          "user": "JiriPapousek",
+          "total_commits": 8,
+          "retest_comments": 1,
           "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/491"
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/238"
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 1,
+        "total_commits": 8,
+        "total_retests": 1,
+        "retest_comments": 1,
+        "update_branch_actions": 0,
+        "prs_with_retests": 1,
+        "pr_retest_rate": 100.0,
+        "avg_retests_per_pr": 1.0,
+        "avg_retests_per_commit": 0.125
+      }
+    },
+    "RedHatInsights/insights-behavioral-spec": {
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-behavioral-spec",
+          "pr_number": 725,
+          "title": "[CCXDEV-15621] feat: add AGENTS.md",
+          "merged_at": "2025-12-05T10:38:11Z",
+          "user": "juandspy",
+          "total_commits": 4,
+          "retest_comments": 0,
+          "update_branch_count": 1,
+          "total_retests": 1,
+          "url": "https://github.com/RedHatInsights/insights-behavioral-spec/pull/725"
         },
         {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 490,
-          "title": "chore(deps): update module github.com/tinylib/msgp to v1.6.0",
-          "merged_at": "2025-12-04T16:54:44Z",
-          "user": "red-hat-konflux[bot]",
+          "repository": "RedHatInsights/insights-behavioral-spec",
+          "pr_number": 726,
+          "title": "[CCXDEV-15708] Add npm as dependency",
+          "merged_at": "2025-12-05T09:45:52Z",
+          "user": "JiriPapousek",
           "total_commits": 1,
           "retest_comments": 0,
           "update_branch_count": 0,
           "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/490"
+          "url": "https://github.com/RedHatInsights/insights-behavioral-spec/pull/726"
         }
       ],
       "summary": {
         "total_prs_analyzed": 2,
-        "total_commits": 2,
-        "total_retests": 0,
+        "total_commits": 5,
+        "total_retests": 1,
         "retest_comments": 0,
-        "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
-      }
-    },
-    "RedHatInsights/insights-content-template-renderer": {
-      "prs": [],
-      "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "retest_comments": 0,
-        "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
-      }
-    },
-    "RedHatInsights/insights-behavioral-spec": {
-      "prs": [],
-      "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
-        "total_retests": 0,
-        "retest_comments": 0,
-        "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "update_branch_actions": 1,
+        "prs_with_retests": 1,
+        "pr_retest_rate": 50.0,
+        "avg_retests_per_pr": 0.5,
+        "avg_retests_per_commit": 0.2
       }
     },
     "RedHatInsights/insights-results-aggregator-cleaner": {
@@ -155,17 +168,30 @@
       }
     },
     "RedHatInsights/ccx-notification-service": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-service",
+          "pr_number": 1043,
+          "title": "[CCXDEV-15686] Update WriteReadError logging to use Warn level",
+          "merged_at": "2025-12-05T13:01:13Z",
+          "user": "joselsegura",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1043"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/ccx-notification-writer": {
