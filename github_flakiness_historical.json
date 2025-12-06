@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-06T10:07:47.632885+00:00",
+  "analysis_date": "2025-12-06T22:07:28.280204+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-07T10:07:47.607765+00:00",
-    "to": "2025-12-06T10:07:47.632885+00:00"
+    "from": "2025-09-07T22:07:28.255616+00:00",
+    "to": "2025-12-06T22:07:28.280204+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -1430,30 +1430,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/461"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 460,
-          "title": "chore(deps): update dependency go to v1.25.1",
-          "merged_at": "2025-09-07T20:33:41Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/460"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 459,
-          "title": "chore(deps): update module golang.org/x/sys to v0.36.0",
-          "merged_at": "2025-09-07T16:39:30Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/459"
         }
       ],
       "summary": {
@@ -4397,13 +4373,13 @@
       }
     }
   },
-  "last_updated": "2025-12-06T10:07:47.632885+00:00",
-  "cutoff_date": "2025-09-07T10:07:47.607765+00:00",
+  "last_updated": "2025-12-06T22:07:28.280204+00:00",
+  "cutoff_date": "2025-09-07T22:07:28.255616+00:00",
   "summary": {
-    "total_prs": 350,
+    "total_prs": 348,
     "total_retests": 56,
     "prs_with_retests": 38,
-    "retest_rate": 10.857142857142858,
+    "retest_rate": 10.919540229885058,
     "retest_comments": 37,
     "update_branch_actions": 19
   }
