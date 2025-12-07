@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-07T10:07:27.184277+00:00",
+  "analysis_date": "2025-12-07T22:07:41.022069+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-08T10:07:27.159562+00:00",
-    "to": "2025-12-07T10:07:27.184277+00:00"
+    "from": "2025-09-08T22:07:40.997503+00:00",
+    "to": "2025-12-07T22:07:41.022069+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -4313,8 +4313,8 @@
       }
     }
   },
-  "last_updated": "2025-12-07T10:07:27.184277+00:00",
-  "cutoff_date": "2025-09-08T10:07:27.159562+00:00",
+  "last_updated": "2025-12-07T22:07:41.022069+00:00",
+  "cutoff_date": "2025-09-08T22:07:40.997503+00:00",
   "summary": {
     "total_prs": 343,
     "total_retests": 56,
