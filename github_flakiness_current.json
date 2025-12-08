@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-07T21:06:58.145683",
+  "analysis_date": "2025-12-08T09:12:44.264251",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,34 +15,47 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-06T21:06:44.161863+00:00",
-    "to": "2025-12-07T21:06:58.145700"
+    "from": "2025-12-07T09:12:26.981324+00:00",
+    "to": "2025-12-08T09:12:44.264269"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 0,
-    "total_commits": 0,
+    "total_prs_analyzed": 1,
+    "total_commits": 1,
     "total_retests": 0,
     "retest_comments": 0,
     "update_branch_actions": 0,
     "prs_with_retests": 0,
-    "pr_retest_rate": 0,
-    "avg_retests_per_pr": 0,
-    "avg_retests_per_commit": 0
+    "pr_retest_rate": 0.0,
+    "avg_retests_per_pr": 0.0,
+    "avg_retests_per_commit": 0.0
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-ccx-messaging",
+          "pr_number": 623,
+          "title": "build(deps): update boto3 requirement from <1.42.1,>=1.34.1 to >=1.34.1,<1.42.5",
+          "merged_at": "2025-12-08T07:22:04Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/623"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-results-aggregator": {
