@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-08T09:12:44.264251",
+  "analysis_date": "2025-12-08T21:08:12.977104",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,13 +15,13 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-07T09:12:26.981324+00:00",
-    "to": "2025-12-08T09:12:44.264269"
+    "from": "2025-12-07T21:07:44.486874+00:00",
+    "to": "2025-12-08T21:08:12.977121"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 1,
-    "total_commits": 1,
+    "total_prs_analyzed": 6,
+    "total_commits": 6,
     "total_retests": 0,
     "retest_comments": 0,
     "update_branch_actions": 0,
@@ -73,31 +73,69 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 493,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-08T20:49:48Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/493"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 492,
+          "title": "chore(deps): update module golang.org/x/sys to v0.39.0",
+          "merged_at": "2025-12-08T16:48:07Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/492"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-content-template-renderer": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 240,
+          "title": "[CCXDEV-15708] Restart worker regularly to avoid memory leak",
+          "merged_at": "2025-12-08T11:52:05Z",
+          "user": "JiriPapousek",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/240"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-behavioral-spec": {
@@ -115,17 +153,30 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-cleaner": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 555,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-08T21:00:08Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/555"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
@@ -157,17 +208,30 @@
       }
     },
     "RedHatInsights/ccx-notification-writer": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 724,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-08T17:07:26Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/724"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/obsint-mocks": {
