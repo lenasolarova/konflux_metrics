@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-08T21:08:12.977104",
+  "analysis_date": "2025-12-09T09:11:02.078518",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,13 +15,13 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-07T21:07:44.486874+00:00",
-    "to": "2025-12-08T21:08:12.977121"
+    "from": "2025-12-08T09:10:23.632769+00:00",
+    "to": "2025-12-09T09:11:02.078533"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 6,
-    "total_commits": 6,
+    "total_prs_analyzed": 13,
+    "total_commits": 13,
     "total_retests": 0,
     "retest_comments": 0,
     "update_branch_actions": 0,
@@ -32,33 +32,6 @@
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-ccx-messaging",
-          "pr_number": 623,
-          "title": "build(deps): update boto3 requirement from <1.42.1,>=1.34.1 to >=1.34.1,<1.42.5",
-          "merged_at": "2025-12-08T07:22:04Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-ccx-messaging/pull/623"
-        }
-      ],
-      "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
-        "total_retests": 0,
-        "retest_comments": 0,
-        "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
-      }
-    },
-    "RedHatInsights/insights-results-aggregator": {
       "prs": [],
       "summary": {
         "total_prs_analyzed": 0,
@@ -72,8 +45,59 @@
         "avg_retests_per_commit": 0
       }
     },
+    "RedHatInsights/insights-results-aggregator": {
+      "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2337,
+          "title": "fix(deps): update module golang.org/x/sync to v0.19.0",
+          "merged_at": "2025-12-08T21:13:09Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2337"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2336,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-08T21:22:21Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2336"
+        }
+      ],
+      "summary": {
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
+        "total_retests": 0,
+        "retest_comments": 0,
+        "update_branch_actions": 0,
+        "prs_with_retests": 0,
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
+      }
+    },
     "RedHatInsights/insights-results-aggregator-exporter": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-exporter",
+          "pr_number": 494,
+          "title": "chore(deps): update module golang.org/x/net to v0.48.0",
+          "merged_at": "2025-12-09T00:52:56Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/494"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator-exporter",
           "pr_number": 493,
@@ -100,8 +124,8 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 3,
+        "total_commits": 3,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
@@ -113,6 +137,30 @@
     },
     "RedHatInsights/insights-content-template-renderer": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 242,
+          "title": "Bump pytest from 9.0.1 to 9.0.2",
+          "merged_at": "2025-12-08T23:37:36Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/242"
+        },
+        {
+          "repository": "RedHatInsights/insights-content-template-renderer",
+          "pr_number": 241,
+          "title": "Bump fastapi from 0.123.0 to 0.124.0",
+          "merged_at": "2025-12-08T23:19:07Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-content-template-renderer/pull/241"
+        },
         {
           "repository": "RedHatInsights/insights-content-template-renderer",
           "pr_number": 240,
@@ -127,8 +175,8 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 3,
+        "total_commits": 3,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
@@ -156,6 +204,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 556,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-09T01:03:26Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/556"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
           "pr_number": 555,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-12-08T21:00:08Z",
@@ -168,8 +228,8 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 2,
+        "total_commits": 2,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
@@ -211,6 +271,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 726,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-09T01:16:26Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/726"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 725,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-08T21:10:34Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/725"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 724,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-12-08T17:07:26Z",
@@ -223,8 +307,8 @@
         }
       ],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 3,
+        "total_commits": 3,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
