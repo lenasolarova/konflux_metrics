@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-10T10:09:18.524341+00:00",
+  "analysis_date": "2025-12-10T22:08:27.272710+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-11T10:09:18.511849+00:00",
-    "to": "2025-12-10T10:09:18.524341+00:00"
+    "from": "2025-09-11T22:08:27.260241+00:00",
+    "to": "2025-12-10T22:08:27.272710+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -28,6 +28,36 @@
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
       "mrs": [
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1154,
+          "title": "Add schemathesis as dependency and adapt to v4",
+          "merged_at": "2025-12-10T16:25:08.223Z",
+          "author": "ireyes",
+          "total_commits": 2,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1154"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1152,
+          "title": "Update pre-commit hooks",
+          "merged_at": "2025-12-10T15:08:44.711Z",
+          "author": "iqe-bot",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1152"
+        },
+        {
+          "project": "insights-qe/iqe-ccx-plugin",
+          "mr_iid": 1150,
+          "title": "Refactor test method endpoints",
+          "merged_at": "2025-12-10T15:07:36.293Z",
+          "author": "ireyes",
+          "total_commits": 6,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1150"
+        },
         {
           "project": "insights-qe/iqe-ccx-plugin",
           "mr_iid": 1153,
@@ -782,6 +812,26 @@
       "mrs": [
         {
           "project": "ccx/parquet-factory",
+          "mr_iid": 316,
+          "title": "[CCXDEV-15661] Remove shared-podman-debug tag for GL runner",
+          "merged_at": "2025-12-10T15:33:42.479Z",
+          "author": "ireyes",
+          "total_commits": 1,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/316"
+        },
+        {
+          "project": "ccx/parquet-factory",
+          "mr_iid": 315,
+          "title": "[CCXDEV-15661] GitLab runners tag change",
+          "merged_at": "2025-12-10T12:27:51.950Z",
+          "author": "ireyes",
+          "total_commits": 10,
+          "total_retests": 0,
+          "url": "https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/315"
+        },
+        {
+          "project": "ccx/parquet-factory",
           "mr_iid": 318,
           "title": "[CCXDEV-15376] fix: upgrade to aws sdk 2",
           "merged_at": "2025-11-12T15:34:25.704Z",
@@ -1108,12 +1158,12 @@
       }
     }
   },
-  "last_updated": "2025-12-10T10:09:18.524341+00:00",
-  "cutoff_date": "2025-09-11T10:09:18.511849+00:00",
+  "last_updated": "2025-12-10T22:08:27.272710+00:00",
+  "cutoff_date": "2025-09-11T22:08:27.260241+00:00",
   "summary": {
-    "total_mrs": 99,
+    "total_mrs": 104,
     "total_retests": 23,
     "mrs_with_retests": 14,
-    "retest_rate": 14.14141414141414
+    "retest_rate": 13.461538461538462
   }
 }
