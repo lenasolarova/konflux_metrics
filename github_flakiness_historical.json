@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-09T22:08:23.824369+00:00",
+  "analysis_date": "2025-12-10T10:09:18.506574+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-10T22:08:23.799702+00:00",
-    "to": "2025-12-09T22:08:23.824369+00:00"
+    "from": "2025-09-11T10:09:18.481655+00:00",
+    "to": "2025-12-10T10:09:18.506574+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -456,6 +456,18 @@
     },
     "RedHatInsights/insights-results-aggregator": {
       "prs": [
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2339,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-10T01:13:03Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2339"
+        },
         {
           "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2338,
@@ -1946,6 +1958,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator-cleaner",
+          "pr_number": 558,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-10T00:58:16Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/558"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
           "pr_number": 557,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-12-09T20:58:44Z",
@@ -3056,6 +3080,30 @@
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-service",
+          "pr_number": 1045,
+          "title": "Reduce log level to WARN to avoid duplicate Glitchtip issues",
+          "merged_at": "2025-12-10T08:24:04Z",
+          "user": "JiriPapousek",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1045"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-service",
+          "pr_number": 1044,
+          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.485 to 0.1.486",
+          "merged_at": "2025-12-10T07:25:58Z",
+          "user": "dependabot[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1044"
+        },
+        {
+          "repository": "RedHatInsights/ccx-notification-service",
           "pr_number": 1043,
           "title": "[CCXDEV-15686] Update WriteReadError logging to use Warn level",
           "merged_at": "2025-12-05T13:01:13Z",
@@ -3429,6 +3477,18 @@
     },
     "RedHatInsights/ccx-notification-writer": {
       "prs": [
+        {
+          "repository": "RedHatInsights/ccx-notification-writer",
+          "pr_number": 727,
+          "title": "chore(deps): update all dependencies",
+          "merged_at": "2025-12-09T21:10:17Z",
+          "user": "red-hat-konflux[bot]",
+          "total_commits": 1,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/727"
+        },
         {
           "repository": "RedHatInsights/ccx-notification-writer",
           "pr_number": 726,
@@ -4469,13 +4529,13 @@
       }
     }
   },
-  "last_updated": "2025-12-09T22:08:23.824369+00:00",
-  "cutoff_date": "2025-09-10T22:08:23.799702+00:00",
+  "last_updated": "2025-12-10T10:09:18.506574+00:00",
+  "cutoff_date": "2025-09-11T10:09:18.481655+00:00",
   "summary": {
-    "total_prs": 356,
+    "total_prs": 361,
     "total_retests": 56,
     "prs_with_retests": 38,
-    "retest_rate": 10.674157303370785,
+    "retest_rate": 10.526315789473683,
     "retest_comments": 37,
     "update_branch_actions": 19
   }
