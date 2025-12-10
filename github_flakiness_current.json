@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-10T09:10:51.179044",
+  "analysis_date": "2025-12-10T21:08:48.654492",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-09T09:10:28.294326+00:00",
-    "to": "2025-12-10T09:10:51.179060"
+    "from": "2025-12-09T21:08:26.617543+00:00",
+    "to": "2025-12-10T21:08:48.654508"
   },
   "overall_summary": {
     "total_repos": 11,
     "total_prs_analyzed": 7,
-    "total_commits": 7,
-    "total_retests": 0,
-    "retest_comments": 0,
-    "update_branch_actions": 0,
-    "prs_with_retests": 0,
-    "pr_retest_rate": 0.0,
-    "avg_retests_per_pr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "total_commits": 16,
+    "total_retests": 3,
+    "retest_comments": 1,
+    "update_branch_actions": 2,
+    "prs_with_retests": 1,
+    "pr_retest_rate": 14.285714285714285,
+    "avg_retests_per_pr": 0.42857142857142855,
+    "avg_retests_per_commit": 0.1875
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -49,6 +49,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-aggregator",
+          "pr_number": 2335,
+          "title": "[CCXDEV-15617] Add AGENTS.MD",
+          "merged_at": "2025-12-10T11:09:03Z",
+          "user": "lenasolarova",
+          "total_commits": 7,
+          "retest_comments": 1,
+          "update_branch_count": 2,
+          "total_retests": 3,
+          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2335"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-aggregator",
           "pr_number": 2339,
           "title": "chore(deps): update all dependencies",
           "merged_at": "2025-12-10T01:13:03Z",
@@ -58,30 +70,18 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2339"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator",
-          "pr_number": 2338,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-09T17:12:48Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2338"
         }
       ],
       "summary": {
         "total_prs_analyzed": 2,
-        "total_commits": 2,
-        "total_retests": 0,
-        "retest_comments": 0,
-        "update_branch_actions": 0,
-        "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "total_commits": 8,
+        "total_retests": 3,
+        "retest_comments": 1,
+        "update_branch_actions": 2,
+        "prs_with_retests": 1,
+        "pr_retest_rate": 50.0,
+        "avg_retests_per_pr": 1.5,
+        "avg_retests_per_commit": 0.375
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
@@ -139,23 +139,11 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/558"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
-          "pr_number": 557,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-09T20:58:44Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/557"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 1,
+        "total_commits": 1,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
@@ -246,17 +234,30 @@
       }
     },
     "RedHatInsights/obsint-mocks": {
-      "prs": [],
+      "prs": [
+        {
+          "repository": "RedHatInsights/obsint-mocks",
+          "pr_number": 161,
+          "title": "Refactor mock AMS configuration",
+          "merged_at": "2025-12-10T09:16:10Z",
+          "user": "ikerreyes",
+          "total_commits": 4,
+          "retest_comments": 0,
+          "update_branch_count": 0,
+          "total_retests": 0,
+          "url": "https://github.com/RedHatInsights/obsint-mocks/pull/161"
+        }
+      ],
       "summary": {
-        "total_prs_analyzed": 0,
-        "total_commits": 0,
+        "total_prs_analyzed": 1,
+        "total_commits": 4,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0,
-        "avg_retests_per_pr": 0,
-        "avg_retests_per_commit": 0
+        "pr_retest_rate": 0.0,
+        "avg_retests_per_pr": 0.0,
+        "avg_retests_per_commit": 0.0
       }
     },
     "RedHatInsights/insights-results-smart-proxy": {
