@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-10T21:08:48.654492",
+  "analysis_date": "2025-12-11T09:11:43.621381",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-09T21:08:26.617543+00:00",
-    "to": "2025-12-10T21:08:48.654508"
+    "from": "2025-12-10T09:11:18.725779+00:00",
+    "to": "2025-12-11T09:11:43.621398"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 7,
-    "total_commits": 16,
+    "total_prs_analyzed": 3,
+    "total_commits": 12,
     "total_retests": 3,
     "retest_comments": 1,
     "update_branch_actions": 2,
     "prs_with_retests": 1,
-    "pr_retest_rate": 14.285714285714285,
-    "avg_retests_per_pr": 0.42857142857142855,
-    "avg_retests_per_commit": 0.1875
+    "pr_retest_rate": 33.33333333333333,
+    "avg_retests_per_pr": 1.0,
+    "avg_retests_per_commit": 0.25
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -58,30 +58,18 @@
           "update_branch_count": 2,
           "total_retests": 3,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2335"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator",
-          "pr_number": 2339,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-10T01:13:03Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator/pull/2339"
         }
       ],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 8,
+        "total_prs_analyzed": 1,
+        "total_commits": 7,
         "total_retests": 3,
         "retest_comments": 1,
         "update_branch_actions": 2,
         "prs_with_retests": 1,
-        "pr_retest_rate": 50.0,
-        "avg_retests_per_pr": 1.5,
-        "avg_retests_per_commit": 0.375
+        "pr_retest_rate": 100.0,
+        "avg_retests_per_pr": 3.0,
+        "avg_retests_per_commit": 0.42857142857142855
       }
     },
     "RedHatInsights/insights-results-aggregator-exporter": {
@@ -127,30 +115,17 @@
       }
     },
     "RedHatInsights/insights-results-aggregator-cleaner": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-cleaner",
-          "pr_number": 558,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-10T00:58:16Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/558"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/insights-operator-gathering-conditions-service": {
@@ -168,57 +143,32 @@
       }
     },
     "RedHatInsights/ccx-notification-service": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/ccx-notification-service",
-          "pr_number": 1045,
-          "title": "Reduce log level to WARN to avoid duplicate Glitchtip issues",
-          "merged_at": "2025-12-10T08:24:04Z",
-          "user": "JiriPapousek",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1045"
-        },
-        {
-          "repository": "RedHatInsights/ccx-notification-service",
-          "pr_number": 1044,
-          "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.485 to 0.1.486",
-          "merged_at": "2025-12-10T07:25:58Z",
-          "user": "dependabot[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/ccx-notification-service/pull/1044"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 2,
-        "total_commits": 2,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/ccx-notification-writer": {
       "prs": [
         {
           "repository": "RedHatInsights/ccx-notification-writer",
-          "pr_number": 727,
+          "pr_number": 728,
           "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-09T21:10:17Z",
+          "merged_at": "2025-12-11T05:13:19Z",
           "user": "red-hat-konflux[bot]",
           "total_commits": 1,
           "retest_comments": 0,
           "update_branch_count": 0,
           "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/727"
+          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/728"
         }
       ],
       "summary": {
