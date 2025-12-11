@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-11T10:09:12.004107+00:00",
+  "analysis_date": "2025-12-11T22:08:13.582471+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-12T10:09:11.979301+00:00",
-    "to": "2025-12-11T10:09:12.004107+00:00"
+    "from": "2025-09-12T22:08:13.557530+00:00",
+    "to": "2025-12-11T22:08:13.582471+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -4289,6 +4289,18 @@
       "prs": [
         {
           "repository": "RedHatInsights/insights-results-smart-proxy",
+          "pr_number": 1639,
+          "title": "Add AGENTS.md",
+          "merged_at": "2025-12-11T14:05:28Z",
+          "user": "lenasolarova",
+          "total_commits": 3,
+          "retest_comments": 2,
+          "update_branch_count": 0,
+          "total_retests": 2,
+          "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1639"
+        },
+        {
+          "repository": "RedHatInsights/insights-results-smart-proxy",
           "pr_number": 1634,
           "title": "Bump github.com/openshift-online/ocm-sdk-go from 0.1.483 to 0.1.484",
           "merged_at": "2025-11-26T17:55:15Z",
@@ -4553,14 +4565,14 @@
       }
     }
   },
-  "last_updated": "2025-12-11T10:09:12.004107+00:00",
-  "cutoff_date": "2025-09-12T10:09:11.979301+00:00",
+  "last_updated": "2025-12-11T22:08:13.582471+00:00",
+  "cutoff_date": "2025-09-12T22:08:13.557530+00:00",
   "summary": {
-    "total_prs": 363,
-    "total_retests": 59,
-    "prs_with_retests": 39,
-    "retest_rate": 10.743801652892563,
-    "retest_comments": 38,
+    "total_prs": 364,
+    "total_retests": 61,
+    "prs_with_retests": 40,
+    "retest_rate": 10.989010989010989,
+    "retest_comments": 40,
     "update_branch_actions": 21
   }
 }
