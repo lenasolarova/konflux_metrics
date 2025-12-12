@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-11T21:09:29.597878",
+  "analysis_date": "2025-12-12T09:10:55.552031",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,20 +15,20 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-10T21:09:09.963020+00:00",
-    "to": "2025-12-11T21:09:29.597895"
+    "from": "2025-12-11T09:10:37.304434+00:00",
+    "to": "2025-12-12T09:10:55.552041"
   },
   "overall_summary": {
     "total_repos": 11,
-    "total_prs_analyzed": 2,
-    "total_commits": 4,
-    "total_retests": 2,
-    "retest_comments": 2,
+    "total_prs_analyzed": 1,
+    "total_commits": 3,
+    "total_retests": 1,
+    "retest_comments": 1,
     "update_branch_actions": 0,
     "prs_with_retests": 1,
-    "pr_retest_rate": 50.0,
+    "pr_retest_rate": 100.0,
     "avg_retests_per_pr": 1.0,
-    "avg_retests_per_commit": 0.5
+    "avg_retests_per_commit": 0.3333333333333333
   },
   "repositories": {
     "RedHatInsights/insights-ccx-messaging": {
@@ -144,30 +144,17 @@
       }
     },
     "RedHatInsights/ccx-notification-writer": {
-      "prs": [
-        {
-          "repository": "RedHatInsights/ccx-notification-writer",
-          "pr_number": 728,
-          "title": "chore(deps): update all dependencies",
-          "merged_at": "2025-12-11T05:13:19Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/ccx-notification-writer/pull/728"
-        }
-      ],
+      "prs": [],
       "summary": {
-        "total_prs_analyzed": 1,
-        "total_commits": 1,
+        "total_prs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "retest_comments": 0,
         "update_branch_actions": 0,
         "prs_with_retests": 0,
-        "pr_retest_rate": 0.0,
-        "avg_retests_per_pr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "pr_retest_rate": 0,
+        "avg_retests_per_pr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "RedHatInsights/obsint-mocks": {
@@ -193,22 +180,22 @@
           "merged_at": "2025-12-11T14:05:28Z",
           "user": "lenasolarova",
           "total_commits": 3,
-          "retest_comments": 2,
+          "retest_comments": 1,
           "update_branch_count": 0,
-          "total_retests": 2,
+          "total_retests": 1,
           "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1639"
         }
       ],
       "summary": {
         "total_prs_analyzed": 1,
         "total_commits": 3,
-        "total_retests": 2,
-        "retest_comments": 2,
+        "total_retests": 1,
+        "retest_comments": 1,
         "update_branch_actions": 0,
         "prs_with_retests": 1,
         "pr_retest_rate": 100.0,
-        "avg_retests_per_pr": 2.0,
-        "avg_retests_per_commit": 0.6666666666666666
+        "avg_retests_per_pr": 1.0,
+        "avg_retests_per_commit": 0.3333333333333333
       }
     }
   }
