@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-11T22:08:13.599986+00:00",
+  "analysis_date": "2025-12-12T10:09:11.020081+00:00",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,8 +12,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-12T22:08:13.587587+00:00",
-    "to": "2025-12-11T22:08:13.599986+00:00"
+    "from": "2025-09-13T10:09:11.007537+00:00",
+    "to": "2025-12-12T10:09:11.020081+00:00"
   },
   "overall_summary": {
     "total_projects": 7,
@@ -786,16 +786,6 @@
           "total_commits": 1,
           "total_retests": 0,
           "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/94"
-        },
-        {
-          "project": "ccx/ccx-load-test",
-          "mr_iid": 93,
-          "title": "chore(deps): update konflux references",
-          "merged_at": "2025-09-13T08:14:09.966Z",
-          "author": "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/93"
         }
       ],
       "summary": {
@@ -1158,12 +1148,12 @@
       }
     }
   },
-  "last_updated": "2025-12-11T22:08:13.599986+00:00",
-  "cutoff_date": "2025-09-12T22:08:13.587587+00:00",
+  "last_updated": "2025-12-12T10:09:11.020081+00:00",
+  "cutoff_date": "2025-09-13T10:09:11.007537+00:00",
   "summary": {
-    "total_mrs": 104,
+    "total_mrs": 103,
     "total_retests": 23,
     "mrs_with_retests": 14,
-    "retest_rate": 13.461538461538462
+    "retest_rate": 13.592233009708737
   }
 }

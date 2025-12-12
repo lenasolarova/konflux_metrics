@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-11T22:08:13.582471+00:00",
+  "analysis_date": "2025-12-12T10:09:11.002270+00:00",
   "repos": [
     "RedHatInsights/insights-ccx-messaging",
     "RedHatInsights/insights-results-aggregator",
@@ -15,8 +15,8 @@
   ],
   "days_analyzed": 90,
   "date_range": {
-    "from": "2025-09-12T22:08:13.557530+00:00",
-    "to": "2025-12-11T22:08:13.582471+00:00"
+    "from": "2025-09-13T10:09:10.976868+00:00",
+    "to": "2025-12-12T10:09:11.002270+00:00"
   },
   "overall_summary": {
     "total_repos": 11,
@@ -1454,18 +1454,6 @@
           "update_branch_count": 0,
           "total_retests": 0,
           "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/463"
-        },
-        {
-          "repository": "RedHatInsights/insights-results-aggregator-exporter",
-          "pr_number": 462,
-          "title": "chore(deps): update konflux references",
-          "merged_at": "2025-09-13T08:44:14Z",
-          "user": "red-hat-konflux[bot]",
-          "total_commits": 1,
-          "retest_comments": 0,
-          "update_branch_count": 0,
-          "total_retests": 0,
-          "url": "https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/462"
         }
       ],
       "summary": {
@@ -4294,9 +4282,9 @@
           "merged_at": "2025-12-11T14:05:28Z",
           "user": "lenasolarova",
           "total_commits": 3,
-          "retest_comments": 2,
+          "retest_comments": 1,
           "update_branch_count": 0,
-          "total_retests": 2,
+          "total_retests": 1,
           "url": "https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1639"
         },
         {
@@ -4565,14 +4553,14 @@
       }
     }
   },
-  "last_updated": "2025-12-11T22:08:13.582471+00:00",
-  "cutoff_date": "2025-09-12T22:08:13.557530+00:00",
+  "last_updated": "2025-12-12T10:09:11.002270+00:00",
+  "cutoff_date": "2025-09-13T10:09:10.976868+00:00",
   "summary": {
-    "total_prs": 364,
-    "total_retests": 61,
+    "total_prs": 363,
+    "total_retests": 60,
     "prs_with_retests": 40,
-    "retest_rate": 10.989010989010989,
-    "retest_comments": 40,
+    "retest_rate": 11.019283746556475,
+    "retest_comments": 39,
     "update_branch_actions": 21
   }
 }
