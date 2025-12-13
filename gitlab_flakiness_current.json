@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-13T08:27:38.755127",
+  "analysis_date": "2025-12-13T20:10:33.459220",
   "gitlab_url": "https://gitlab.cee.redhat.com",
   "project_paths": [
     "insights-qe/iqe-ccx-plugin",
@@ -12,51 +12,30 @@
   ],
   "days_analyzed": 1,
   "date_range": {
-    "from": "2025-12-12T08:23:37.377561+00:00",
-    "to": "2025-12-13T08:27:38.755146"
+    "from": "2025-12-12T20:08:49.115828+00:00",
+    "to": "2025-12-13T20:10:33.459242"
   },
   "overall_summary": {
     "total_projects": 7,
-    "total_mrs_analyzed": 2,
-    "total_commits": 2,
+    "total_mrs_analyzed": 0,
+    "total_commits": 0,
     "total_retests": 0,
     "mrs_with_retests": 0,
-    "mr_retest_rate": 0.0,
-    "avg_retests_per_mr": 0.0,
-    "avg_retests_per_commit": 0.0
+    "mr_retest_rate": 0,
+    "avg_retests_per_mr": 0,
+    "avg_retests_per_commit": 0
   },
   "projects": {
     "insights-qe/iqe-ccx-plugin": {
-      "mrs": [
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1151,
-          "title": "Use the mock AMS new endpoints to register cluster for test endpoints",
-          "merged_at": "2025-12-12T15:48:34.916Z",
-          "author": "ireyes",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1151"
-        },
-        {
-          "project": "insights-qe/iqe-ccx-plugin",
-          "mr_iid": 1155,
-          "title": "RHINENG-22719 Update and correct the content",
-          "merged_at": "2025-12-12T10:16:29.389Z",
-          "author": "apimplap",
-          "total_commits": 1,
-          "total_retests": 0,
-          "url": "https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1155"
-        }
-      ],
+      "mrs": [],
       "summary": {
-        "total_mrs_analyzed": 2,
-        "total_commits": 2,
+        "total_mrs_analyzed": 0,
+        "total_commits": 0,
         "total_retests": 0,
         "mrs_with_retests": 0,
-        "mr_retest_rate": 0.0,
-        "avg_retests_per_mr": 0.0,
-        "avg_retests_per_commit": 0.0
+        "mr_retest_rate": 0,
+        "avg_retests_per_mr": 0,
+        "avg_retests_per_commit": 0
       }
     },
     "ccx/ccx-data-pipeline": {
